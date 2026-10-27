@@ -109,6 +109,31 @@ p { margin: 0; text-wrap: pretty; }
 }
 .sq--flat  { box-shadow: none; }
 
+/* 對齊格線的方塊：用格數定位，跟背景格線永遠對齊 */
+.sq--cell, .dots--cell { box-sizing: border-box; }
+.sq--cell {
+  left: calc(var(--x, 0) * var(--grid-size));
+  top: calc(var(--y, 0) * var(--grid-size));
+  width: calc(var(--w, 1) * var(--grid-size));
+  height: calc(var(--h, var(--w, 1)) * var(--grid-size));
+}
+.dots--cell {
+  left: calc(var(--x, 0) * var(--grid-size) + var(--grid-size) * 0.2);
+  top: calc(var(--y, 0) * var(--grid-size) + var(--grid-size) * 0.2);
+  width: calc(var(--grid-size) * 0.6);
+  height: calc(var(--grid-size) * 0.6);
+}
+.sq--desktop { display: none; }
+
+/* Pop up 進場：方塊依序彈出（--i 決定順序） */
+.js .pop { opacity: 0; transform: scale(0.55); }
+.js .pop.is-popped { animation: pop-in 0.62s cubic-bezier(0.34, 1.56, 0.64, 1) both; animation-delay: calc(var(--i, 0) * 70ms); }
+@keyframes pop-in {
+  0%   { opacity: 0; transform: scale(0.55); }
+  60%  { opacity: 1; }
+  100% { opacity: 1; transform: scale(1); }
+}
+
 /* 點陣小方塊 */
 .dots {
   position: absolute;
@@ -526,9 +551,15 @@ figure { margin: 0; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .hero__cue::after { animation: none; }
   .sq { will-change: auto; }
+  .js .pop, .js .pop.is-popped { opacity: 1; transform: none; animation: none; }
 }
 
 /* 15. Breakpoints (Bootstrap 5: 576 / 768 / 992 / 1200 / 1400) ----------- */
+
+/* xs：手機格線改小，方塊跟著縮小 */
+@media (max-width: 767.98px) {
+  :root { --grid-size: 48px; }
+}
 
 /* sm ≥ 576 */
 @media (min-width: 576px) {
@@ -545,6 +576,7 @@ figure { margin: 0; }
   .section { padding-block: var(--sp-9); }
   .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .sq--desktop { display: block; }
   .pager { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pager a.pager__next { text-align: right; }
   .sheet__figures--pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }

@@ -49,28 +49,26 @@
     <!-- ===== Hero ===== -->
     <section class="hero grid-bg" aria-labelledby="hero-title">
       <div class="hero__art" aria-hidden="true">
+        <!-- 方塊對齊背景格線：--x / --y 是第幾格，--w 是佔幾格（--h 不填則同 --w）。手機格線 48px、平板以上 72px -->
         <!-- 左上方塊群：呼應紙本封面 -->
-        <span class="sq sq--glow" data-depth="0.35" style="left:3%;top:10%;width:clamp(72px,11vw,150px);aspect-ratio:1;"></span>
-        <span class="sq sq--dark" data-depth="0.5" style="left:calc(3% + clamp(72px,11vw,150px));top:10%;width:clamp(72px,11vw,150px);aspect-ratio:1;border-radius:0 10px 10px 0;"></span>
-        <span class="sq" data-depth="0.45" style="left:3%;top:calc(10% + clamp(72px,11vw,150px));width:clamp(72px,11vw,150px);aspect-ratio:1;border-radius:0 0 0 10px;"></span>
-        <span class="sq sq--dark" data-depth="0.3" style="left:calc(3% + clamp(72px,11vw,150px));top:calc(10% + clamp(72px,11vw,150px));width:clamp(72px,11vw,150px);aspect-ratio:1;"></span>
-        <span class="sq sq--light" data-depth="0.6" style="left:calc(3% + clamp(150px,23vw,310px));top:calc(10% + clamp(40px,6vw,80px));width:clamp(60px,9vw,120px);aspect-ratio:1;"></span>
-        <span class="sq" data-depth="0.25" style="left:-2%;top:36%;width:clamp(64px,9vw,120px);aspect-ratio:1;"></span>
-        <span class="sq sq--light" data-depth="0.7" style="left:13%;top:42%;width:clamp(40px,5vw,64px);aspect-ratio:1;"></span>
-        <span class="sq sq--glow" data-depth="0.4" style="left:18%;top:38%;width:clamp(70px,10vw,140px);aspect-ratio:1;"></span>
+        <span class="sq sq--cell sq--glow" style="--x:1;--y:1;--w:2;--i:0;border-radius:10px 0 0 0;"></span>
+        <span class="sq sq--cell sq--dark" style="--x:3;--y:1;--w:2;--i:1;border-radius:0 10px 0 0;"></span>
+        <span class="sq sq--cell" style="--x:1;--y:3;--w:2;--i:2;border-radius:0 0 0 10px;"></span>
+        <span class="sq sq--cell sq--dark" style="--x:3;--y:3;--w:2;--i:3;border-radius:0 0 10px 0;"></span>
+        <span class="sq sq--cell sq--light" style="--x:5;--y:2;--w:1;--i:4;"></span>
+        <span class="sq sq--cell sq--glow" style="--x:5;--y:4;--w:1;--i:5;"></span>
+        <span class="dots dots--cell" style="--x:5;--y:1;--i:6;"></span>
+        <span class="dots dots--cell" style="--x:0;--y:5;--i:7;"></span>
 
-        <!-- 右上散落方塊 -->
-        <span class="sq sq--ghost" data-depth="0.2" style="right:28%;top:12%;width:clamp(50px,6vw,84px);aspect-ratio:1;"></span>
-        <span class="sq sq--light" data-depth="0.5" style="right:30%;top:20%;width:clamp(56px,7vw,96px);aspect-ratio:1;"></span>
-        <span class="sq sq--ghost" data-depth="0.15" style="right:22%;top:16%;width:clamp(40px,5vw,72px);aspect-ratio:1;"></span>
-        <span class="sq sq--light" data-depth="0.45" style="right:42%;top:30%;width:clamp(56px,7vw,96px);aspect-ratio:1;"></span>
-        <span class="sq sq--ghost" data-depth="0.25" style="right:6%;top:22%;width:clamp(36px,4vw,56px);aspect-ratio:1;"></span>
-        <span class="sq sq--flat" data-depth="0.3" style="right:10%;top:28%;width:clamp(24px,3vw,40px);aspect-ratio:1;"></span>
-        <span class="sq sq--light" data-depth="0.55" style="right:-1%;top:34%;width:clamp(32px,4vw,52px);aspect-ratio:1;"></span>
-
-        <span class="dots" data-depth="0.2" style="left:clamp(150px,22vw,300px);top:9%;width:48px;height:40px;"></span>
-        <span class="dots" data-depth="0.35" style="right:32%;top:30%;width:32px;height:32px;"></span>
-        <span class="dots" data-depth="0.3" style="right:8%;top:58%;width:40px;height:32px;"></span>
+        <!-- 右側散落方塊（窄螢幕會被裁掉，不影響） -->
+        <span class="sq sq--cell sq--ghost" style="--x:10;--y:1;--w:1;--i:8;"></span>
+        <span class="sq sq--cell sq--light" style="--x:11;--y:2;--w:1;--i:9;"></span>
+        <span class="sq sq--cell sq--ghost" style="--x:13;--y:1;--w:1;--i:10;"></span>
+        <span class="sq sq--cell sq--light" style="--x:9;--y:3;--w:1;--i:11;"></span>
+        <span class="sq sq--cell sq--ghost" style="--x:16;--y:2;--w:1;--i:12;"></span>
+        <span class="sq sq--cell sq--dark" style="--x:17;--y:3;--w:1;--i:13;"></span>
+        <span class="sq sq--cell sq--light" style="--x:18;--y:1;--w:1;--i:14;"></span>
+        <span class="dots dots--cell" style="--x:12;--y:3;--i:15;"></span>
       </div>
 
       <div class="container hero__content">
@@ -199,9 +197,9 @@
 
     <!-- ===== Contact ===== -->
     <section class="section contact grid-bg" id="contact" aria-labelledby="contact-title">
-      <span class="sq sq--glow" aria-hidden="true" data-depth="0.3" style="right:6%;top:18%;width:clamp(70px,10vw,140px);aspect-ratio:1;"></span>
-      <span class="sq sq--light" aria-hidden="true" data-depth="0.5" style="right:18%;top:52%;width:clamp(40px,5vw,72px);aspect-ratio:1;"></span>
-      <span class="dots" aria-hidden="true" style="right:4%;bottom:14%;width:48px;height:40px;"></span>
+      <span class="sq sq--cell sq--glow sq--desktop" aria-hidden="true" style="--x:14;--y:2;--w:2;--i:0;"></span>
+      <span class="sq sq--cell sq--light sq--desktop" aria-hidden="true" style="--x:12;--y:4;--w:1;--i:1;"></span>
+      <span class="dots dots--cell sq--desktop" aria-hidden="true" style="--x:16;--y:5;--i:2;"></span>
       <div class="container">
         <h2 class="contact__title reveal" id="contact-title">Let’s Talk</h2>
         <ul class="contact__list reveal">

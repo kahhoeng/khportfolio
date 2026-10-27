@@ -64,31 +64,26 @@ function initReveal() {
   els.forEach((el) => io.observe(el));
 }
 
-/* ---- 方塊視差：data-depth 越大移動越多 ---- */
-function initParallax() {
-  if (reduceMotion) return;
-  const items = [...document.querySelectorAll('[data-depth]')];
-  if (!items.length) return;
+/* ---- 方塊 Pop up 進場：區塊進入畫面時，方塊依 --i 順序彈出 ---- */
+function initPop() {
+  const groups = new Map();
+  document.querySelectorAll('.sq--cell, .dots--cell').forEach((el) => {
+    const host = el.closest('section') || document.body;
+    if (!groups.has(host)) groups.set(host, []);
+    groups.get(host).push(el);
+  });
+  if (!groups.size) return;
+  if (reduceMotion || !('IntersectionObserver' in window)) return;   // CSS 會直接顯示
 
-  let px = 0, py = 0, sy = window.scrollY, ticking = false;
-  const update = () => {
-    ticking = false;
-    for (const el of items) {
-      const d = parseFloat(el.dataset.depth) || 0;
-      el.style.transform = `translate3d(${(px * d * 18).toFixed(1)}px, ${(py * d * 18 - sy * d * 0.25).toFixed(1)}px, 0)`;
-    }
-  };
-  const request = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
-
-  window.addEventListener('scroll', () => { sy = window.scrollY; request(); }, { passive: true });
-  if (window.matchMedia('(pointer: fine)').matches) {
-    window.addEventListener('pointermove', (e) => {
-      px = (e.clientX / window.innerWidth - 0.5) * 2;
-      py = (e.clientY / window.innerHeight - 0.5) * 2;
-      request();
-    }, { passive: true });
-  }
-  update();
+  groups.forEach((els) => els.forEach((el) => el.classList.add('pop')));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => {
+      if (!en.isIntersecting) return;
+      groups.get(en.target).forEach((el) => el.classList.add('is-popped'));
+      io.unobserve(en.target);
+    });
+  }, { threshold: 0.15 });
+  groups.forEach((_, host) => io.observe(host));
 }
 
 /* ---- d3 時間軸：接近畫面時才載入 d3 ---- */
@@ -111,7 +106,7 @@ function initTimelineLazy() {
 initHeader();
 initNav();
 initReveal();
-initParallax();
+initPop();
 initLightbox();
 initI18n().then(() => {
   initWorks();
