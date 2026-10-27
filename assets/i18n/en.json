@@ -1,0 +1,19 @@
+{
+  "_readme": "英文翻譯。key 對應 HTML 裡的 data-i18n。沒填的會顯示中文。作品與時間軸的英文請填在 assets/data/*.json 的 en 欄位。",
+  "skip": "Skip to content",
+  "nav.about": "About",
+  "nav.work": "Work",
+  "nav.photo": "Photography",
+  "nav.contact": "Contact",
+  "hero.selected": "Selected Works",
+  "hero.tagline": "",
+  "hero.cue": "Scroll",
+  "about.photo": "Photo",
+  "about.lead": "",
+  "about.p1": "",
+  "about.p2": "",
+  "timeline.hint": "Tap a bar for details",
+  "filter.all": "All",
+  "photo.sub": "Space, seen from above",
+  "contact.phone": "Phone"
+}

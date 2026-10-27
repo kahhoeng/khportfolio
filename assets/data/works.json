@@ -1,0 +1,109 @@
+{
+  "_readme": "作品清單。新增作品：複製一筆、改內容即可。cat 可用 space（空間）、video（影像）、ui（介面）。thumb 留空會顯示灰色方塊佔位。cover=true 代表縮圖要裁切填滿（照片、3D 圖）；線稿請用 false。href 留空代表內頁還沒做。",
+  "categories": [
+    { "id": "space", "zh": "空間", "en": "Space" },
+    { "id": "video", "zh": "影像", "en": "Video" },
+    { "id": "ui", "zh": "介面", "en": "Interface" }
+  ],
+  "works": [
+    {
+      "id": "cabinet",
+      "cat": "space",
+      "year": "2026",
+      "title": { "zh": "組合櫃", "en": "Modular Cabinet" },
+      "summary": { "zh": "三個獨立櫃體組成的收納櫃，從 SketchUp 建模、材質到三視圖尺寸出圖。", "en": "" },
+      "tools": "SketchUp",
+      "thumb": "assets/img/work/cab_3d.jpg",
+      "cover": false,
+      "href": "projects/cabinet.html"
+    },
+    {
+      "id": "bedroom",
+      "cat": "space",
+      "year": "2026",
+      "title": { "zh": "臥室｜從現況到施工圖", "en": "Bedroom — From Survey to Construction Set" },
+      "summary": { "zh": "現況、配置、天花、燈具位置與迴路、兩向立面，一個空間出齊七張施工圖。", "en": "" },
+      "tools": "AutoCAD",
+      "thumb": "assets/img/work/bed_layout.png",
+      "cover": false,
+      "href": "projects/bedroom.html"
+    },
+    {
+      "id": "bathroom",
+      "cat": "space",
+      "year": "2026",
+      "title": { "zh": "浴廁平面與立面", "en": "Bathroom Plan & Elevation" },
+      "summary": { "zh": "長型浴室分為洗手、馬桶、浴缸三區，平面與立面尺寸互相對應。", "en": "" },
+      "tools": "AutoCAD",
+      "thumb": "assets/img/work/bath_plan.png",
+      "cover": false,
+      "href": "projects/bathroom.html"
+    },
+    {
+      "id": "digital-signage",
+      "cat": "space",
+      "year": "2018–2021",
+      "title": { "zh": "VIA 數位看板提案集", "en": "VIA Digital Signage Proposals" },
+      "summary": { "zh": "把數位看板硬體規格，轉成商場、文化場館、醫療、辦公等場域的空間配置圖與提案視覺。", "en": "" },
+      "tools": "提案視覺 · 空間配置圖",
+      "thumb": "",
+      "cover": true,
+      "href": ""
+    },
+    {
+      "id": "ikea",
+      "cat": "video",
+      "year": "2021",
+      "title": { "zh": "IKEA 台中店智慧叫號系統｜客戶案例", "en": "IKEA Taichung — Customer Case Video" },
+      "summary": { "zh": "記錄系統導入過程，梳理實際使用情境，轉成具說服力的 B2B 成功案例影片。", "en": "" },
+      "tools": "拍攝 · 剪輯 · 調色 · 腳本",
+      "thumb": "",
+      "cover": true,
+      "href": ""
+    },
+    {
+      "id": "mobile360",
+      "cat": "video",
+      "year": "2023",
+      "title": { "zh": "Mobile360 堆高機安全系統｜安裝教學", "en": "Mobile360 — Installation Guide Videos" },
+      "summary": { "zh": "把繁瑣的安裝與校正手冊，轉成全球經銷商看得懂的標準化教學影片。", "en": "" },
+      "tools": "拍攝 · 剪輯 · 調色 · 腳本",
+      "thumb": "",
+      "cover": true,
+      "href": ""
+    },
+    {
+      "id": "smarthome",
+      "cat": "video",
+      "year": "2020",
+      "title": { "zh": "VIA Smart Home｜情境與介紹影片", "en": "VIA Smart Home — Scenario Videos" },
+      "summary": { "zh": "把 IoT 產品的連動邏輯與使用情境轉成影像，讓客戶不用聽解說也能看懂。", "en": "" },
+      "tools": "拍攝 · 剪輯 · 調色 · 腳本",
+      "thumb": "",
+      "cover": true,
+      "href": ""
+    },
+    {
+      "id": "via-web",
+      "cat": "ui",
+      "year": "2022",
+      "title": { "zh": "VIA 官網改版｜介面與內容編排", "en": "VIA Website Redesign" },
+      "summary": { "zh": "配合品牌轉型，重新規劃資訊分類與頁面呈現，承載「產業解決方案」的新定位。", "en": "" },
+      "tools": "UI/UX · Wireframe · Prototype",
+      "thumb": "",
+      "cover": true,
+      "href": ""
+    },
+    {
+      "id": "via-next",
+      "cat": "ui",
+      "year": "2021",
+      "title": { "zh": "VIA NEXT｜資訊架構與線框圖", "en": "VIA NEXT — IA & Wireframes" },
+      "summary": { "zh": "在緊迫時程下，把子公司既有的資訊架構快速轉成開發端可執行的線框圖。", "en": "" },
+      "tools": "UI/UX · Wireframe",
+      "thumb": "",
+      "cover": true,
+      "href": ""
+    }
+  ]
+}

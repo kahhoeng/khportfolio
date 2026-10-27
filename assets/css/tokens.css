@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Design tokens — KH Portfolio
+   改顏色、字體、間距，只要改這個檔案。
+   ========================================================================== */
+
+:root {
+  /* ---- Color: neutral ---- */
+  --c-bg: #ffffff;
+  --c-bg-soft: #f6f6f5;
+  --c-ink: #222324;          /* 主要文字 */
+  --c-ink-2: #5f6163;        /* 次要文字（白底對比 6:1） */
+  --c-ink-3: #8a8c8e;        /* 裝飾用，不放重要文字 */
+  --c-line: #e6e6e4;         /* 分隔線 */
+  --c-grid: #efefee;         /* 背景格線 */
+  --c-cross: #c9cacb;        /* 背景十字記號 */
+
+  /* ---- Color: accent ---- */
+  --c-accent: #2fd3dc;       /* 青色細線、點綴（不放文字） */
+  --c-accent-ink: #0b7c84;   /* 青色文字用（白底對比 4.9:1） */
+
+  /* ---- Square gradients ---- */
+  --sq-mid: linear-gradient(135deg, #f2f2f2 0%, #b9bbbc 48%, #7f8285 100%);
+  --sq-dark: linear-gradient(140deg, #9a9d9f 0%, #6e7174 45%, #4b4e51 100%);
+  --sq-light: linear-gradient(135deg, #ffffff 0%, #e4e5e5 55%, #c4c6c7 100%);
+  --sq-shadow: -14px 22px 34px rgba(20, 22, 24, 0.32);
+  --sq-shadow-soft: -8px 14px 22px rgba(20, 22, 24, 0.18);
+  --sq-radius: 10px;
+
+  /* ---- Type ---- */
+  --f-display: "Montserrat", "Noto Sans TC", system-ui, sans-serif;
+  --f-body: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --fs-xs: 0.8125rem;   /* 13 */
+  --fs-sm: 0.875rem;    /* 14 */
+  --fs-md: 1rem;        /* 16 */
+  --fs-lg: 1.125rem;    /* 18 */
+  --fs-xl: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --fs-2xl: clamp(2rem, 1.5rem + 2.4vw, 3.25rem);
+  --fs-hero: clamp(3rem, 1rem + 9vw, 8.5rem);
+
+  /* ---- Space ---- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 72px;
+  --sp-9: 112px;
+
+  --gutter: 16px;             /* 左右留白，各斷點在 main.css 調整 */
+  --container: 1200px;
+  --header-h: 60px;
+  --grid-size: 72px;          /* 背景格線間距 */
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* ---- Bootstrap 5 斷點（僅供參考，CSS 變數無法用在 media query） ----
+   sm  ≥ 576px   手機橫式
+   md  ≥ 768px   平板
+   lg  ≥ 992px   小筆電
+   xl  ≥ 1200px  桌機
+   xxl ≥ 1400px  大螢幕
+*/
