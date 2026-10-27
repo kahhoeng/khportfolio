@@ -80,13 +80,14 @@ p { margin: 0; text-wrap: pretty; }
 
 /* 3. Grid background & squares ------------------------------------------- */
 .grid-bg {
+  /* 格線＋十字記號：十字的中心落在格線交叉點上（四段分別畫在相鄰的格子邊緣，拼起來成為完整的 +） */
   background-color: var(--c-bg);
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72'%3E%3Cpath d='M36 31v10M31 36h10' stroke='%23c9cacb' stroke-width='1'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72'%3E%3Cpath d='M0 .5h5M.5 0v5M72 .5h-5M.5 72v-5' stroke='%23b9babb' stroke-width='1' fill='none'/%3E%3C/svg%3E"),
     linear-gradient(var(--c-grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--c-grid) 1px, transparent 1px);
   background-size: var(--grid-size) var(--grid-size);
-  background-position: 0 0, -1px -1px, -1px -1px;
+  background-position: 0 0;
 }
 
 /* 方塊元件：.sq + 尺寸 + 色調。位置用 style 或額外 class 設定 */
