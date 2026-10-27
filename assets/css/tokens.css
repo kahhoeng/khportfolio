@@ -15,8 +15,10 @@
   --c-cross: #c9cacb;        /* 背景十字記號 */
 
   /* ---- Color: accent ---- */
-  --c-accent: #2fd3dc;       /* 青色細線、點綴（不放文字） */
-  --c-accent-ink: #0b7c84;   /* 青色文字用（白底對比 4.9:1） */
+  --c-accent: #e8402a;       /* 紅色：細線、圓點、箭頭 */
+  --c-accent-ink: #c4321f;   /* 紅色文字用（白底對比 5.3:1） */
+  --c-panel: #ebeced;        /* 淺灰底板（作品區） */
+  --c-black: #151617;        /* 黑色主打卡 */
 
   /* ---- Square gradients ---- */
   --sq-mid: linear-gradient(135deg, #f2f2f2 0%, #b9bbbc 48%, #7f8285 100%);

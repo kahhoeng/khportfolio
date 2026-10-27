@@ -1,5 +1,5 @@
 {
-  "_readme": "作品清單。新增作品：複製一筆、改內容即可。cat 可用 space（空間）、video（影像）、ui（介面）。thumb 留空會顯示灰色方塊佔位。cover=true 代表縮圖要裁切填滿（照片、3D 圖）；線稿請用 false。href 留空代表內頁還沒做。",
+  "_readme": "作品清單。新增作品：複製一筆、改內容即可。cat 可用 space（空間）、video（影像）、ui（介面）。thumb 留空會顯示灰色方塊佔位。cover=true 代表縮圖要裁切填滿（照片、3D 圖）；線稿請用 false。href 留空代表內頁還沒做。 feature=true 會變成黑色主打卡（建議只放一件）。",
   "categories": [
     {
       "id": "space",
@@ -50,7 +50,8 @@
       "tools": "AutoCAD",
       "thumb": "assets/img/work/bed_layout.png",
       "cover": false,
-      "href": "projects/bedroom.html"
+      "href": "projects/bedroom.html",
+      "feature": true
     },
     {
       "id": "bathroom",

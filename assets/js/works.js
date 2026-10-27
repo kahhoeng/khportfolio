@@ -24,7 +24,6 @@ function el(tag, attrs = {}, children = []) {
 
 function media(work, index) {
   const box = el('div', { class: 'work-card__media' + (work.thumb ? '' : ' placeholder') });
-  box.append(el('span', { class: 'work-card__num', text: String(index + 1).padStart(2, '0') }));
   if (work.thumb) {
     box.append(el('img', {
       src: work.thumb,
@@ -43,8 +42,7 @@ function media(work, index) {
 
 function card(work, index, catLabel) {
   const title = pick(work.title);
-  const inner = [
-    media(work, index),
+  const body = el('div', { class: 'work-card__body' }, [
     el('div', { class: 'work-card__meta' }, [
       el('span', {}, [
         el('span', { class: 'work-card__cat', text: catLabel }),
@@ -54,10 +52,20 @@ function card(work, index, catLabel) {
     ]),
     el('h3', { class: 'work-card__title', text: title }),
     el('p', { class: 'work-card__summary', text: pick(work.summary) }),
+    work.href
+      ? el('span', { class: 'work-card__more', 'aria-hidden': 'true', text: lang() === 'en' ? 'View project →' : '看作品 →' })
+      : el('span', { class: 'work-card__status', text: lang() === 'en' ? 'Case study in progress' : '內頁製作中' }),
+  ]);
+  const inner = [
+    el('span', { class: 'work-card__num', 'aria-hidden': 'true', text: `/ ${String(index + 1).padStart(2, '0')}` }),
+    media(work, index),
+    body,
   ];
-  if (!work.href) inner.push(el('span', { class: 'work-card__status', text: lang() === 'en' ? 'Case study in progress' : '內頁製作中' }));
 
-  const li = el('li', { class: 'work-card reveal is-visible', 'data-cat': work.cat });
+  const li = el('li', {
+    class: 'work-card reveal is-visible' + (work.feature ? ' work-card--feature' : ''),
+    'data-cat': work.cat,
+  });
   li.append(work.href ? el('a', { class: 'work-card__link', href: work.href }, inner) : el('div', { class: 'work-card__link' }, inner));
   return li;
 }
