@@ -16,6 +16,7 @@ const BAR_H = 22;
 const M = { top: 24, right: 96, bottom: 34, left: 64 };
 
 function shortLabel(item) {
+  if (item.label) return pick(item.label);
   const t = pick(item.title);
   return t.split(/[｜|—]/)[0].trim();
 }
@@ -120,11 +121,14 @@ export async function initTimeline(host) {
         node.append('rect')
           .attr('x', x0).attr('y', cy - BAR_H / 2)
           .attr('width', w).attr('height', BAR_H).attr('rx', 4);
-        const fits = textWidth(label) + 16 < w;
+        const tw = textWidth(label);
+        const fits = tw + 16 < w;
+        const nearEnd = x0 + w + tw + 6 > width - 4;   // 靠右邊界時改成靠右對齊，避免被裁掉
         node.append('text')
-          .attr('x', fits ? x0 + 8 : x0 + w + 6)
+          .attr('x', fits ? x0 + 8 : (nearEnd ? x0 + w : x0 + w + 6))
           .attr('y', fits ? cy : cy - BAR_H / 2 - 6)
           .attr('dy', fits ? '0.35em' : '0')
+          .attr('text-anchor', !fits && nearEnd ? 'end' : 'start')
           .text(label);
       } else {
         node.append('circle').attr('cx', x(d.s)).attr('cy', cy).attr('r', 7);

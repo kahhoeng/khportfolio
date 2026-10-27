@@ -15,5 +15,13 @@
   "timeline.hint": "Tap a bar for details",
   "filter.all": "All",
   "photo.sub": "Space, seen from above",
-  "contact.phone": "Phone"
+  "hero.roles": "Marketing Design · Video Content · Spatial Drafting",
+  "about.role": "M.S. in Interaction Design | Marketing Design · Video Content · Spatial Drafting",
+  "about.creds": "Certifications: AutoCAD Certified User (ACU), ISO 27001 Internal Auditor | Taiwan permanent resident (no work permit required)",
+  "stats.years": "Years in B2B tech",
+  "stats.videos": "Video assets produced end to end",
+  "stats.guides": "Standardized install guides & video SOPs",
+  "stats.fae": "On-site FAE support requests",
+  "contact.location": "Location",
+  "contact.city": "New Taipei City"
 }

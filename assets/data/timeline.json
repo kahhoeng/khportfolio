@@ -1,29 +1,24 @@
 {
-  "_readme": "時間軸資料。lane：edu（學習）、work（工作）、train（轉職訓練）。只有 start 沒有 end 的會畫成一個點；end 填 \"now\" 代表進行中。period 是畫面上顯示的文字，可以寫得比日期更粗略。標 [待確認] 的請改成正確內容。",
+  "_readme": "時間軸資料。lane：edu（學習）、work（工作）、train（進修）。只有 start 沒有 end 的會畫成一個點；end 填 \"now\" 代表進行中。period 是畫面上顯示的文字。色塊上的短標籤取 title 裡「｜」前面的字，或另外填 label。",
   "lanes": [
-    { "id": "edu", "zh": "學習", "en": "Education" },
+    { "id": "edu", "zh": "學歷", "en": "Education" },
     { "id": "work", "zh": "工作", "en": "Work" },
-    { "id": "train", "zh": "轉職", "en": "Retraining" }
+    { "id": "train", "zh": "進修", "en": "Training" }
   ],
   "domain": ["2011-01", "2027-06"],
   "items": [
     {
-      "lane": "edu", "start": "2011-09",
-      "period": "2011",
-      "title": { "zh": "來台求學", "en": "Moved to Taiwan for study" },
-      "note": { "zh": "從馬來西亞來台灣念大學。", "en": "" }
-    },
-    {
-      "lane": "edu", "start": "2012-09", "end": "2016-06",
-      "period": "2012 – 2016",
-      "title": { "zh": "東海大學｜資訊管理", "en": "Tunghai University — Information Management" },
-      "note": { "zh": "2012 年轉系，以資訊管理為主，修過一學期工業設計。", "en": "" }
+      "lane": "edu", "start": "2011-09", "end": "2016-06",
+      "period": "2011 – 2016",
+      "title": { "zh": "東海大學｜資訊管理學士", "en": "Tunghai University — B.S. Information Management" },
+      "note": { "zh": "從馬來西亞來台求學，以資訊管理為主，修過一學期工業設計。", "en": "" }
     },
     {
       "lane": "edu", "start": "2016-09", "end": "2018-06",
-      "period": "2016 – [待確認]",
-      "title": { "zh": "研究所｜互動設計", "en": "M.A. — Interaction Design" },
-      "note": { "zh": "[學校名稱待確認]。從資管走進設計，開始處理使用者、介面與體驗。", "en": "" }
+      "period": "2016 – 2018",
+      "label": { "zh": "北科大", "en": "Taipei Tech" },
+      "title": { "zh": "國立台北科技大學｜互動設計碩士", "en": "Taipei Tech — M.S. Interaction Design" },
+      "note": { "zh": "從資管走進設計，開始處理使用者、介面與體驗。", "en": "" }
     },
     {
       "lane": "work", "start": "2017-08",
@@ -32,22 +27,29 @@
       "note": { "zh": "盤點資訊架構與 UI Flow，用 Axure RP 設計標準化線框圖。", "en": "" }
     },
     {
-      "lane": "work", "start": "2018-07", "end": "2025-03",
-      "period": "2018 – 2025",
-      "title": { "zh": "威盛電子 VIA｜產品行銷與視覺", "en": "VIA Technologies — Product Marketing & Visual" },
-      "note": { "zh": "教學與案例影片、提案視覺與空間配置圖、官網 UI/UX、展會素材。", "en": "" }
+      "lane": "work", "start": "2018-10", "end": "2021-05",
+      "period": "10/2018 – 05/2021",
+      "title": { "zh": "威盛電子｜高級產品行銷代表", "en": "VIA Technologies — Senior Product Marketing Representative" },
+      "note": { "zh": "設計 4 份標準化 RMA 服務文件；製作技術引導與應用場景影片；把硬體規格整理成智慧城市應用場景提案與空間配置圖。", "en": "" }
+    },
+    {
+      "lane": "work", "start": "2021-06", "end": "2025-03",
+      "period": "06/2021 – 03/2025",
+      "title": { "zh": "威盛電子｜高級行銷代表", "en": "VIA Technologies — Senior Marketing Representative" },
+      "note": { "zh": "參與 21+ 支影音資產全流程產出（含 Minexpo 2024）；開發 10 份標準化安裝指南與影片 SOP，FAE 現場支援需求減少約三成；規劃企業與子公司網站介面，資訊三次點擊內取得。", "en": "" }
     },
     {
       "lane": "work", "start": "2026-04", "end": "2026-07",
-      "period": "2026",
-      "title": { "zh": "友通資訊 DFI｜資深技術行銷", "en": "DFI — Senior Technical Marketing Specialist" },
-      "note": { "zh": "B2B 工業電腦產品內容、繁中在地化與一頁式網頁建置。", "en": "" }
+      "period": "04/2026 – 07/2026",
+      "title": { "zh": "友通資訊 DFI｜高級產品行銷專員", "en": "DFI Inc. — Senior Product Marketing Specialist" },
+      "note": { "zh": "B2B 產品線新品發表內容（NPR、EDM、社群素材）與繁體中文在地化；HubSpot 名單分群整理。", "en": "" }
     },
     {
-      "lane": "train", "start": "2026-09", "end": "now",
-      "period": "2026 – 進行中",
-      "title": { "zh": "聯成公訓｜室內軟裝與 BIM 空間應用班", "en": "Interior Design & BIM Program" },
-      "note": { "zh": "現場丈量、AutoCAD 施工圖、SketchUp 建模，Revit 學習中。", "en": "" }
+      "lane": "train", "start": "2026-08", "end": "now",
+      "period": "08/2026 – 迄今",
+      "label": { "zh": "室內設計進修", "en": "Interior design" },
+      "title": { "zh": "室內軟裝與 BIM 空間應用班｜進修", "en": "Interior Soft Furnishing & BIM Program" },
+      "note": { "zh": "現場丈量、AutoCAD 平面圖、SketchUp 建模、Revit 基礎。", "en": "" }
     }
   ]
 }

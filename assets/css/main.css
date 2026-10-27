@@ -226,6 +226,7 @@ p { margin: 0; text-wrap: pretty; }
   font-size: var(--fs-lg); color: var(--c-ink-2);
 }
 .hero__meta strong { font-weight: 500; color: var(--c-ink); }
+.hero__roles { margin-top: var(--sp-2); font-size: var(--fs-sm); color: var(--c-ink-2); }
 .hero__tagline {
   margin-top: var(--sp-5);
   max-width: 34em;
@@ -264,7 +265,19 @@ p { margin: 0; text-wrap: pretty; }
 .about__photo .placeholder__label { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
 .about__portrait .dots { width: 64px; height: 48px; right: -24px; bottom: -28px; }
 
+.about__role { font-size: var(--fs-xs); color: var(--c-accent-ink); margin-bottom: var(--sp-2); }
 .about__lead { font-size: var(--fs-xl); font-weight: 500; line-height: 1.5; margin-bottom: var(--sp-4); }
+.about__creds { margin-top: var(--sp-4); font-size: var(--fs-xs); color: var(--c-ink-2); }
+
+.stats {
+  margin: var(--sp-6) 0 0;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0;
+  border-top: 1px solid var(--c-ink);
+}
+.stats div { padding: var(--sp-3) var(--sp-3) var(--sp-3) 0; border-bottom: 1px solid var(--c-line); display: flex; flex-direction: column-reverse; gap: 2px; }
+.stats dt { font-size: var(--fs-xs); color: var(--c-ink-2); line-height: 1.4; }
+.stats dd { margin: 0; font-family: var(--f-mono); font-size: var(--fs-2xl); font-weight: 500; line-height: 1.1; }
+.stats dd span { font-family: var(--f-body); font-size: var(--fs-sm); font-weight: 400; color: var(--c-ink-2); margin-left: 2px; }
 .about__text { display: grid; gap: var(--sp-4); color: var(--c-ink); max-width: 38em; }
 
 .skills {
@@ -480,6 +493,7 @@ figure { margin: 0; }
   :root { --gutter: 40px; --header-h: 68px; }
   .section { padding-block: var(--sp-9); }
   .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .pager { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pager a.pager__next { text-align: right; }
   .sheet__figures--pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
