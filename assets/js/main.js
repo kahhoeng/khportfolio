@@ -86,6 +86,52 @@ function initPop() {
   groups.forEach((_, host) => io.observe(host));
 }
 
+/* ---- 捲動時方塊浮動：依捲動速度稍微錯位，停下來後慢慢回到格線上 ---- */
+function initScrollFloat() {
+  if (reduceMotion) return;
+  const items = [...document.querySelectorAll('.sq--cell, .dots--cell')];
+  if (!items.length) return;
+
+  // 每個方塊不同的「重量」與偏移方向，讓它們不會整齊劃一地移動
+  const params = items.map((el, i) => {
+    const r1 = Math.sin((i + 1) * 12.9898) * 43758.5453 % 1;
+    const r2 = Math.sin((i + 1) * 78.233) * 12345.6789 % 1;
+    return {
+      el,
+      depth: 0.35 + Math.abs(r1) * 0.9,          // 0.35–1.25：越大飄得越多
+      side: (Math.abs(r2) - 0.5) * 0.8,                    // 左右偏移的比例
+      max: (+getComputedStyle(el).getPropertyValue('--w') || 1) > 1 ? 18 : 30,   // 大方塊飄得少一點
+    };
+  });
+
+  let lastY = window.scrollY;
+  let target = 0;       // 這一刻的捲動速度
+  let current = 0;      // 平滑後的速度（決定位移）
+  let running = false;
+
+  const frame = () => {
+    const y = window.scrollY;
+    target = Math.max(-40, Math.min(40, (y - lastY) * 1.6));
+    lastY = y;
+    current += (target - current) * 0.08;      // 越小越「黏」、越有漂浮感
+    for (const p of params) {
+      const dy = Math.max(-p.max, Math.min(p.max, current * p.depth));
+      const dx = dy * p.side;
+      p.el.style.translate = `${dx.toFixed(2)}px ${dy.toFixed(2)}px`;
+    }
+    if (Math.abs(current) > 0.05 || Math.abs(target) > 0.05) {
+      requestAnimationFrame(frame);
+    } else {
+      for (const p of params) p.el.style.translate = '0px 0px';   // 完全回到格線
+      running = false;
+    }
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!running) { running = true; lastY = window.scrollY; requestAnimationFrame(frame); }
+  }, { passive: true });
+}
+
 /* ---- d3 時間軸：接近畫面時才載入 d3 ---- */
 function initTimelineLazy() {
   const host = document.querySelector('[data-timeline]');
@@ -107,6 +153,7 @@ initHeader();
 initNav();
 initReveal();
 initPop();
+initScrollFloat();
 initLightbox();
 initI18n().then(() => {
   initWorks();
