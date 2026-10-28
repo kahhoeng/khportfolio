@@ -30,7 +30,7 @@ function textWidth(str) {
 
 export async function initTimeline(host) {
   const detail = document.querySelector('[data-timeline-detail]');
-  const res = await fetch(host.dataset.src);
+  const res = await fetch(host.dataset.src, { cache: 'no-cache' });
   const data = await res.json();
 
   const now = new Date();

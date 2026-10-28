@@ -77,7 +77,7 @@ export async function initWorks() {
 
   let data;
   try {
-    const res = await fetch(list.dataset.src);
+    const res = await fetch(list.dataset.src, { cache: 'no-cache' });
     data = await res.json();
   } catch (err) {
     list.append(el('li', { text: '作品資料載入失敗，請重新整理頁面。' }));

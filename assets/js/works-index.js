@@ -39,7 +39,7 @@ export async function initWorksIndex() {
 
   let data;
   try {
-    data = await (await fetch(list.dataset.src)).json();
+    data = await (await fetch(list.dataset.src, { cache: 'no-cache' })).json();
   } catch (err) {
     list.append(h('li', { text: '作品資料載入失敗，請重新整理頁面。' }));
     console.error(err);

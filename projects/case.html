@@ -201,7 +201,7 @@
   const id = new URLSearchParams(location.search).get('id');
   let works, cases;
   try {
-    [works, cases] = await Promise.all(['../assets/data/works.json', '../assets/data/cases.json'].map((u) => fetch(u).then((r) => r.json())));
+    [works, cases] = await Promise.all(['../assets/data/works.json', '../assets/data/cases.json'].map((u) => fetch(u, { cache: 'no-cache' }).then((r) => r.json())));
   } catch (e) { document.getElementById('loading').textContent = '資料載入失敗，請重新整理頁面。'; return; }
   const w = works.works.find((x) => x.id === id);
   const c = cases.cases[id];
