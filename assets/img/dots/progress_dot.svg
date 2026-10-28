@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 46.86 10.08">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_未命名漸層_54);
+      }
+    </style>
+    <linearGradient id="_未命名漸層_54" data-name="未命名漸層 54" x1="46.86" y1="5.04" x2="0" y2="5.04" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#efefef"/>
+      <stop offset=".86" stop-color="#898989" stop-opacity=".7"/>
+    </linearGradient>
+  </defs>
+  <g id="A3_size" data-name="A3 size">
+    <path class="cls-1" d="M9.67,0v10.08s-9.67,0-9.67,0V0s9.67,0,9.67,0ZM18.48,0v10.08s9.67,0,9.67,0V0s-9.67,0-9.67,0ZM37.18,0v10.08s9.67,0,9.67,0V0s-9.67,0-9.67,0Z"/>
+  </g>
+</svg>

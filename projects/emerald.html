@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>預售屋 綠翡翠｜K.H Design</title>
+  <meta name="description" content="預售屋綠翡翠的平面現況與配置規劃，1:80。">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+  <style>
+    /* 格線版作品內頁：整頁是一張用 1px 細線切開的表格（平板以上 4 欄，手機 1 欄）。
+       左欄放章節說明（捲動時黏在畫面上），右側三欄放圖面，兩張一組照施工階段排列。 */
+    @font-face { font-family: "GenWanMin"; src: url("../assets/fonts/GenWanMin2TW-R-latin.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+
+    :root {
+      --bg: #ffffff;
+      --page: #ececeb;
+      --plate: #f3f3f2;
+      --ink: #1d1e1f;
+      --ink-2: #5f6163;
+      --ink-3: #8c8e90;
+      --rule: #e2e2e0;
+      --sq: linear-gradient(135deg, #f2f2f2 0%, #b9bbbc 48%, #7f8285 100%);
+      --f-brand: "GenWanMin", "Noto Serif TC", Georgia, serif;
+      --f-body: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+      --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+      --pad: 18px;
+      --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--page); color: var(--ink); font-family: var(--f-body); font-size: 14px; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, p { margin: 0; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    :focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+    button { font: inherit; color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    .wrap { max-width: 1440px; margin: 0 auto; padding: 16px; }
+    .page { container: page / inline-size; background: var(--bg); border: 1px solid var(--rule); }
+    .grid { display: grid; grid-template-columns: minmax(0, 1fr); }
+    .cell { position: relative; min-width: 0; padding: var(--pad); border-bottom: 1px solid var(--rule); }
+    .label { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--ink-3); }
+
+    /* ---- 頁首（格線第一列） ---- */
+    .head { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.96); backdrop-filter: blur(6px); }
+    .head .cell { min-height: 60px; display: flex; align-items: flex-start; }
+    .head .cell:nth-child(odd) { border-right: 1px solid var(--rule); }
+    .head .cell:nth-child(n+3) { display: none; }
+    .brand { display: grid; gap: 2px; }
+    .brand b { font-family: var(--f-brand); font-weight: 400; font-size: 20px; line-height: 1; }
+    .brand small { font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.28em; color: var(--ink-2); }
+    .head__right { justify-content: flex-end; gap: 18px; }
+
+    /* ---- 標題列 ---- */
+    .title-cell { display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; min-height: 170px; }
+    .title { font-size: clamp(32px, 6cqi, 64px); font-weight: 500; line-height: 1.1; letter-spacing: 0.02em; }
+    .title-en { font-family: var(--f-mono); font-size: 12px; color: var(--ink-2); }
+    .mark-cell { display: none; }
+    .mark { position: absolute; left: var(--pad); bottom: var(--pad); width: 44px; height: 44px; border-radius: 8px; background: var(--sq); box-shadow: -6px 10px 16px rgba(20,22,24,0.25); }
+
+    /* ---- 概要 ---- */
+    .meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 16px; margin: 0; }
+    .meta dt { font-family: var(--f-mono); font-size: 11px; color: var(--ink-3); }
+    .meta dd { margin: 0; }
+    .story { display: grid; gap: 6px; }
+    .story h3 { font-family: var(--f-mono); font-size: 11px; font-weight: 500; letter-spacing: 0.08em; color: var(--ink-3); }
+
+    /* ---- 圖面 ---- */
+    .plates { display: grid; gap: 1px; background: var(--rule); }
+    .plate { margin: 0; background: var(--plate); display: flex; flex-direction: column; }
+    .plate__btn { border: 0; padding: clamp(14px, 3.4cqi, 40px); background: none; cursor: zoom-in; display: grid; place-items: center; flex: 1; width: 100%; }
+    .plate__btn img { max-height: min(62vh, 620px); width: auto; object-fit: contain; mix-blend-mode: multiply; }
+    .plate figcaption { display: flex; justify-content: space-between; gap: 12px; padding: 8px 12px; border-top: 1px solid var(--rule); background: var(--bg); font-family: var(--f-mono); font-size: 11px; color: var(--ink-2); }
+    .plate figcaption b { font-family: var(--f-body); font-weight: 500; color: var(--ink); }
+
+    .chapter__side { display: grid; gap: 18px; align-content: start; }
+    .chapter__no { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.1em; color: var(--ink-3); }
+    .chapter__title { font-size: 20px; font-weight: 700; letter-spacing: 0.04em; }
+    .sheet { display: grid; gap: 4px; padding-top: 12px; border-top: 1px solid var(--rule); }
+    .sheet__name { display: flex; justify-content: space-between; gap: 12px; font-weight: 700; }
+    .sheet__name span { font-family: var(--f-mono); font-size: 11px; font-weight: 400; color: var(--ink-2); }
+    .sheet__text { color: var(--ink-2); font-size: 13px; }
+
+    /* ---- 上下頁 ---- */
+    .pager { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pager .cell { min-height: 76px; display: flex; flex-direction: column; justify-content: flex-end; gap: 2px; }
+    .pager .cell:first-child { border-right: 1px solid var(--rule); }
+    .pager .cell:last-child { align-items: flex-end; text-align: right; }
+    .pager .cell--mid { display: none; }
+    .pager b { font-weight: 500; }
+    .foot { display: flex; justify-content: space-between; gap: 12px; font-family: var(--f-mono); font-size: 11px; color: var(--ink-3); border-bottom: 0; }
+
+    /* ======== 平板以上：4 欄格線 ======== */
+    @container page (min-width: 760px) {
+      :root { --pad: 20px; }
+      .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .row { display: contents; }
+      .cell { border-right: 1px solid var(--rule); }
+      .row > .cell:last-child, .head > .cell:last-child, .pager > .cell:last-child { border-right: 0; }
+      .span-3 { grid-column: span 3; }
+      .span-4 { grid-column: span 4; }
+
+      .head { display: contents; }
+      .head .cell { min-height: 92px; position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.96); }
+      .head .cell:nth-child(n+3) { display: flex; }
+      .head .cell:nth-child(odd) { border-right: 1px solid var(--rule); }
+
+      .mark-cell { display: block; }
+      .title-cell { min-height: 220px; }
+
+      .meta { grid-template-columns: minmax(0, 1fr); }
+      .story-row .cell { min-height: 150px; }
+
+      .chapter__side > .sticky { position: sticky; top: 112px; display: grid; gap: 18px; }
+      .plates--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .plates--stack { grid-template-columns: minmax(0, 1fr); }
+
+      .pager { display: contents; }
+      .pager .cell { min-height: 110px; }
+      .pager .cell--mid { display: flex; }
+      .pager .cell:first-child { border-right: 1px solid var(--rule); }
+    }
+
+
+    /* ---- 現況 vs 配置：拖曳比較 ---- */
+    .cmp { position: relative; background: var(--plate); padding: clamp(14px, 3cqi, 36px); user-select: none; -webkit-user-select: none; touch-action: pan-y; }
+    .cmp__frame { position: relative; margin: 0 auto; max-width: 1100px; }
+    .cmp__frame img { width: 100%; height: auto; mix-blend-mode: multiply; pointer-events: none; }
+    .cmp__after { position: absolute; inset: 0; clip-path: inset(0 0 0 var(--x, 50%)); background: var(--plate); }
+    .cmp__line { position: absolute; top: 0; bottom: 0; left: var(--x, 50%); width: 2px; margin-left: -1px; background: var(--ink); pointer-events: none; }
+    .cmp__knob { position: absolute; top: 50%; left: var(--x, 50%); width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 12px; background: var(--sq); box-shadow: -6px 10px 16px rgba(20,22,24,0.28); display: grid; place-items: center; cursor: ew-resize; border: 0; padding: 0; }
+    .cmp__knob::before { content: "⟷"; font-size: 18px; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.4); }
+    .cmp__tag { position: absolute; top: 10px; font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.08em; padding: 2px 8px; background: #fff; border: 1px solid var(--rule); border-radius: 999px; }
+    .cmp__tag--l { left: 10px; } .cmp__tag--r { right: 10px; }
+    .cmp__hint { font-family: var(--f-mono); font-size: 11px; color: var(--ink-2); }
+
+    /* 放大檢視 */
+    .lb { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: #fbfbfa; }
+    .lb::backdrop { background: rgba(0,0,0,0.4); }
+    .lb__bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 16px; border-bottom: 1px solid var(--rule); background: #fff; font-family: var(--f-mono); font-size: 12px; }
+    .lb__btn { min-width: 44px; min-height: 44px; border: 1px solid var(--rule); border-radius: 8px; background: #fff; cursor: pointer; }
+    .lb__stage { height: calc(100dvh - 62px); overflow: auto; display: grid; place-items: center; padding: 20px; }
+    .lb__stage img { max-width: 100%; max-height: 100%; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <article class="page" aria-labelledby="p-title">
+    <div class="grid">
+
+      <!-- 頁首：格線第一列 -->
+      <nav class="head" aria-label="網站">
+        <div class="cell"><a class="brand" href="../index.html" aria-label="K.H Design 首頁"><b>K.H Design</b><small>SPACE · OBJECT · MEDIA</small></a></div>
+        <div class="cell head__right"><a href="../index.html#work">Work</a><a href="../index.html#contact">Contact</a></div>
+        <div class="cell"><a href="../index.html#work">← Work Index</a></div>
+        <div class="cell head__right"><span class="label">02 / 05 · SPACE</span></div>
+      </nav>
+
+      <!-- 標題 -->
+      <div class="row">
+        <div class="cell mark-cell"><span class="mark" aria-hidden="true"></span></div>
+        <div class="cell span-3 title-cell">
+          <span class="label">空間設計提案 · 2026.10</span>
+          <h1 class="title" id="p-title">預售屋｜綠翡翠</h1>
+          <span class="title-en">Pre-sale Residence — Survey &amp; Layout</span>
+        </div>
+      </div>
+
+      <!-- 概要＋現況／配置比較 -->
+      <div class="row">
+        <div class="cell">
+          <dl class="meta">
+            <div><dt>類型</dt><dd>空間設計提案</dd></div>
+            <div><dt>日期</dt><dd>2026.10</dd></div>
+            <div><dt>工具</dt><dd>AutoCAD</dd></div>
+            <div><dt>比例</dt><dd>1:80</dd></div>
+            <div><dt>圖面</dt><dd>2 張</dd></div>
+            <div><dt>範圍</dt><dd>現況丈量 · 平面配置</dd></div>
+          </dl>
+        </div>
+        <div class="cell span-3" style="padding:0">
+          <figure class="plate" style="margin:0">
+            <div class="cmp" id="cmp" style="--x:50%">
+              <div class="cmp__frame">
+                <img src="../assets/img/work/emerald_01_survey.png" alt="綠翡翠平面現況圖">
+                <div class="cmp__after"><img src="../assets/img/work/emerald_02_layout.png" alt="綠翡翠平面配置圖"></div>
+                <span class="cmp__line" aria-hidden="true"></span>
+                <button class="cmp__knob" type="button" id="cmp-knob" role="slider" aria-label="現況與配置比較" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></button>
+              </div>
+              <span class="cmp__tag cmp__tag--l">現況 SURVEY</span>
+              <span class="cmp__tag cmp__tag--r">配置 LAYOUT</span>
+            </div>
+            <figcaption><b>現況 ⟷ 配置</b><span class="cmp__hint">拖曳中間的方塊比較 · 1:80</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- 目標／做法／成果（草稿，待確認） -->
+      <div class="row story-row">
+        <div class="cell"><span class="label">PROCESS</span></div>
+        <div class="cell story"><h3>設計目標</h3><p>以一戶預售屋為對象，先把建商交屋的現況完整丈量出來，再依生活動線重新規劃平面。</p></div>
+        <div class="cell story"><h3>做法</h3><p>先畫平面現況圖，標出各空間淨尺寸、門窗與天花高度；再以中央的圓桌餐廳串起客廳、吧檯與廚房，公共區鋪六角磚，臥室區改鋪木地板。</p></div>
+        <div class="cell story"><h3>成果</h3><p>平面現況圖與平面配置圖各一張，比例 1:80，圖框統一使用 K.H Design 的標準格式。</p></div>
+      </div>
+
+      <div id="chapters" style="display:contents"></div>
+
+      <!-- 上下頁 -->
+      <div class="pager">
+        <a class="cell" href="studio-grid.html"><span class="label">← PREV</span><b>01 板橋小套房</b></a>
+        <a class="cell cell--mid" href="../index.html#work"><span class="label">INDEX</span><b>全部作品</b></a>
+        <div class="cell cell--mid" aria-hidden="true"></div>
+        <a class="cell" href="cabinet.html"><span class="label">NEXT →</span><b>03 組合櫃</b></a>
+      </div>
+      <div class="cell span-4 foot"><span>© 2026 K.H Design · 黃家禾</span><span>A001–A002</span></div>
+    </div>
+  </article>
+</div>
+
+<dialog class="lb" id="lb" aria-label="圖面放大">
+  <div class="lb__bar"><span id="lb-cap"></span><button class="lb__btn" type="button" id="lb-close" aria-label="關閉">✕</button></div>
+  <div class="lb__stage"><img id="lb-img" alt=""></div>
+</dialog>
+
+<script>
+(() => {
+  const CH = [
+    { no: '01', title: '現況／配置', layout: 'stack', sheets: [
+      { n: '01', name: '平面現況圖', scale: '1:80', img: 'emerald_01_survey.png', text: '丈量交屋現況：各空間淨尺寸、門窗編號與尺寸、窗台高度。室內 CH280，浴室 CH240，前陽台 CH300。' },
+      { n: '02', name: '平面配置圖', scale: '1:80', img: 'emerald_02_layout.png', text: '中央圓桌餐廳串起客廳、吧檯與廚房；公共區鋪六角磚，三間臥室鋪木地板，主臥附更衣與衛浴。' } ] },
+  ];
+  const h = (tag, attrs = {}, kids = []) => {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) { if (v == null) continue; if (k === 'class') n.className = v; else if (k === 'text') n.textContent = v; else n.setAttribute(k, v); }
+    for (const c of [].concat(kids)) if (c) n.append(c);
+    return n;
+  };
+  const host = document.getElementById('chapters');
+  CH.forEach((c) => {
+    const side = h('div', { class: 'cell chapter__side' }, h('div', { class: 'sticky' }, [
+      h('span', { class: 'chapter__no', text: `CHAPTER ${c.no} / ${String(CH.length).padStart(2, '0')}` }),
+      h('h2', { class: 'chapter__title', text: c.title }),
+      ...c.sheets.map((s) => h('div', { class: 'sheet' }, [
+        h('p', { class: 'sheet__name' }, [`${s.n}　${s.name}`, h('span', { text: s.scale })]),
+        h('p', { class: 'sheet__text', text: s.text }),
+      ])),
+    ]));
+    const plates = h('div', { class: 'plates ' + (c.layout === 'stack' ? 'plates--stack' : 'plates--2') }, c.sheets.map((s) =>
+      h('figure', { class: 'plate' }, [
+        h('button', { class: 'plate__btn', type: 'button', 'data-zoom': '', 'data-caption': `${s.n} ${s.name} ${s.scale}` }, h('img', { src: `../assets/img/work/${s.img}`, alt: `綠翡翠${s.name}`, loading: 'lazy', decoding: 'async' })),
+        h('figcaption', {}, [h('b', { text: s.name }), h('span', { text: `${s.n} / 02 · ${s.scale}` })]),
+      ])));
+    host.append(h('div', { class: 'row' }, [side, h('div', { class: 'cell span-3', style: 'padding:0' }, plates)]));
+  });
+
+  /* 現況 ⟷ 配置 比較：拖曳方塊或點圖面任一處，鍵盤用 ← → */
+  const cmp = document.getElementById('cmp');
+  const knob = document.getElementById('cmp-knob');
+  const frame = cmp.querySelector('.cmp__frame');
+  const set = (pct) => {
+    pct = Math.max(0, Math.min(100, pct));
+    cmp.style.setProperty('--x', pct + '%');
+    knob.setAttribute('aria-valuenow', Math.round(pct));
+  };
+  const fromEvent = (e) => { const r = frame.getBoundingClientRect(); set(((e.clientX - r.left) / r.width) * 100); };
+  let drag = false;
+  frame.addEventListener('pointerdown', (e) => { drag = true; frame.setPointerCapture(e.pointerId); fromEvent(e); });
+  frame.addEventListener('pointermove', (e) => { if (drag) fromEvent(e); });
+  frame.addEventListener('pointerup', () => { drag = false; });
+  frame.addEventListener('pointercancel', () => { drag = false; });
+  knob.addEventListener('keydown', (e) => {
+    const now = +knob.getAttribute('aria-valuenow');
+    if (e.key === 'ArrowLeft') { set(now - 5); e.preventDefault(); }
+    if (e.key === 'ArrowRight') { set(now + 5); e.preventDefault(); }
+  });
+
+  const lb = document.getElementById('lb');
+  document.addEventListener('click', (e) => {
+    const z = e.target.closest('[data-zoom]'); if (!z) return;
+    const img = z.querySelector('img');
+    document.getElementById('lb-img').src = img.src;
+    document.getElementById('lb-img').alt = img.alt;
+    document.getElementById('lb-cap').textContent = z.dataset.caption;
+    lb.showModal();
+  });
+  document.getElementById('lb-close').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', (e) => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

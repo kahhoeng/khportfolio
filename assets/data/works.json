@@ -1,5 +1,5 @@
 {
-  "_readme": "作品清單。新增作品：複製一筆、改內容即可。cat 可用 space（空間）、video（影像）、ui（介面）。thumb 留空會顯示灰色方塊佔位。cover=true 代表縮圖要裁切填滿（照片、3D 圖）；線稿請用 false。href 留空代表內頁還沒做。 feature=true 會變成黑色主打卡（建議只放一件）。",
+  "_readme": "作品清單。新增作品：複製一筆、改內容即可。cat 可用 space（空間）、video（影像）、ui（介面）。thumb 留空會顯示灰色方塊佔位。cover=true 代表縮圖要裁切填滿（照片、3D 圖）；線稿請用 false。href 留空代表內頁還沒做。 feature=true 會變成黑色主打卡（建議只放一件）。 highlight=1/2/3 代表首頁精選的順序（只放三件），其餘作品放在 All Works 集合頁。換精選只要改這個數字。",
   "categories": [
     {
       "id": "space",
@@ -19,6 +19,43 @@
   ],
   "works": [
     {
+      "id": "studio",
+      "cat": "space",
+      "year": "2026",
+      "feature": true,
+      "title": {
+        "zh": "板橋小套房｜從現況到水電",
+        "en": "Studio Renovation — Survey to MEP"
+      },
+      "summary": {
+        "zh": "長型小套房的改造提案：從現況、拆除、新作隔間，畫到地板、天花、給排水與電源插座，共 8 張施工圖。",
+        "en": ""
+      },
+      "tools": "AutoCAD",
+      "thumb": "assets/img/work/studio_02_layout.png",
+      "cover": false,
+      "href": "projects/studio-grid.html",
+      "highlight": 1
+    },
+    {
+      "id": "emerald",
+      "cat": "space",
+      "year": "2026",
+      "highlight": 2,
+      "title": {
+        "zh": "預售屋｜綠翡翠",
+        "en": "Pre-sale Residence — Emerald"
+      },
+      "summary": {
+        "zh": "預售屋的平面現況丈量與配置規劃：以中央圓桌餐廳串起客廳、吧檯與廚房，三間臥室各自獨立。",
+        "en": ""
+      },
+      "tools": "AutoCAD",
+      "thumb": "assets/img/work/emerald_02_layout.png",
+      "cover": false,
+      "href": "projects/emerald.html"
+    },
+    {
       "id": "cabinet",
       "cat": "space",
       "year": "2026",
@@ -33,7 +70,8 @@
       "tools": "SketchUp",
       "thumb": "assets/img/work/cab_3d.jpg",
       "cover": false,
-      "href": "projects/cabinet.html"
+      "href": "projects/cabinet.html",
+      "highlight": 3
     },
     {
       "id": "bedroom",
@@ -50,8 +88,7 @@
       "tools": "AutoCAD",
       "thumb": "assets/img/work/bed_layout.png",
       "cover": false,
-      "href": "projects/bedroom.html",
-      "feature": true
+      "href": "projects/bedroom.html"
     },
     {
       "id": "bathroom",

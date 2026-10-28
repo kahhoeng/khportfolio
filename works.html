@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All Works｜K.H Design</title>
+  <meta name="description" content="黃家禾 K.H. NG 的作品集：室內設計施工圖與 3D 建模、B2B 影像與提案視覺、介面設計與空拍攝影。">
+  <meta property="og:title" content="黃家禾 K.H. NG｜Portfolio">
+  <meta property="og:description" content="從視覺溝通，走進空間設計。室內設計、影像、介面與攝影作品。">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#ffffff">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Montserrat:wght@700&family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>@font-face { font-family: "GenWanMin"; src: url("assets/fonts/GenWanMin2TW-R-latin.woff2") format("woff2"); font-weight: 400; font-display: swap; }@font-face { font-family: "GenWanMin"; src: url("assets/fonts/GenWanMin2TW-M-latin.woff2") format("woff2"); font-weight: 500; font-display: swap; }</style>
+  <style>
+    .archive { padding-top: calc(var(--header-h) + var(--sp-7)); }
+    .archive__back { display: inline-flex; gap: 8px; margin-bottom: var(--sp-5); font-family: var(--f-mono); font-size: var(--fs-sm); color: var(--c-ink-2); text-decoration: none; }
+    .archive__back:hover { color: var(--c-accent-ink); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">跳到主要內容</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="KH Portfolio 回到首頁">
+        <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>KH Portfolio</span>
+      </a>
+      <nav class="nav" aria-label="主選單">
+        <div class="lang-switch" role="group" aria-label="語言" hidden data-lang-switch>
+          <button type="button" data-lang="zh-Hant" aria-pressed="true">中</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="開啟選單">
+          <span class="nav__toggle-bars" aria-hidden="true"></span>
+        </button>
+        <ul class="nav__list" id="nav-list">
+          <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+          <li><a href="index.html#work" data-i18n="nav.work">Work</a></li>
+          <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section archive grid-bg" aria-labelledby="archive-title">
+      <div class="container">
+        <a class="archive__back" href="index.html#work">← Work Index</a>
+        <header class="section-head">
+          <span class="section-head__kicker">Work</span>
+          <h1 class="section-head__title" id="archive-title">All Works</h1>
+          <span class="section-head__sub">SPACE · OBJECT · MEDIA</span>
+        </header>
+
+        <div class="filters" role="group" aria-label="作品分類" data-filters>
+          <button class="filter" type="button" data-filter="all" aria-pressed="true"><span data-i18n="filter.all">全部</span><span class="filter__count"></span></button>
+        </div>
+
+        <ul class="work-grid" data-works data-src="assets/data/works.json" aria-live="polite"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>© 2026 K.H. NG 黃家禾</span>
+      <a href="#main">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

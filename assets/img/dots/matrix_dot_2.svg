@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 52.38 47.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_未命名漸層_44);
+      }
+    </style>
+    <linearGradient id="_未命名漸層_44" data-name="未命名漸層 44" x1=".89" y1="38.3" x2="51.48" y2="9.09" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#efefef"/>
+      <stop offset=".54" stop-color="#b5b6b6"/>
+      <stop offset=".95" stop-color="#dcdddd"/>
+    </linearGradient>
+  </defs>
+  <g id="A3_size" data-name="A3 size">
+    <path class="cls-1" d="M0,0h5.04v4.84H0V0ZM0,15.48h5.04v-4.84H0v4.84ZM0,26.12h5.04v-4.84H0v4.84ZM0,36.76h5.04v-4.84H0v4.84ZM9.47,4.84h5.04V0h-5.04v4.84ZM9.47,15.48h5.04v-4.84h-5.04v4.84ZM9.47,26.12h5.04v-4.84h-5.04v4.84ZM9.47,36.76h5.04v-4.84h-5.04v4.84ZM9.47,47.4h5.04v-4.84h-5.04v4.84ZM18.94,4.84h5.04V0h-5.04v4.84ZM18.94,15.48h5.04v-4.84h-5.04v4.84ZM18.94,26.12h5.04v-4.84h-5.04v4.84ZM18.94,36.76h5.04v-4.84h-5.04v4.84ZM18.94,47.4h5.04v-4.84h-5.04v4.84ZM28.4,4.84h5.04V0h-5.04v4.84ZM28.4,15.48h5.04v-4.84h-5.04v4.84ZM28.4,26.12h5.04v-4.84h-5.04v4.84ZM28.4,36.76h5.04v-4.84h-5.04v4.84ZM28.4,47.4h5.04v-4.84h-5.04v4.84ZM37.87,4.84h5.04V0h-5.04v4.84ZM37.87,15.48h5.04v-4.84h-5.04v4.84ZM37.87,26.12h5.04v-4.84h-5.04v4.84ZM37.87,36.76h5.04v-4.84h-5.04v4.84ZM37.87,47.4h5.04v-4.84h-5.04v4.84ZM47.34,15.48h5.04v-4.84h-5.04v4.84ZM47.34,26.12h5.04v-4.84h-5.04v4.84ZM47.34,36.76h5.04v-4.84h-5.04v4.84ZM47.34,47.4h5.04v-4.84h-5.04v4.84Z"/>
+  </g>
+</svg>

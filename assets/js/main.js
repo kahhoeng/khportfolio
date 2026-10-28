@@ -4,6 +4,7 @@
    ========================================================================== */
 import { initI18n } from './i18n.js';
 import { initWorks } from './works.js';
+import { initWorksIndex } from './works-index.js';
 import { initLightbox } from './lightbox.js';
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -67,7 +68,7 @@ function initReveal() {
 /* ---- 方塊 Pop up 進場：區塊進入畫面時，方塊依 --i 順序彈出 ---- */
 function initPop() {
   const groups = new Map();
-  document.querySelectorAll('.sq--cell, .dots--cell').forEach((el) => {
+  document.querySelectorAll('.sq--cell, .dots--cell, .cover-art > .ca').forEach((el) => {
     const host = el.closest('section') || document.body;
     if (!groups.has(host)) groups.set(host, []);
     groups.get(host).push(el);
@@ -89,7 +90,7 @@ function initPop() {
 /* ---- 捲動時方塊浮動：依捲動速度稍微錯位，停下來後慢慢回到格線上 ---- */
 function initScrollFloat() {
   if (reduceMotion) return;
-  const items = [...document.querySelectorAll('.sq--cell, .dots--cell')];
+  const items = [...document.querySelectorAll('.sq--cell, .dots--cell, .cover-art > .ca')];
   if (!items.length) return;
 
   // 每個方塊不同的「重量」與偏移方向，讓它們不會整齊劃一地移動
@@ -157,5 +158,6 @@ initScrollFloat();
 initLightbox();
 initI18n().then(() => {
   initWorks();
+  initWorksIndex();
   initTimelineLazy();
 });

@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>板橋小套房｜K.H Design</title>
+  <meta name="description" content="長型小套房的改造提案：現況、配置、拆除、新作隔間、地板、天花、給排水與電源插座，共 8 張施工圖。">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+  <style>
+    /* 格線版作品內頁：整頁是一張用 1px 細線切開的表格（平板以上 4 欄，手機 1 欄）。
+       左欄放章節說明（捲動時黏在畫面上），右側三欄放圖面，兩張一組照施工階段排列。 */
+    @font-face { font-family: "GenWanMin"; src: url("../assets/fonts/GenWanMin2TW-R-latin.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+
+    :root {
+      --bg: #ffffff;
+      --page: #ececeb;
+      --plate: #f3f3f2;
+      --ink: #1d1e1f;
+      --ink-2: #5f6163;
+      --ink-3: #8c8e90;
+      --rule: #e2e2e0;
+      --sq: linear-gradient(135deg, #f2f2f2 0%, #b9bbbc 48%, #7f8285 100%);
+      --f-brand: "GenWanMin", "Noto Serif TC", Georgia, serif;
+      --f-body: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+      --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+      --pad: 18px;
+      --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--page); color: var(--ink); font-family: var(--f-body); font-size: 14px; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, p { margin: 0; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    :focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+    button { font: inherit; color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    .wrap { max-width: 1440px; margin: 0 auto; padding: 16px; }
+    .page { container: page / inline-size; background: var(--bg); border: 1px solid var(--rule); }
+    .grid { display: grid; grid-template-columns: minmax(0, 1fr); }
+    .cell { position: relative; min-width: 0; padding: var(--pad); border-bottom: 1px solid var(--rule); }
+    .label { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--ink-3); }
+
+    /* ---- 頁首（格線第一列） ---- */
+    .head { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.96); backdrop-filter: blur(6px); }
+    .head .cell { min-height: 60px; display: flex; align-items: flex-start; }
+    .head .cell:nth-child(odd) { border-right: 1px solid var(--rule); }
+    .head .cell:nth-child(n+3) { display: none; }
+    .brand { display: grid; gap: 2px; }
+    .brand b { font-family: var(--f-brand); font-weight: 400; font-size: 20px; line-height: 1; }
+    .brand small { font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.28em; color: var(--ink-2); }
+    .head__right { justify-content: flex-end; gap: 18px; }
+
+    /* ---- 標題列 ---- */
+    .title-cell { display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; min-height: 170px; }
+    .title { font-size: clamp(32px, 6cqi, 64px); font-weight: 500; line-height: 1.1; letter-spacing: 0.02em; }
+    .title-en { font-family: var(--f-mono); font-size: 12px; color: var(--ink-2); }
+    .mark-cell { display: none; }
+    .mark { position: absolute; left: var(--pad); bottom: var(--pad); width: 44px; height: 44px; border-radius: 8px; background: var(--sq); box-shadow: -6px 10px 16px rgba(20,22,24,0.25); }
+
+    /* ---- 概要 ---- */
+    .meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 16px; margin: 0; }
+    .meta dt { font-family: var(--f-mono); font-size: 11px; color: var(--ink-3); }
+    .meta dd { margin: 0; }
+    .story { display: grid; gap: 6px; }
+    .story h3 { font-family: var(--f-mono); font-size: 11px; font-weight: 500; letter-spacing: 0.08em; color: var(--ink-3); }
+
+    /* ---- 圖面 ---- */
+    .plates { display: grid; gap: 1px; background: var(--rule); }
+    .plate { margin: 0; background: var(--plate); display: flex; flex-direction: column; }
+    .plate__btn { border: 0; padding: clamp(14px, 3.4cqi, 40px); background: none; cursor: zoom-in; display: grid; place-items: center; flex: 1; width: 100%; }
+    .plate__btn img { max-height: min(62vh, 620px); width: auto; object-fit: contain; mix-blend-mode: multiply; }
+    .plate figcaption { display: flex; justify-content: space-between; gap: 12px; padding: 8px 12px; border-top: 1px solid var(--rule); background: var(--bg); font-family: var(--f-mono); font-size: 11px; color: var(--ink-2); }
+    .plate figcaption b { font-family: var(--f-body); font-weight: 500; color: var(--ink); }
+
+    .chapter__side { display: grid; gap: 18px; align-content: start; }
+    .chapter__no { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.1em; color: var(--ink-3); }
+    .chapter__title { font-size: 20px; font-weight: 700; letter-spacing: 0.04em; }
+    .sheet { display: grid; gap: 4px; padding-top: 12px; border-top: 1px solid var(--rule); }
+    .sheet__name { display: flex; justify-content: space-between; gap: 12px; font-weight: 700; }
+    .sheet__name span { font-family: var(--f-mono); font-size: 11px; font-weight: 400; color: var(--ink-2); }
+    .sheet__text { color: var(--ink-2); font-size: 13px; }
+
+    /* ---- 上下頁 ---- */
+    .pager { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pager .cell { min-height: 76px; display: flex; flex-direction: column; justify-content: flex-end; gap: 2px; }
+    .pager .cell:first-child { border-right: 1px solid var(--rule); }
+    .pager .cell:last-child { align-items: flex-end; text-align: right; }
+    .pager .cell--mid { display: none; }
+    .pager b { font-weight: 500; }
+    .foot { display: flex; justify-content: space-between; gap: 12px; font-family: var(--f-mono); font-size: 11px; color: var(--ink-3); border-bottom: 0; }
+
+    /* ======== 平板以上：4 欄格線 ======== */
+    @container page (min-width: 760px) {
+      :root { --pad: 20px; }
+      .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .row { display: contents; }
+      .cell { border-right: 1px solid var(--rule); }
+      .row > .cell:last-child, .head > .cell:last-child, .pager > .cell:last-child { border-right: 0; }
+      .span-3 { grid-column: span 3; }
+      .span-4 { grid-column: span 4; }
+
+      .head { display: contents; }
+      .head .cell { min-height: 92px; position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.96); }
+      .head .cell:nth-child(n+3) { display: flex; }
+      .head .cell:nth-child(odd) { border-right: 1px solid var(--rule); }
+
+      .mark-cell { display: block; }
+      .title-cell { min-height: 220px; }
+
+      .meta { grid-template-columns: minmax(0, 1fr); }
+      .story-row .cell { min-height: 150px; }
+
+      .chapter__side > .sticky { position: sticky; top: 112px; display: grid; gap: 18px; }
+      .plates--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .plates--stack { grid-template-columns: minmax(0, 1fr); }
+
+      .pager { display: contents; }
+      .pager .cell { min-height: 110px; }
+      .pager .cell--mid { display: flex; }
+      .pager .cell:first-child { border-right: 1px solid var(--rule); }
+    }
+
+    /* 放大檢視 */
+    .lb { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: #fbfbfa; }
+    .lb::backdrop { background: rgba(0,0,0,0.4); }
+    .lb__bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 16px; border-bottom: 1px solid var(--rule); background: #fff; font-family: var(--f-mono); font-size: 12px; }
+    .lb__btn { min-width: 44px; min-height: 44px; border: 1px solid var(--rule); border-radius: 8px; background: #fff; cursor: pointer; }
+    .lb__stage { height: calc(100dvh - 62px); overflow: auto; display: grid; place-items: center; padding: 20px; }
+    .lb__stage img { max-width: 100%; max-height: 100%; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <article class="page" aria-labelledby="p-title">
+    <div class="grid">
+
+      <!-- 頁首：格線第一列 -->
+      <nav class="head" aria-label="網站">
+        <div class="cell"><a class="brand" href="../index.html" aria-label="K.H Design 首頁"><b>K.H Design</b><small>SPACE · OBJECT · MEDIA</small></a></div>
+        <div class="cell head__right"><a href="../index.html#work">Work</a><a href="../index.html#contact">Contact</a></div>
+        <div class="cell"><a href="../index.html#work">← Work Index</a></div>
+        <div class="cell head__right"><span class="label">01 / 05 · SPACE</span></div>
+      </nav>
+
+      <!-- 標題 -->
+      <div class="row">
+        <div class="cell mark-cell"><span class="mark" aria-hidden="true"></span></div>
+        <div class="cell span-3 title-cell">
+          <span class="label">空間設計提案 · 2026.10</span>
+          <h1 class="title" id="p-title">板橋小套房</h1>
+          <span class="title-en">Studio Renovation — From Survey to MEP</span>
+        </div>
+      </div>
+
+      <!-- 概要＋主圖 -->
+      <div class="row">
+        <div class="cell">
+          <dl class="meta">
+            <div><dt>類型</dt><dd>空間設計提案</dd></div>
+            <div><dt>日期</dt><dd>2026.10</dd></div>
+            <div><dt>工具</dt><dd>AutoCAD</dd></div>
+            <div><dt>比例</dt><dd>1:30</dd></div>
+            <div><dt>圖面</dt><dd>8 張</dd></div>
+            <div><dt>範圍</dt><dd>拆除 · 隔間 · 地坪 · 天花 · 水電</dd></div>
+          </dl>
+        </div>
+        <div class="cell span-3" style="padding:0">
+          <figure class="plate">
+            <button class="plate__btn" type="button" data-zoom data-caption="平面配置圖 1:30"><img src="../assets/img/work/studio_02_layout.png" alt="板橋小套房平面配置圖"></button>
+            <figcaption><b>平面配置圖</b><span>02 / 08 · 1:30</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- 目標／做法／成果 -->
+      <div class="row story-row">
+        <div class="cell"><span class="label">PROCESS</span></div>
+        <div class="cell story"><h3>設計目標</h3><p>以一間長型小套房為對象，從現況丈量開始，完成一套可以交給工班施工的改造圖。</p></div>
+        <div class="cell story"><h3>做法</h3><p>先畫現況與配置。浴室把馬桶與洗手台位置對調、改用日式橫拉門與玻璃隔屏，再依此畫出拆除、新作隔間、地板、天花與水電圖。</p></div>
+        <div class="cell story"><h3>成果</h3><p>8 張施工圖，從拆除一路交代到給排水與電源插座，圖框統一使用 K.H Design 的標準格式。</p></div>
+      </div>
+
+      <div id="chapters" style="display:contents"></div>
+
+      <!-- 上下頁 -->
+      <div class="pager">
+        <a class="cell" href="bathroom.html"><span class="label">← PREV</span><b>04 浴廁平面與立面</b></a>
+        <a class="cell cell--mid" href="../index.html#work"><span class="label">INDEX</span><b>全部作品</b></a>
+        <div class="cell cell--mid" aria-hidden="true"></div>
+        <a class="cell" href="emerald.html"><span class="label">NEXT →</span><b>02 預售屋｜綠翡翠</b></a>
+      </div>
+      <div class="cell span-4 foot"><span>© 2026 K.H Design · 黃家禾</span><span>A001–A008</span></div>
+    </div>
+  </article>
+</div>
+
+<dialog class="lb" id="lb" aria-label="圖面放大">
+  <div class="lb__bar"><span id="lb-cap"></span><button class="lb__btn" type="button" id="lb-close" aria-label="關閉">✕</button></div>
+  <div class="lb__stage"><img id="lb-img" alt=""></div>
+</dialog>
+
+<script>
+(() => {
+  const CH = [
+    { no: '01', title: '現況／配置', layout: '2', sheets: [
+      { n: '01', name: '平面現況圖', scale: '1:30', img: 'studio_01_survey.png', text: '長型套房，淨深 579 cm，浴室在入口側。現況為平釘天花，室內 CH240、浴室 CH227.5，並標示門窗尺寸。' },
+      { n: '02', name: '平面配置圖', scale: '1:30', img: 'studio_02_layout.png', text: '沿長向配置工作區、睡眠區與收納，靠窗擺放書桌，入口側是浴室。' } ] },
+    { no: '02', title: '拆除／新作隔間', layout: 'stack', sheets: [
+      { n: '03', name: '拆除圖', scale: '1:30', img: 'studio_03_demo.png', text: '拆除浴室原門片與門框（門洞維持 W78 × H210）、原馬桶與洗手台，地坪拆除見底約 1 坪。' },
+      { n: '04', name: '新作隔間圖', scale: '1:30', img: 'studio_04_partition.png', text: '床頭背板封 6mm 矽酸鈣板；浴室改日式橫拉門，馬桶與洗手台對調，新作 8mm 強化清玻璃隔屏與人造石止水門檻。' } ] },
+    { no: '03', title: '地板／天花', layout: '2', sheets: [
+      { n: '05', name: '地板配置圖', scale: '1:30', img: 'studio_05_floor.png', text: '臥室 3.5 坪胡桃木木地板；衛浴與淋浴區各 0.5 坪，使用冠軍瓷磚維斯塔系列。' },
+      { n: '06', name: '天花板配置圖', scale: '1:30', img: 'studio_06_ceiling.png', text: '原平釘天花保留：臥室 CH240；浴室 CH≦227.5，依天花內管線現場調整。' } ] },
+    { no: '04', title: '給排水／電源', layout: '2', sheets: [
+      { n: '07', name: '水管排水圖', scale: '1:30', img: 'studio_07_plumbing.png', text: '原糞管封堵並移位，配合新的馬桶位置；列出給冷水、給冷熱水、排水、落水口與汙水。' },
+      { n: '08', name: '電源插座配置圖', scale: '1:30', img: 'studio_08_power.png', text: '接地型雙聯插座 18 個（110V）、專用迴路 2 組（220V），並標示安裝高度。' } ] },
+  ];
+  const h = (tag, attrs = {}, kids = []) => {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) { if (v == null) continue; if (k === 'class') n.className = v; else if (k === 'text') n.textContent = v; else n.setAttribute(k, v); }
+    for (const c of [].concat(kids)) if (c) n.append(c);
+    return n;
+  };
+  const host = document.getElementById('chapters');
+  CH.forEach((c) => {
+    const side = h('div', { class: 'cell chapter__side' }, h('div', { class: 'sticky' }, [
+      h('span', { class: 'chapter__no', text: `CHAPTER ${c.no} / 04` }),
+      h('h2', { class: 'chapter__title', text: c.title }),
+      ...c.sheets.map((s) => h('div', { class: 'sheet' }, [
+        h('p', { class: 'sheet__name' }, [`${s.n}　${s.name}`, h('span', { text: s.scale })]),
+        h('p', { class: 'sheet__text', text: s.text }),
+      ])),
+    ]));
+    const plates = h('div', { class: 'plates ' + (c.layout === 'stack' ? 'plates--stack' : 'plates--2') }, c.sheets.map((s) =>
+      h('figure', { class: 'plate' }, [
+        h('button', { class: 'plate__btn', type: 'button', 'data-zoom': '', 'data-caption': `${s.n} ${s.name} ${s.scale}` }, h('img', { src: `../assets/img/work/${s.img}`, alt: `板橋小套房${s.name}`, loading: 'lazy', decoding: 'async' })),
+        h('figcaption', {}, [h('b', { text: s.name }), h('span', { text: `${s.n} / 08 · ${s.scale}` })]),
+      ])));
+    host.append(h('div', { class: 'row' }, [side, h('div', { class: 'cell span-3', style: 'padding:0' }, plates)]));
+  });
+
+  const lb = document.getElementById('lb');
+  document.addEventListener('click', (e) => {
+    const z = e.target.closest('[data-zoom]'); if (!z) return;
+    const img = z.querySelector('img');
+    document.getElementById('lb-img').src = img.src;
+    document.getElementById('lb-img').alt = img.alt;
+    document.getElementById('lb-cap').textContent = z.dataset.caption;
+    lb.showModal();
+  });
+  document.getElementById('lb-close').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', (e) => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>
