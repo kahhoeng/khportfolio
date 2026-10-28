@@ -548,10 +548,10 @@ p { margin: 0; text-wrap: pretty; }
   .wx__item.is-open .wx__thumb { opacity: 0; }
 
   /* All Works 收起時：疊起來的三個方塊 */
-  .wx__stack .sq { position: absolute; width: min(46%, 92px); aspect-ratio: 1; }
-  .wx__stack .sq:nth-child(1) { transform: translate(-26%, -30%); }
+  .wx__stack .sq { position: absolute; width: min(46%, 92px); aspect-ratio: 1; border-radius: 0; }
+  .wx__stack .sq:nth-child(1) { transform: translate(-26%, -30%); box-shadow: -5px 8px 16px rgba(52, 44, 40, 0.1); }
   .wx__stack .sq:nth-child(2) { transform: translate(8%, -2%); }
-  .wx__stack .sq:nth-child(3) { transform: translate(36%, 30%); width: min(30%, 60px); }
+  .wx__stack .sq:nth-child(2) { box-shadow: -6px 10px 20px rgba(52, 44, 40, 0.15); }
   .wx__item--all:not(.is-open) { background: #f6f6f5; }
 
   /* 展開：圖在上、文字在下 */

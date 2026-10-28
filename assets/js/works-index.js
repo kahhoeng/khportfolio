@@ -103,9 +103,9 @@ export async function initWorksIndex() {
       h('span', { class: 'wx__title', text: lang() === 'en' ? `More ${cat.en}` : `更多${cat.zh}` }),
       h('span', { class: 'wx__chev', 'aria-hidden': 'true' }),
     ]);
-    // 收起時：一疊灰色漸層方塊，暗示裡面還有作品
+    // 收起時：兩個疊起來的灰色漸層方塊（直角），暗示裡面還有作品
     const stack = h('div', { class: 'wx__thumb wx__stack', 'aria-hidden': 'true' }, [
-      h('span', { class: 'sq sq--light' }), h('span', { class: 'sq' }), h('span', { class: 'sq sq--dark' }),
+      h('span', { class: 'sq sq--light' }), h('span', { class: 'sq' }),
     ]);
     const items = h('ol', { class: 'wx__list' }, rest.map(({ w }, k) => h('li', {}, [
       h('span', { class: 'wx__listNum', text: pad(k + 4) }),
