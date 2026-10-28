@@ -51,7 +51,8 @@
     .head .cell:nth-child(odd) { border-right: 1px solid var(--rule); }
     .head .cell:nth-child(n+3) { display: none; }
     .brand { display: grid; gap: 2px; }
-    .brand b { font-family: var(--f-brand); font-weight: 400; font-size: 20px; line-height: 1; }
+    .brand img { height: 20px; width: auto; }
+    .brand { gap: 6px; }
     .brand small { font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.28em; color: var(--ink-2); }
     .head__right { justify-content: flex-end; gap: 18px; }
 
@@ -155,7 +156,7 @@
 
       <!-- 頁首：格線第一列 -->
       <nav class="head" aria-label="網站">
-        <div class="cell"><a class="brand" href="../index.html" aria-label="K.H Design 首頁"><b>K.H Design</b><small>SPACE · OBJECT · MEDIA</small></a></div>
+        <div class="cell"><a class="brand" href="../index.html" aria-label="K.H Design 首頁"><img class="brand__logo" src="../assets/img/logo/kh-design-wordmark.svg" alt="" width="116" height="22"><small>SPACE · OBJECT · MEDIA</small></a></div>
         <div class="cell head__right"><a href="../index.html#work">Work</a><a href="../index.html#contact">Contact</a></div>
         <div class="cell"><a href="../index.html#work">← Work Index</a></div>
         <div class="cell head__right"><span class="label">02 / 05 · SPACE</span></div>

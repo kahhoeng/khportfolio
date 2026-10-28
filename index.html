@@ -14,8 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Montserrat:wght@700&family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
-  <link rel="stylesheet" href="assets/css/tokens.css?v=20261028b">
-  <link rel="stylesheet" href="assets/css/main.css?v=20261028b">
+  <link rel="stylesheet" href="assets/css/tokens.css?v=20261028c">
+  <link rel="stylesheet" href="assets/css/main.css?v=20261028c">
   <style>
     /* ===== Hero 試作：A 品牌＋標語、B 名字＋職稱、C 一句話（只在預覽版） ===== */
     .hv { display: none; }
@@ -58,6 +58,13 @@
     .ca--tiny { background: var(--t); border-radius: 1px; }
     .ca--svg { height: auto; }   /* 點陣：使用 Illustrator 匯出的 SVG（含原稿漸層） */
     @media (max-width: 767.98px) { .ca--low { display: none; } }
+    /* 首頁封面：方塊縮小、變淺、陰影變輕，標題往上移 */
+    .hero { min-height: min(84svh, 800px); }
+    .hero .hero__content { padding-bottom: var(--sp-7); }
+    .hero .cover-art { width: max(74%, 600px); }
+    .hero .ca--sq { filter: brightness(1.2) contrast(0.72); box-shadow: -0.8cqi 1.3cqi 2.6cqi rgba(52, 44, 40, 0.15); }
+    .hero .ca--light { box-shadow: -0.7cqi 1.1cqi 2.2cqi rgba(52, 44, 40, 0.11); }
+    .hero .ca--glow { box-shadow: -0.9cqi 1.4cqi 2.8cqi rgba(52, 44, 40, 0.14); }
     @media (min-width: 992px) {
       .hero__content > * { margin-left: 39.5%; }
       .hero__content .hero__tagline { display: none; }   /* 桌機版讓標題下移，不壓到方塊；說明文字 About 已有 */
@@ -109,9 +116,8 @@
   <!-- ===== Header ===== -->
   <header class="site-header" id="top">
     <div class="container site-header__inner">
-      <a class="brand" href="#top" aria-label="KH Portfolio 回到頂端">
-        <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span>KH Portfolio</span>
+      <a class="brand" href="#top" aria-label="K.H Design 回到頂端">
+        <img class="brand__logo" src="assets/img/logo/kh-design-wordmark.svg" alt="" width="116" height="22">
       </a>
       <nav class="nav" aria-label="主選單">
         <div class="lang-switch" role="group" aria-label="語言" hidden data-lang-switch>
@@ -304,6 +310,6 @@
     </div>
   </footer>
 
-  <script type="module" src="assets/js/main.js?v=20261028b"></script>
+  <script type="module" src="assets/js/main.js?v=20261028c"></script>
 </body>
 </html>

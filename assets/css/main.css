@@ -140,9 +140,8 @@ p { margin: 0; text-wrap: pretty; }
 .dots {
   position: absolute;
   pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Crect width='5' height='5' fill='%23a5a7a9'/%3E%3C/svg%3E");
-  background-size: 8px 8px;
-  opacity: 0.85;
+  background: url("../img/dots/matrix_dot_2.svg") center / contain no-repeat;   /* Illustrator 匯出的點陣 2（含漸層） */
+  aspect-ratio: 52.38 / 47.4;
 }
 
 /* 方塊縮圖（圖片待補時的佔位） */
@@ -188,6 +187,7 @@ p { margin: 0; text-wrap: pretty; }
   display: inline-flex; align-items: center; gap: 10px;
   font-family: var(--f-mono); font-size: var(--fs-sm); text-decoration: none; color: var(--c-ink);
 }
+.brand__logo { display: block; height: 22px; width: auto; }
 .brand__mark { display: inline-flex; gap: 3px; }
 .brand__mark i { width: 8px; height: 8px; border-radius: 1px; background: #c9cacb; }
 .brand__mark i:nth-child(2) { background: #a5a7a9; }
@@ -310,7 +310,7 @@ p { margin: 0; text-wrap: pretty; }
 }
 .about__photo img { width: 100%; height: 100%; object-fit: cover; }
 .about__photo .placeholder__label { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
-.about__portrait .dots { width: 64px; height: 48px; right: -24px; bottom: -28px; }
+.about__portrait .dots { width: 68px; height: auto; right: -26px; bottom: -30px; }
 
 .about__role { font-size: var(--fs-xs); color: var(--c-accent-ink); margin-bottom: var(--sp-2); }
 .about__lead { font-size: var(--fs-xl); font-weight: 500; line-height: 1.5; margin-bottom: var(--sp-4); }

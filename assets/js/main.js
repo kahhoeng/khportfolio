@@ -4,9 +4,9 @@
    每個功能都先檢查頁面上有沒有對應元素，所以首頁和作品內頁共用這支檔案。
    ========================================================================== */
 import { initI18n } from './i18n.js';
-import { initWorks } from './works.js?v=20261028b';
-import { initWorksIndex } from './works-index.js?v=20261028b';
-import { initLightbox } from './lightbox.js?v=20261028b';
+import { initWorks } from './works.js?v=20261028c';
+import { initWorksIndex } from './works-index.js?v=20261028c';
+import { initLightbox } from './lightbox.js?v=20261028c';
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -134,11 +134,45 @@ function initScrollFloat() {
   }, { passive: true });
 }
 
+/* ---- 封面方塊自己動：每 3 秒挑兩個方塊，往附近輕輕挪一點，偶爾回到原位 ----
+   位移用 transform（捲動浮動用的是 translate，兩者會疊加，不會互相蓋掉）。
+   畫面看不到封面、或分頁在背景時暫停；使用者設定「減少動態」時不啟動。 */
+function initIdleShift() {
+  if (reduceMotion) return;
+  const art = document.querySelector('.hero .cover-art');
+  if (!art) return;
+  const items = [...art.querySelectorAll('.ca--sq, .ca--outline')];
+  if (!items.length) return;
+
+  // 彈出動畫結束後拿掉 pop 樣式，transform 才能自由使用
+  items.forEach((el) => {
+    el.addEventListener('animationend', () => el.classList.remove('pop', 'is-popped'), { once: true });
+    el.style.transition = 'transform 1.6s cubic-bezier(0.45, 0, 0.2, 1)';
+  });
+
+  const RANGE = 2;     // 最大位移（cqi，約為封面寬度的 2%）
+  let visible = true;
+  new IntersectionObserver(([en]) => { visible = en.isIntersecting; }).observe(art);
+
+  const tick = () => {
+    if (!visible || document.hidden) return;
+    const ready = items.filter((el) => !el.classList.contains('pop'));
+    for (let k = 0; k < 2 && ready.length; k++) {
+      const el = ready.splice(Math.floor(Math.random() * ready.length), 1)[0];
+      if (Math.random() < 0.3) { el.style.transform = ''; continue; }      // 回到原位
+      const dx = (Math.random() * 2 - 1) * RANGE;
+      const dy = (Math.random() * 2 - 1) * RANGE;
+      el.style.transform = `translate(${dx.toFixed(2)}cqi, ${dy.toFixed(2)}cqi)`;
+    }
+  };
+  setInterval(tick, 3000);
+}
+
 /* ---- d3 時間軸：接近畫面時才載入 d3 ---- */
 function initTimelineLazy() {
   const host = document.querySelector('[data-timeline]');
   if (!host) return;
-  const load = () => import('./timeline.js?v=20261028b')
+  const load = () => import('./timeline.js?v=20261028c')
     .then((m) => m.initTimeline(host))
     .catch((err) => {
       console.error(err);
@@ -156,6 +190,7 @@ initNav();
 initReveal();
 initPop();
 initScrollFloat();
+initIdleShift();
 initLightbox();
 initI18n().then(() => {
   initWorks();
