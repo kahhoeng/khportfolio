@@ -1,5 +1,5 @@
 {
-  "_readme": "作品清單。新增作品：複製一筆、改內容即可。cat 可用 space（空間）、video（影像）、ui（介面）。thumb 留空會顯示灰色方塊佔位。cover=true 代表縮圖要裁切填滿（照片、3D 圖）；線稿請用 false。href 留空代表內頁還沒做。 feature=true 會變成黑色主打卡（建議只放一件）。 highlight=1/2/3 決定作品在首頁該類別那一列的順序；每列最多顯示 3 件，超過的收進 More，並可在 works.html 依類別查看。",
+  "_readme": "作品清單。新增作品：複製一筆、改內容即可。cat 可用 space（空間）、video（影像）、ui（介面）。thumb 留空會顯示灰色方塊佔位。cover=true 代表縮圖要裁切填滿（照片、3D 圖）；線稿請用 false。href 留空代表內頁還沒做。 feature=true 會變成黑色主打卡（建議只放一件）。 highlight=1/2/3 決定作品在首頁該類別那一列的順序；每列最多顯示 3 件，超過的收進 More，並可在 works.html 依類別查看。 home=false 代表不放在首頁 Work Index，只出現在 All Works。",
   "categories": [
     {
       "id": "space",
@@ -290,22 +290,40 @@
       "href": "projects/case.html?id=via-marketing"
     },
     {
+      "id": "smarthome-visual",
+      "cat": "marketing",
+      "year": "2020",
+      "highlight": 2,
+      "title": {
+        "zh": "VIA 智慧安居｜主視覺與產品型錄",
+        "en": "VIA Smart Home — Key Visual & Catalogue"
+      },
+      "summary": {
+        "zh": "智慧安居解決方案的主視覺 Banner 與產品總覽頁，和情境影片使用同一套視覺。",
+        "en": ""
+      },
+      "tools": "主視覺 · 型錄版面",
+      "thumb": "assets/img/case/sh_banner.jpg",
+      "cover": true,
+      "href": "projects/case.html?id=smarthome-visual"
+    },
+    {
       "id": "dfi-marketing",
       "cat": "marketing",
       "year": "2026",
-      "highlight": 2,
       "title": {
-        "zh": "DFI｜產品文章與一頁式網頁",
-        "en": "DFI — Product Marketing & Localization"
+        "zh": "DFI｜新品上市素材與繁中在地化",
+        "en": "DFI — Launch Assets & Localization"
       },
       "summary": {
-        "zh": "工業電腦新品的技術文章與 LinkedIn 貼文、HubSpot 建置的歐盟 CRA 合規專頁，以及名單管理 SOP。",
+        "zh": "工業電腦新品的英文技術文章初稿與 LinkedIn 貼文素材，以及歐盟 CRA 合規專頁的繁中在地化與上架。",
         "en": ""
       },
-      "tools": "HubSpot · LinkedIn · Blog",
+      "tools": "新品素材 · 繁中在地化",
       "thumb": "assets/img/case/dfi_blog1.jpg",
       "cover": true,
-      "href": "projects/case.html?id=dfi-marketing"
+      "href": "projects/case.html?id=dfi-marketing",
+      "home": false
     }
   ]
 }

@@ -342,8 +342,8 @@
         },
         {
           "title": "成果",
-          "text": "產出「情境體驗」與「產品介紹」兩種影片，業務與經銷商可以依場合（展覽、提案、培訓）選用；產品串聯邏輯 1–2 分鐘就能說明完畢。同一套視覺也延伸到主視覺 Banner 與產品型錄。",
-          "layout": "2",
+          "text": "產出「情境體驗」與「產品介紹」兩種影片，業務與經銷商可以依場合（展覽、提案、培訓）選用；產品串聯邏輯 1–2 分鐘就能說明完畢。",
+          "layout": "one",
           "photo": true,
           "videos": [
             [
@@ -352,16 +352,7 @@
               "sh_v1"
             ]
           ],
-          "images": [
-            [
-              "sh_banner",
-              "主視覺 Banner"
-            ],
-            [
-              "sh_cat",
-              "產品總覽"
-            ]
-          ]
+          "images": []
         }
       ]
     },
@@ -833,20 +824,16 @@
       ]
     },
     "dfi-marketing": {
-      "badge": "DFI · 產品行銷",
-      "en": "DFI — Product Articles & One-page Site",
+      "badge": "DFI · 高級產品行銷專員",
+      "en": "DFI — Launch Assets & Traditional Chinese Localization",
       "meta": [
         [
           "類型",
-          "B2B 產品行銷"
+          "新品上市素材 · 在地化"
         ],
         [
           "範圍",
-          "技術文章 · LinkedIn · HubSpot 專頁 · SOP"
-        ],
-        [
-          "工具",
-          "HubSpot"
+          "技術文章 · LinkedIn · 繁中專頁"
         ]
       ],
       "links": [
@@ -855,18 +842,18 @@
           "https://pages.dfi.com/zh-tw/cyber-resilience-act-cra-compliance"
         ]
       ],
-      "overview": "2026 年在友通資訊擔任高級產品行銷專員，負責 B2B 工業電腦產品線的對外文章與網頁建置，橫跨技術文章、HubSpot 部落格、社群素材，對象包含工程端、採購端與海外客戶。",
-      "challenge": "規格表回答不了工程師與採購真正在意的問題：塞不塞得進機構、散熱撐不撐得住、I/O 夠不夠；同一份產品資訊也要在部落格、EDM、LinkedIn 之間保持一致。",
+      "overview": "2026 年在友通資訊擔任高級產品行銷專員，負責工業電腦新品的上市素材與繁體中文在地化。",
+      "challenge": "B2B 工業電腦的讀者是工程師與採購，他們在意的是機構、散熱與 I/O，而不只是規格表；同一份產品資訊也要在不同通路之間保持一致。",
       "role": [
-        "為 ASL600 與 EB100-MTU 撰寫新品文章：先提出實務部署的疑慮，再用規格回應",
-        "製作 LinkedIn 貼文素材",
-        "在 HubSpot 建置歐盟 CRA 合規專頁繁中版：頁面框架、區塊配置與錨點導覽",
-        "HubSpot 聯絡人分群，並撰寫公司綁定的操作說明"
+        "撰寫兩款新品的英文技術文章初稿",
+        "製作 LinkedIn 新品貼文素材",
+        "將歐盟 CRA 合規專頁在地化成繁中版，並在 HubSpot 上架",
+        "整理聯絡人名單的操作 SOP"
       ],
       "chapters": [
         {
-          "title": "產品技術文章",
-          "text": "ASL600（SMARC 2.2 模組）與 EB100-MTU（無風扇工業電腦）的新品文章。",
+          "title": "新品文章",
+          "text": "ASL600（SMARC 2.2 模組）與 EB100-MTU（無風扇工業電腦）的新品文章初稿。",
           "layout": "2",
           "photo": false,
           "images": [
@@ -882,7 +869,7 @@
         },
         {
           "title": "LinkedIn 貼文",
-          "text": "新品上市貼文：一句話標語、規格重點與連結。",
+          "text": "新品上市貼文素材。",
           "layout": "2",
           "photo": false,
           "images": [
@@ -897,26 +884,71 @@
           ]
         },
         {
-          "title": "CRA 合規專頁",
-          "text": "在 HubSpot 建置的一頁式網頁，文案與視覺由文案端與設計端提供。",
+          "title": "CRA 專頁繁中版",
+          "text": "將歐盟《網路韌性法案》專頁在地化成繁體中文並上架；文案與視覺由原團隊提供。",
           "layout": "one",
           "photo": false,
           "images": [
             [
               "dfi_cra",
-              "CRA 專頁"
+              "CRA 專頁繁中版"
             ]
           ]
         },
         {
-          "title": "HubSpot SOP 文件",
-          "text": "名單管理的逐步教學，讓團隊照著操作（公司名稱已模糊處理）。",
+          "title": "操作 SOP",
+          "text": "名單整理的逐步說明（公司名稱已模糊處理）。",
           "layout": "one",
           "photo": false,
           "images": [
             [
               "dfi_sop",
-              "Step by Step Guide"
+              "操作 SOP"
+            ]
+          ]
+        }
+      ]
+    },
+    "smarthome-visual": {
+      "badge": "VIA 智慧城市 · 行銷設計",
+      "en": "VIA Smart Home — Key Visual & Product Catalogue",
+      "meta": [
+        [
+          "類型",
+          "主視覺 · 產品型錄"
+        ],
+        [
+          "產品",
+          "智慧安居解決方案"
+        ]
+      ],
+      "overview": "智慧安居解決方案的主視覺 Banner 與產品型錄頁面，和情境影片使用同一套視覺，讓業務在展覽、提案與官網上呈現一致的形象。",
+      "role": [
+        "主視覺 Banner 設計",
+        "產品總覽頁的版面編排"
+      ],
+      "chapters": [
+        {
+          "title": "主視覺",
+          "text": "以送貨員在門口機前的情境，點出智慧安居的使用場景。",
+          "layout": "one",
+          "photo": true,
+          "images": [
+            [
+              "sh_banner",
+              "主視覺 Banner"
+            ]
+          ]
+        },
+        {
+          "title": "產品型錄",
+          "text": "把室內對講主機、門口機與社區設備整理在同一頁，標示各產品的功能重點。",
+          "layout": "one",
+          "photo": false,
+          "images": [
+            [
+              "sh_cat",
+              "產品總覽"
             ]
           ]
         }
