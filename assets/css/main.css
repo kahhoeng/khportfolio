@@ -453,6 +453,11 @@ p { margin: 0; text-wrap: pretty; }
 /* 9b. Work Index 直條（首頁：3 件精選 + All Works）-------------------- */
 .wx-wrap { container: wx / inline-size; }
 .wx-hint { font-size: var(--fs-xs); color: var(--c-ink-2); margin: calc(-1 * var(--sp-5)) 0 var(--sp-5); }
+.wx-row + .wx-row { margin-top: var(--sp-7); }
+.wx-row__head { display: flex; align-items: baseline; gap: 12px; padding-bottom: 10px; }
+.wx-row__tag { font-family: var(--f-mono); font-size: var(--fs-xs); letter-spacing: 0.1em; color: var(--c-ink-2); }
+.wx-row__name { font-size: var(--fs-lg); font-weight: 700; }
+.wx-row__count { margin-left: auto; font-family: var(--f-mono); font-size: var(--fs-xs); color: var(--c-accent-ink); }
 .wx { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--c-ink); }
 
 .wx__item { position: relative; background: #fff; border-bottom: 1px solid var(--c-line); }
@@ -514,13 +519,13 @@ p { margin: 0; text-wrap: pretty; }
 
 /* ---- 平板／桌機：橫向展開的直條 ---- */
 @container wx (min-width: 700px) {
-  .wx { display: flex; height: clamp(440px, 62vh, 580px); border-bottom: 1px solid var(--c-line); }
+  .wx { display: flex; height: clamp(400px, 56vh, 520px); border-bottom: 1px solid var(--c-line); }
   .wx__item {
     flex: 1 1 0; min-width: 0; overflow: hidden; border-bottom: 0; border-left: 1px solid var(--c-line);
     transition: flex-grow 0.55s var(--ease), background-color 0.35s var(--ease), color 0.35s var(--ease);
   }
   .wx__item:last-child { border-right: 1px solid var(--c-line); }
-  .wx__item.is-open { flex-grow: 2.7; border-color: var(--c-black); }
+  .wx__item.is-open { flex-grow: calc(0.6 + var(--n, 4) * 0.55); border-color: var(--c-black); }
 
   .wx__hit {
     position: absolute; inset: 0; z-index: 1;
@@ -568,7 +573,7 @@ p { margin: 0; text-wrap: pretty; }
 }
 /* iPad 直放：展開那條多拿一點寬度 */
 @container wx (min-width: 700px) and (max-width: 1023px) {
-  .wx__item.is-open { flex-grow: 3.6; }
+  .wx__item.is-open { flex-grow: calc(1 + var(--n, 4) * 0.65); }
   .wx__hit { padding: 16px 12px 20px; }
   .wx__cat { letter-spacing: 0.06em; }
 }

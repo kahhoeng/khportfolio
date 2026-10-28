@@ -86,7 +86,9 @@ export async function initWorks() {
   }
 
   const cats = new Map(data.categories.map((c) => [c.id, c]));
-  let active = 'all';
+  // works.html#cat=space 這類網址會直接套用該類別
+  const fromHash = (location.hash.match(/^#cat=([\w-]+)$/) || [])[1];
+  let active = fromHash && cats.has(fromHash) ? fromHash : 'all';
 
   function render() {
     list.replaceChildren(...data.works.map((w, i) => card(w, i, pick(cats.get(w.cat)) || w.cat)));

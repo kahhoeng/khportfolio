@@ -1,10 +1,10 @@
 {
-  "_readme": "作品清單。新增作品：複製一筆、改內容即可。cat 可用 space（空間）、video（影像）、ui（介面）。thumb 留空會顯示灰色方塊佔位。cover=true 代表縮圖要裁切填滿（照片、3D 圖）；線稿請用 false。href 留空代表內頁還沒做。 feature=true 會變成黑色主打卡（建議只放一件）。 highlight=1/2/3 代表首頁精選的順序（只放三件），其餘作品放在 All Works 集合頁。換精選只要改這個數字。",
+  "_readme": "作品清單。新增作品：複製一筆、改內容即可。cat 可用 space（空間）、video（影像）、ui（介面）。thumb 留空會顯示灰色方塊佔位。cover=true 代表縮圖要裁切填滿（照片、3D 圖）；線稿請用 false。href 留空代表內頁還沒做。 feature=true 會變成黑色主打卡（建議只放一件）。 highlight=1/2/3 決定作品在首頁該類別那一列的順序；每列最多顯示 3 件，超過的收進 More，並可在 works.html 依類別查看。",
   "categories": [
     {
       "id": "space",
-      "zh": "空間",
-      "en": "Space"
+      "zh": "空間設計",
+      "en": "Space Design"
     },
     {
       "id": "video",
@@ -13,8 +13,8 @@
     },
     {
       "id": "ui",
-      "zh": "介面",
-      "en": "Interface"
+      "zh": "UX/UI 設計",
+      "en": "UX/UI Design"
     }
   ],
   "works": [

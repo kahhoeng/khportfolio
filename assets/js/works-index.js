@@ -1,6 +1,7 @@
 /* ==========================================================================
-   首頁 Work Index — 3 件精選 + All Works 直條
-   - 讀 works.json，highlight = 1/2/3 的作品依序排成直條，其餘作品收進最後一條「All Works」
+   首頁 Work Index — 依類別分列（空間設計／影像／UX/UI 設計）
+   - 每列最多 3 件作品；該類別超過 3 件時，最後一條是 More，連到集合頁並篩選該類別
+   - highlight 數字決定列內順序，沒有 highlight 的照 works.json 順序
    - 平板／桌機（區塊寬 ≥ 700，iPad 直放也算）：橫向展開直條
        滑鼠：滑過展開，點一下進作品
        觸控：點一下展開，再點一次進作品
@@ -69,7 +70,7 @@ export async function initWorksIndex() {
     const li = h('li', { class: 'wx__item', 'data-href': w.href || '' });
     const hit = h('button', { class: 'wx__hit', type: 'button', 'aria-expanded': 'false', 'aria-controls': id }, [
       h('span', { class: 'wx__num', text: pad(k + 1) }),
-      h('span', { class: 'wx__cat', text: catTag(w) }),
+      h('span', { class: 'wx__cat', text: w.tools || w.year || '' }),
       h('span', { class: 'wx__title', text: pick(w.title) }),
       h('span', { class: 'wx__chev', 'aria-hidden': 'true' }),
     ]);
@@ -81,7 +82,7 @@ export async function initWorksIndex() {
     const body = h('div', { class: 'wx__body', id }, [
       media(w, k, 'wx__media'),
       h('div', { class: 'wx__detail' }, [
-        h('p', { class: 'wx__meta' }, [h('b', { text: catTag(w) }), h('span', { text: w.tools || '' }), h('span', { text: w.year || '' })]),
+        h('p', { class: 'wx__meta' }, [h('b', { text: catTag(w) }), h('span', { text: w.year || '' })]),
         h('h3', { class: 'wx__name', text: pick(w.title) }),
         h('p', { class: 'wx__summary', text: pick(w.summary) }),
         open,
@@ -91,31 +92,32 @@ export async function initWorksIndex() {
     return li;
   }
 
-  function allItem(rest, total) {
-    const id = 'wx-all';
-    const href = list.dataset.all || 'works.html';
+  // 類別作品超過 3 件時，最後一條是 More：列出其餘作品，連到集合頁並套用該類別篩選
+  function moreItem(cat, rest) {
+    const id = `wx-more-${cat.id}`;
+    const href = `${list.dataset.all || 'works.html'}#cat=${cat.id}`;
     const li = h('li', { class: 'wx__item wx__item--all', 'data-href': href });
     const hit = h('button', { class: 'wx__hit', type: 'button', 'aria-expanded': 'false', 'aria-controls': id }, [
       h('span', { class: 'wx__num', text: `+${rest.length}` }),
-      h('span', { class: 'wx__cat', text: lang() === 'en' ? 'ARCHIVE' : '全部作品 ARCHIVE' }),
-      h('span', { class: 'wx__title', text: 'All Works' }),
+      h('span', { class: 'wx__cat', text: 'MORE' }),
+      h('span', { class: 'wx__title', text: lang() === 'en' ? `More ${cat.en}` : `更多${cat.zh}` }),
       h('span', { class: 'wx__chev', 'aria-hidden': 'true' }),
     ]);
     // 收起時：一疊灰色漸層方塊，暗示裡面還有作品
     const stack = h('div', { class: 'wx__thumb wx__stack', 'aria-hidden': 'true' }, [
       h('span', { class: 'sq sq--light' }), h('span', { class: 'sq' }), h('span', { class: 'sq sq--dark' }),
     ]);
-    const items = h('ol', { class: 'wx__list' }, rest.map(({ w, i }) => h('li', {}, [
-      h('span', { class: 'wx__listNum', text: pad(i + 1) }),
+    const items = h('ol', { class: 'wx__list' }, rest.map(({ w }, k) => h('li', {}, [
+      h('span', { class: 'wx__listNum', text: pad(k + 4) }),
       h('span', { class: 'wx__listTitle', text: pick(w.title) }),
-      h('span', { class: 'wx__listCat', text: (cats.get(w.cat)?.zh) || '' }),
+      h('span', { class: 'wx__listCat', text: w.year || '' }),
     ])));
     const body = h('div', { class: 'wx__body wx__body--all', id }, [
       h('div', { class: 'wx__detail' }, [
-        h('p', { class: 'wx__meta' }, [h('b', { text: 'ARCHIVE' }), h('span', { text: lang() === 'en' ? `${total} works` : `共 ${total} 件作品` })]),
-        h('h3', { class: 'wx__name', text: 'All Works' }),
+        h('p', { class: 'wx__meta' }, [h('b', { text: 'MORE' }), h('span', { text: lang() === 'en' ? `${rest.length} more` : `還有 ${rest.length} 件` })]),
+        h('h3', { class: 'wx__name', text: lang() === 'en' ? `More ${cat.en}` : `更多${cat.zh}` }),
         items,
-        h('a', { class: 'wx__open', href }, [lang() === 'en' ? 'See all works ' : '看全部作品 ', h('span', { text: '→' })]),
+        h('a', { class: 'wx__open', href }, [lang() === 'en' ? 'See all ' : `看全部${cat.zh} `, h('span', { text: '→' })]),
       ]),
     ]);
     li.append(hit, stack, body, h('span', { class: 'wx__dot', 'aria-hidden': 'true' }));
@@ -123,19 +125,35 @@ export async function initWorksIndex() {
   }
 
   function setOpen(li) {
-    list.querySelectorAll('.wx__item').forEach((p) => {
+    li.parentElement.querySelectorAll('.wx__item').forEach((p) => {
       const on = p === li;
       p.classList.toggle('is-open', on);
       p.querySelector('.wx__hit').setAttribute('aria-expanded', String(on));
     });
   }
 
+  // 每個類別一列：最多 3 件（highlight 數字小的優先，其餘照資料順序），超過才加 More
   function render() {
-    const indexed = data.works.map((w, i) => ({ w, i }));
-    const top = indexed.filter(({ w }) => w.highlight).sort((a, b) => a.w.highlight - b.w.highlight).slice(0, 3);
-    const rest = indexed.filter((x) => !top.includes(x));
-    list.replaceChildren(...top.map(({ w }, k) => workItem(w, k)), allItem(rest, data.works.length));
-    setOpen(list.firstElementChild);
+    const rows = data.categories.map((cat) => {
+      const works = data.works.map((w, i) => ({ w, i })).filter(({ w }) => w.cat === cat.id)
+        .sort((a, b) => ((a.w.highlight ?? 99) - (b.w.highlight ?? 99)) || (a.i - b.i));
+      if (!works.length) return null;
+      const shown = works.slice(0, 3);
+      const rest = works.slice(3);
+      const ul = h('ul', { class: 'wx', 'aria-label': cat.zh }, shown.map(({ w }, k) => workItem(w, k)));
+      if (rest.length) ul.append(moreItem(cat, rest));
+      ul.style.setProperty('--n', ul.children.length);
+      setOpen(ul.firstElementChild);
+      return h('section', { class: 'wx-row', 'aria-label': cat.zh }, [
+        h('header', { class: 'wx-row__head' }, [
+          h('span', { class: 'wx-row__tag', text: `[ ${String(cat.en || cat.id).toUpperCase()} ]` }),
+          h('h3', { class: 'wx-row__name', text: cat.zh }),
+          h('span', { class: 'wx-row__count', text: `/ ${pad(works.length)}` }),
+        ]),
+        ul,
+      ]);
+    }).filter(Boolean);
+    list.replaceChildren(...rows);
     syncHint();
   }
 
@@ -171,7 +189,7 @@ export async function initWorksIndex() {
   list.addEventListener('keydown', (e) => {
     if (!['ArrowLeft', 'ArrowRight'].includes(e.key) || !isWide()) return;
     const li = e.target.closest('.wx__item'); if (!li) return;
-    const sib = e.key === 'ArrowRight' ? li.nextElementSibling : li.previousElementSibling;
+    const sib = e.key === 'ArrowRight' ? li.nextElementSibling : li.previousElementSibling;  // 只在同一列內切換
     if (sib) { e.preventDefault(); sib.querySelector('.wx__hit').focus(); }
   });
 
