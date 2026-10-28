@@ -659,12 +659,12 @@
       ]
     },
     "rma": {
-      "badge": "VIA 智慧城市 · 服務設計",
-      "en": "VIA Smart Home — Shipping & RMA Service Design",
+      "badge": "VIA 智慧城市 · 流程文件設計",
+      "en": "VIA Smart Home — Shipping & RMA Documents",
       "meta": [
         [
           "類型",
-          "服務設計 · 流程標準化"
+          "流程文件整理 · 資訊視覺化"
         ],
         [
           "範圍",
@@ -675,23 +675,92 @@
           "InDesign"
         ]
       ],
-      "overview": "智慧建築解決方案隨著建案落地、出貨量大增，我負責建構並優化出貨與退換貨（RMA）的標準作業流程，用標準化的範本與跨部門權責劃分，讓產品規模化之後售後服務仍維持一致的品質。",
-      "challenge": "初期的簡易流程無法因應規模化，下游系統整合商加入後溝通成本升高；公司既有的 RMA 系統是為工業電腦設計，不適用 IoT 產品；代理商、SI、建商之間沒有統一的執行標準。",
+      "overview": "出貨與 RMA（退換貨維修）的規則由主管與相關部門訂定，我負責把這些規則整理成 5 份文件：釐清流程步驟與分支、統一格式，並用 InDesign 重新設計版面與流程圖，讓客戶與內部同仁都看得懂。",
+      "challenge": "原本只有幾張樣式不一的流程圖，保固內外、付費與否等分支不容易看懂；同一套規則要同時給外部客戶與內部同仁使用，需要分開整理成不同版本。",
       "role": [
-        "與 PM、業務、業助釐清各自在流程中的責任",
-        "統整並標準化出貨與 RMA 流程及文件",
-        "設計 RMA 表單、撰寫 SOP，讓新同仁快速上手"
+        "釐清流程步驟與分支，重畫成一致的流程圖",
+        "用 InDesign 設計文件版型，套用到 5 份文件",
+        "依對外、內部用途分別整理版本"
       ],
       "chapters": [
         {
-          "title": "標準化文件",
-          "text": "建立 5 份關鍵文件：出貨流程說明、維修保固政策、內部 RMA 流程 SOP、RMA 表單與 FAQ。圖為內部維修流程（已模糊處理）。",
-          "layout": "one",
+          "title": "初期流程",
+          "text": "整理前的流程圖：資訊都在，但樣式不一，分支與附註不容易看懂。",
+          "layout": "2",
           "photo": false,
+          "drawing": true,
           "images": [
             [
-              "vm_sop",
-              "內部維修流程 SOP"
+              "rma_flow_v1",
+              "初期報修流程"
+            ],
+            [
+              "rma_flow_v2",
+              "初期 RMA 流程"
+            ]
+          ]
+        },
+        {
+          "title": "對外規範：出貨",
+          "text": "把出貨步驟排成一條時間軸，每段標出工作天，前提條件用註記放在下方。",
+          "layout": "one",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "rma_shipping",
+              "出貨說明"
+            ]
+          ]
+        },
+        {
+          "title": "對外規範：保固維修",
+          "text": "第一頁是報修流程與需備妥的資料，第二頁是 RMA 維修流程，用左右分支區分保固內免費維修與保固外付費維修。",
+          "layout": "2",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "rma_warranty_1",
+              "保固維修政策 P.1"
+            ],
+            [
+              "rma_warranty_2",
+              "保固維修政策 P.2 · RMA 維修流程"
+            ]
+          ]
+        },
+        {
+          "title": "內部運作 SOP",
+          "text": "內部版用三欄對照：流程步驟、負責單位、Action Items，每一步由誰處理、要記錄什麼，一眼就能看到。",
+          "layout": "2",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "rma_sop_1",
+              "內部 SOP P.1 · 報修與 RMA 流程"
+            ],
+            [
+              "rma_sop_2",
+              "內部 SOP P.2 · 故障維修流程"
+            ]
+          ]
+        },
+        {
+          "title": "執行工具",
+          "text": "RMA 表單統一客戶要填的欄位，威盛內部填寫區另外標色；FAQ 把常見問題整理成問答格式。",
+          "layout": "2",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "rma_form",
+              "RMA 表單（客戶資料已清除）"
+            ],
+            [
+              "rma_faq",
+              "常見問題 FAQ"
             ]
           ]
         }
@@ -904,6 +973,249 @@
             [
               "dfi_sop",
               "操作 SOP"
+            ]
+          ]
+        }
+      ]
+    },
+    "cabinet": {
+      "badge": "課程作品 · 室內軟裝與 BIM 空間應用班",
+      "en": "Modular Cabinet — SketchUp",
+      "meta": [
+        [
+          "尺寸",
+          "W160 × D30 × H106 cm"
+        ],
+        [
+          "模組",
+          "40 / 80 / 40 cm"
+        ],
+        [
+          "工具",
+          "SketchUp"
+        ]
+      ],
+      "story": [
+        [
+          "練習目標",
+          "用 SketchUp 從零建出一件家具，並且出一套別人拿到就能看懂尺寸的圖。"
+        ],
+        [
+          "做法",
+          "以三個獨立櫃體組合：兩側是木紋門片櫃，中間是開放層架。層板做成活動式，間距 30 cm，下方留 9 cm 踢腳。"
+        ],
+        [
+          "成果",
+          "正反兩面透視、正視圖、俯視圖、側視圖與內部立面，總寬、總高與細部尺寸都標註清楚。"
+        ]
+      ],
+      "chapters": [
+        {
+          "title": "透視圖",
+          "text": "正面與背面透視，確認三個櫃體的組合關係與材質。",
+          "layout": "2",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "work/cab_3d.jpg",
+              "正面透視"
+            ],
+            [
+              "work/cab_back3d.jpg",
+              "背面透視"
+            ]
+          ]
+        },
+        {
+          "title": "三視圖",
+          "text": "總寬 160 cm、總高 106 cm；俯視圖標示 40／80／40 cm 三個模組與深度 30 cm，側視圖標示層板間距。",
+          "layout": "3",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "work/cab_front.jpg",
+              "正視圖"
+            ],
+            [
+              "work/cab_top.jpg",
+              "俯視圖"
+            ],
+            [
+              "work/cab_side.jpg",
+              "側視圖"
+            ]
+          ]
+        },
+        {
+          "title": "內部立面",
+          "text": "三層層板皆為活動式，間距 30 cm。",
+          "layout": "one",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "work/cab_inner.jpg",
+              "內部立面"
+            ]
+          ]
+        }
+      ]
+    },
+    "bedroom": {
+      "badge": "課程作品 · 室內軟裝與 BIM 空間應用班",
+      "en": "Bedroom — From Survey to Construction Set",
+      "meta": [
+        [
+          "圖面",
+          "7 張"
+        ],
+        [
+          "比例",
+          "1:30 / 1:20"
+        ],
+        [
+          "工具",
+          "AutoCAD"
+        ]
+      ],
+      "story": [
+        [
+          "練習目標",
+          "以一間臥室為對象，練習一個空間從現況到施工需要出哪些圖，以及每張圖之間怎麼對應。"
+        ],
+        [
+          "做法",
+          "先畫現況圖確認牆體、門窗與淨尺寸，再依序完成平面配置、天花、燈具位置與迴路，最後用兩向立面交代床頭牆與衣櫃牆。"
+        ],
+        [
+          "成果",
+          "七張圖、兩種比例，圖框、線型與標註方式統一，可以當成一套完整的圖組閱讀。"
+        ]
+      ],
+      "chapters": [
+        {
+          "title": "現況／配置",
+          "text": "現況圖記錄牆體、門窗與淨尺寸；配置圖將雙人床靠主牆置中，兩側配置床頭櫃，對側整排衣櫃。",
+          "layout": "2",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "work/bed_survey.png",
+              "現況圖 1:30"
+            ],
+            [
+              "work/bed_layout.png",
+              "平面配置圖 1:30"
+            ]
+          ]
+        },
+        {
+          "title": "天花",
+          "text": "四周天花高 240 cm，中央做 270 cm 挑高造型，左右退縮 49 cm、前後 76／92 cm。",
+          "layout": "one",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "work/bed_ceiling.png",
+              "天花圖 1:30"
+            ]
+          ]
+        },
+        {
+          "title": "燈具位置與迴路",
+          "text": "挑高區配置四盞嵌燈，以 50／60 cm 定位；迴路圖以虛線標示開關與燈具的對應。",
+          "layout": "2",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "work/bed_lightpos.png",
+              "燈具位置圖 1:30"
+            ],
+            [
+              "work/bed_circuit.png",
+              "燈具迴路圖 1:30"
+            ]
+          ]
+        },
+        {
+          "title": "立面",
+          "text": "床頭牆：中央直向線板造型搭配掛畫，兩側床頭櫃對稱；衣櫃牆：四門衣櫃高 230 cm，上方收納櫃，右側為房門。",
+          "layout": "one",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "work/bed_elevA.png",
+              "立面圖 A｜床頭牆 1:20"
+            ],
+            [
+              "work/bed_elevB.png",
+              "立面圖 B｜衣櫃牆 1:20"
+            ]
+          ]
+        }
+      ]
+    },
+    "bathroom": {
+      "badge": "課程作品 · 室內軟裝與 BIM 空間應用班",
+      "en": "Bathroom — Plan & Elevation",
+      "meta": [
+        [
+          "寬度",
+          "342 cm"
+        ],
+        [
+          "比例",
+          "1:20"
+        ],
+        [
+          "工具",
+          "AutoCAD"
+        ]
+      ],
+      "story": [
+        [
+          "練習目標",
+          "練習用 1:20 的比例畫衛浴空間，讓平面與立面的尺寸彼此對得起來。"
+        ],
+        [
+          "做法",
+          "寬 342 cm 的長型浴室，以隔間分為洗手區、馬桶區與浴缸區，標示各區寬度、設備定位與門的開啟方向。"
+        ],
+        [
+          "成果",
+          "平面圖與立面圖各一張。立面標示樓高 300 cm、天花下淨高 245 cm，磁磚分割、鏡面與窗位都和平面對應。"
+        ]
+      ],
+      "chapters": [
+        {
+          "title": "平面圖",
+          "text": "三區依序排開，標示各區寬度與設備位置。",
+          "layout": "one",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "work/bath_plan.png",
+              "平面圖 1:20"
+            ]
+          ]
+        },
+        {
+          "title": "立面圖",
+          "text": "樓高 300 cm，天花下淨高 245 cm，窗高 130 cm。",
+          "layout": "one",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "work/bath_elev.png",
+              "立面圖 1:20"
             ]
           ]
         }

@@ -75,7 +75,7 @@
       "tools": "SketchUp",
       "thumb": "assets/img/work/cab_3d.jpg",
       "cover": false,
-      "href": "projects/cabinet.html",
+      "href": "projects/case.html?id=cabinet",
       "highlight": 3
     },
     {
@@ -93,7 +93,7 @@
       "tools": "AutoCAD",
       "thumb": "assets/img/work/bed_layout.png",
       "cover": false,
-      "href": "projects/bedroom.html"
+      "href": "projects/case.html?id=bedroom"
     },
     {
       "id": "bathroom",
@@ -110,7 +110,7 @@
       "tools": "AutoCAD",
       "thumb": "assets/img/work/bath_plan.png",
       "cover": false,
-      "href": "projects/bathroom.html"
+      "href": "projects/case.html?id=bathroom"
     },
     {
       "id": "digital-signage",
@@ -259,15 +259,15 @@
       "cat": "ui",
       "year": "2020",
       "title": {
-        "zh": "VIA Smart Home｜出貨與 RMA 服務設計",
-        "en": "VIA Smart Home — RMA Service Design"
+        "zh": "VIA Smart Home｜出貨與 RMA 流程文件",
+        "en": "VIA Smart Home — Shipping & RMA Documents"
       },
       "summary": {
-        "zh": "為智慧建築方案建立出貨與退換貨的標準流程：權責劃分、保固政策、SOP、RMA 表單與 FAQ。",
+        "zh": "把主管訂定的出貨與退換貨規則，整理成 5 份版面一致的文件：出貨說明、保固政策、內部 SOP、RMA 表單與 FAQ。",
         "en": ""
       },
-      "tools": "Service Design · SOP",
-      "thumb": "assets/img/case/vm_sop.jpg",
+      "tools": "InDesign · 流程圖",
+      "thumb": "assets/img/case/rma_shipping.jpg",
       "cover": false,
       "href": "projects/case.html?id=rma"
     },

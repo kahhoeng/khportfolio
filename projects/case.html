@@ -148,6 +148,7 @@
     .links { display: grid; gap: 2px; }
     .links a, .side-link { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--rule); word-break: break-word; }
     .side-link { font-family: var(--f-mono); font-size: 12px; }
+    .plate.plate--drawing .plate__btn img { box-shadow: none; mix-blend-mode: multiply; }
     .plate--video { background: #111; }
     .video, .video__frame { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; padding: 0; position: relative; background: #111; cursor: pointer; }
     .video img { width: 100%; height: 100%; object-fit: cover; opacity: 0.86; transition: opacity 0.3s; }
@@ -197,6 +198,8 @@
     return n;
   };
   const pad = (n) => String(n).padStart(2, '0');
+  // 圖檔：名稱不含 / 的放在 assets/img/case/（.jpg）；含 / 的照路徑讀，例如 work/bed_layout.png
+  const src = (file) => (file.includes('/') ? `../assets/img/${file}` : `../assets/img/case/${file}.jpg`);
   const grid = document.getElementById('grid');
   const id = new URLSearchParams(location.search).get('id');
   let works, cases;
@@ -234,9 +237,12 @@
       h('div', {}, [h('dt', { text: '圖片／影片' }), h('dd', { text: vids ? `${total} 張 · ${vids} 支影片` : `${total} 張` })]),
       c.links ? h('div', {}, [h('dt', { text: '連結' }), h('dd', { class: 'links' }, c.links.map(([t, u]) => h('a', { href: u, target: '_blank', rel: 'noopener', text: t + ' ↗' })))]) : null,
     ])),
-    h('div', { class: 'cell story' }, [h('h3', { text: '專案概述' }), h('p', { text: c.overview || w.summary.zh })]),
-    h('div', { class: 'cell story' }, c.challenge ? [h('h3', { text: '關鍵挑戰' }), h('p', { text: c.challenge })] : []),
-    h('div', { class: 'cell story' }, c.role ? [h('h3', { text: '我負責的部分' }), h('ul', { class: 'role' }, c.role.map((r) => h('li', { text: r })))] : []),
+    // story：自訂三欄（例如課程作品的 練習目標／做法／成果）；沒有就用 概述／挑戰／負責項目
+    ...(c.story ? c.story.map(([t, x]) => h('div', { class: 'cell story' }, [h('h3', { text: t }), h('p', { text: x })])) : [
+      h('div', { class: 'cell story' }, [h('h3', { text: '專案概述' }), h('p', { text: c.overview || w.summary.zh })]),
+      h('div', { class: 'cell story' }, c.challenge ? [h('h3', { text: '關鍵挑戰' }), h('p', { text: c.challenge })] : []),
+      h('div', { class: 'cell story' }, c.role ? [h('h3', { text: '我負責的部分' }), h('ul', { class: 'role' }, c.role.map((r) => h('li', { text: r })))] : []),
+    ]),
   ]));
   // 章節
   let n = 0;
@@ -251,16 +257,16 @@
     // YouTube：先顯示封面，點了才載入播放器（不拖慢頁面）
     const videoPlates = (ch.videos || []).map(([yt, cap, poster]) => h('figure', { class: 'plate plate--video' }, [
       h('button', { class: 'video', type: 'button', 'data-yt': yt, 'aria-label': `播放影片：${cap}` }, [
-        poster ? h('img', { src: `../assets/img/case/${poster}.jpg`, alt: '', loading: 'lazy', decoding: 'async' }) : h('span', { class: 'video__blank', 'aria-hidden': 'true' }, [h('b', { text: cap })]),
+        poster ? h('img', { src: src(poster), alt: '', loading: 'lazy', decoding: 'async' }) : h('span', { class: 'video__blank', 'aria-hidden': 'true' }, [h('b', { text: cap })]),
         h('span', { class: 'video__play', 'aria-hidden': 'true' }),
       ]),
       h('figcaption', {}, [h('b', { text: cap }), h('a', { href: `https://www.youtube.com/watch?v=${yt}${ch.playlist ? '&list=' + ch.playlist : ''}`, target: '_blank', rel: 'noopener', text: 'YouTube ↗' })]),
     ]));
     const imagePlates = (ch.images || []).map(([file, cap]) => {
       n += 1;
-      return h('figure', { class: 'plate' + (ch.photo ? ' plate--photo' : '') }, [
+      return h('figure', { class: 'plate' + (ch.photo ? ' plate--photo' : '') + (ch.drawing ? ' plate--drawing' : '') }, [
         h('button', { class: 'plate__btn', type: 'button', 'data-zoom': '', 'data-caption': cap },
-          h('img', { src: `../assets/img/case/${file}.jpg`, alt: `${w.title.zh}：${cap}`, loading: 'lazy', decoding: 'async' })),
+          h('img', { src: src(file), alt: `${w.title.zh}：${cap}`, loading: 'lazy', decoding: 'async' })),
         h('figcaption', {}, [h('b', { text: cap }), h('span', { text: `${pad(n)} / ${pad(total)}` })]),
       ]);
     });
