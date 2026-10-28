@@ -525,7 +525,7 @@ p { margin: 0; text-wrap: pretty; }
     transition: flex-grow 0.55s var(--ease), background-color 0.35s var(--ease), color 0.35s var(--ease);
   }
   .wx__item:last-child { border-right: 1px solid var(--c-line); }
-  .wx__item.is-open { flex-grow: calc(0.6 + var(--n, 4) * 0.55); border-color: var(--c-black); }
+  .wx__item.is-open { flex-grow: calc(0.6 + max(var(--n, 4), 4) * 0.55); border-color: var(--c-black); }
 
   .wx__hit {
     position: absolute; inset: 0; z-index: 1;
@@ -573,7 +573,7 @@ p { margin: 0; text-wrap: pretty; }
 }
 /* iPad 直放：展開那條多拿一點寬度 */
 @container wx (min-width: 700px) and (max-width: 1023px) {
-  .wx__item.is-open { flex-grow: calc(1 + var(--n, 4) * 0.65); }
+  .wx__item.is-open { flex-grow: calc(1 + max(var(--n, 4), 4) * 0.65); }
   .wx__hit { padding: 16px 12px 20px; }
   .wx__cat { letter-spacing: 0.06em; }
 }

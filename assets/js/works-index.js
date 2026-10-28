@@ -135,11 +135,13 @@ export async function initWorksIndex() {
   // 每個類別一列：最多 3 件（highlight 數字小的優先，其餘照資料順序），超過才加 More
   function render() {
     const rows = data.categories.map((cat) => {
-      const works = data.works.map((w, i) => ({ w, i })).filter(({ w }) => w.cat === cat.id && w.home !== false)
+      const works = data.works.map((w, i) => ({ w, i })).filter(({ w }) => w.cat === cat.id)
         .sort((a, b) => ((a.w.highlight ?? 99) - (b.w.highlight ?? 99)) || (a.i - b.i));
       if (!works.length) return null;
-      const shown = works.slice(0, 3);
-      const rest = works.slice(3);
+      // home=false 的作品不上直條，但會收進 More（例如 DFI）
+      const shown = works.filter(({ w }) => w.home !== false).slice(0, 3);
+      if (!shown.length) return null;
+      const rest = works.filter((x) => !shown.includes(x));
       const ul = h('ul', { class: 'wx', 'aria-label': cat.zh }, shown.map(({ w }, k) => workItem(w, k)));
       if (rest.length) ul.append(moreItem(cat, rest));
       ul.style.setProperty('--n', ul.children.length);
