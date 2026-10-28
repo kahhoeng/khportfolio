@@ -8,8 +8,8 @@
     },
     {
       "id": "video",
-      "zh": "影像",
-      "en": "Video"
+      "zh": "動態影像",
+      "en": "Motion"
     },
     {
       "id": "ui",
@@ -275,37 +275,19 @@
       "id": "via-marketing",
       "cat": "marketing",
       "year": "2024",
-      "highlight": 1,
       "title": {
         "zh": "VIA Mobile360｜產品行銷素材",
         "en": "VIA Mobile360 — Product Marketing"
       },
       "summary": {
-        "zh": "為車用 AI 安全系統產出全球市場的行銷素材：LinkedIn 視覺、Minexpo 2024 展會影片、EDM 與說明圖。",
+        "zh": "車用 AI 安全系統的全球行銷素材：LinkedIn 產品圖與 Infographic、輪播貼文、Minexpo 2024 展會影片與 EDM。",
         "en": ""
       },
-      "tools": "Infographic · 影片 · EDM",
+      "tools": "LinkedIn 視覺 · Infographic · 展會影片",
       "thumb": "assets/img/case/vm_hero.jpg",
       "cover": true,
-      "href": "projects/case.html?id=via-marketing"
-    },
-    {
-      "id": "smarthome-visual",
-      "cat": "marketing",
-      "year": "2020",
-      "highlight": 2,
-      "title": {
-        "zh": "VIA 智慧安居｜主視覺與產品型錄",
-        "en": "VIA Smart Home — Key Visual & Catalogue"
-      },
-      "summary": {
-        "zh": "智慧安居解決方案的主視覺 Banner 與產品總覽頁，和情境影片使用同一套視覺。",
-        "en": ""
-      },
-      "tools": "主視覺 · 型錄版面",
-      "thumb": "assets/img/case/sh_banner.jpg",
-      "cover": true,
-      "href": "projects/case.html?id=smarthome-visual"
+      "href": "projects/case.html?id=via-marketing",
+      "highlight": 1
     },
     {
       "id": "dfi-marketing",
