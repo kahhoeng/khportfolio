@@ -1,0 +1,180 @@
+{
+  "_readme": "通用作品內頁（projects/case.html?id=作品 id）的資料，文字整理自 Notion 作品集。overview：專案概述；challenge：關鍵挑戰；role：我負責的部分；links：外部連結。每章 layout：one＝一張一列、2＝兩張並排、3＝三張並排；photo=true 圖片滿版；videos＝YouTube 影片 [影片 ID, 標題, 封面圖檔名]。圖片放在 assets/img/case/。",
+  "cases": {
+    "digital-signage": {
+      "badge": "VIA 智慧城市 · 提案",
+      "en": "Animal Shelter — Interactive Zone & Digital Signage Proposal",
+      "meta": [["類型", "數位看板應用提案"], ["代表案例", "板橋生命教育中心"], ["工具", "Photoshop · Illustrator · SketchUp"]],
+      "overview": "2018–2021 年在 VIA 智慧城市部門負責數位看板的客戶提案，把硬體規格轉成空間配置與應用情境，涵蓋商場、文化場館、醫療與辦公等場域。這裡以板橋流浪動物之家為代表案例：收容動物多、空間與人力有限，收容品質與領養效率都面臨挑戰，因此與館方一起提出互動與看板的改善方案，也推廣生命教育。",
+      "challenge": "收容所空間有限、動物數量龐大，民眾對收容中心的既有印象也需要改變；方案要在不增加人力的前提下，提高民眾認識與認養的意願。",
+      "role": ["實地場勘，與負責人溝通需求與空間條件", "規劃產品導入方式，用 3D 建模與示意圖呈現提案", "與互動設計團隊一起制定生命教育的互動體驗"],
+      "chapters": [
+        { "title": "場勘", "text": "實地記錄犬舍、走道與現有告示，作為設備位置與動線規劃的依據。", "layout": "2", "photo": true,
+          "images": [["dsg_site1", "犬舍與走道"], ["dsg_site2", "幼犬舍"], ["dsg_site3", "籠舍上的認養資訊"], ["dsg_site4", "成犬舍走道"]] },
+        { "title": "提案規劃", "text": "在平面圖上劃出寵物挑選區與互動體驗區，對應犬舍與幼犬舍的位置。", "layout": "one", "photo": false,
+          "images": [["dsg_plan", "提案規劃｜平面配置"]] },
+        { "title": "寵物挑選區", "text": "成犬舍與幼犬舍分別設置看板與鏡頭，民眾可以即時看到毛寶貝；「每月之星」推薦優先認養。", "layout": "one", "photo": false,
+          "images": [["dsg_pick", "寵物挑選區｜看板配置"]] },
+        { "title": "互動體驗區", "text": "以 VR 頭戴裝置與大螢幕呈現毛寶貝的生活情境，讓民眾在認養前先認識牠們。", "layout": "2", "photo": false,
+          "images": [["dsg_vr1", "VR 內容環境與角色"], ["dsg_vr2", "互動體驗區配置"]] }
+      ]
+    },
+    "ikea": {
+      "badge": "VIA 智慧城市 · 客戶案例影片",
+      "en": "IKEA Taichung — B2B Customer Case Video",
+      "meta": [["類型", "B2B 客戶案例影片"], ["分工", "拍攝 · 剪輯 · 調色 · 腳本"], ["工具", "Premiere · After Effects · Illustrator · Photoshop"], ["器材", "Sony A7III · Tamron 17-28mm"]],
+      "overview": "協助智慧城市部門記錄 IKEA 台中店智慧叫號系統的導入過程，整理出實際的使用情境，透過鏡頭「轉譯」產品價值，做成一支有說服力的成功案例，讓更多潛在客戶看見解決方案帶來的效益。",
+      "challenge": "B2B 客戶關注的重點不同：PM 端要講清楚產品應用與技術特點，IKEA 端則著重導入後的實際成效與使用回饋，影片架構需要同時滿足兩邊。",
+      "role": ["跨團隊溝通：與 PM、企劃與 IKEA 窗口確認拍攝目標", "現場拍攝：觀察並捕捉系統操作的關鍵細節", "後期剪輯：把 B2B 技術流程整理成一看就懂的影片", "全流程執行：從器材準備、現場引導到交片"],
+      "chapters": [
+        { "title": "現場拍攝", "text": "除了訪談，也同步拍攝安裝、教學過程與現場使用的 B-roll，讓觀眾看懂導入的每個步驟與使用情境。", "layout": "2", "photo": true,
+          "images": [["ikea_1", "系統導入現場"], ["ikea_2", "設備安裝"], ["ikea_3", "店內人員訪談"], ["ikea_4", "店內人員訪談"]] },
+        { "title": "產品機能視覺化", "text": "用特寫鏡頭搭配動態圖解，說明自助機的功能、抗菌塗層與防碎保護。後製建立模組化素材、統一調色參數與字卡規範，確保系列影片一致。", "layout": "2", "photo": true,
+          "images": [["ikea_5", "自助機功能"], ["ikea_6", "抗菌塗層（開場）"], ["ikea_7", "抗菌塗層"], ["ikea_8", "防碎保護"]] },
+        { "title": "成果影片", "text": "客戶案例影片。", "layout": "2",
+          "videos": [["voqmLknc1No", "IKEA 台中店智慧叫號系統｜客戶案例", "ikea_1"], ["KwVtc4IxvY0", "IKEA 台中店智慧叫號系統｜產品介紹", "ikea_5"]] }
+      ]
+    },
+    "mobile360": {
+      "badge": "VIA · 教學影片",
+      "en": "Mobile360 Forklift Safety — Installation & Calibration Guide",
+      "meta": [["類型", "安裝與校正教學影片"], ["分工", "拍攝 · 剪輯 · 調色 · 腳本"], ["工具", "Premiere · After Effects · Audition"], ["器材", "Sony A7III · Tamron 17-28mm"]],
+      "overview": "為 Mobile360 AI 堆高機安全系統，與產品行銷團隊合作製作標準化的安裝與校正教學。透過拍攝、特效註解與後製，把厚重的技術手冊轉成清楚直觀的影片，協助全球經銷商與使用者順利完成安裝。",
+      "challenge": "原廠手冊內容詳盡，但閱讀門檻與時間成本高；只靠文字與平面圖，經銷商很難理解佈線與校正流程，容易安裝錯誤或工時過長。",
+      "role": ["與產品行銷團隊逐一確認安裝步驟，確保教學正確", "場勘並規劃拍攝環境：銀色主機與黑色配件容易反光或吃光，特別挑選背景讓細節清楚", "把安裝流程拆成 10 個拍攝單元，製作分鏡腳本", "初剪、模組化素材、統一調色（LUTs）與字卡規範"],
+      "chapters": [
+        { "title": "拍攝", "text": "統一相機參數、拍攝時對照分鏡清單逐一確認，每天收工後過檔並雙重備份。", "layout": "2", "photo": true,
+          "images": [["m360v_1", "片頭｜準備"], ["m360v_3", "拆箱與配件"], ["m360v_2", "裝上堆高機"], ["m360v_4", "示範車輛"]] },
+        { "title": "成果影片", "text": "10 支安裝教學影片，依步驟分段，經銷商可以隨選觀看。", "layout": "3",
+          "playlist": "PLjnWqMMI8U0L4jhDGA1xjL9K7r9-Uswmh",
+          "videos": [["WxYat1cKBYI", "教學 01", "m360v_1"], ["a8BpUVEtSXk", "教學 02", ""], ["9XOMTk8-OjE", "教學 03", ""], ["5Wq-1UGA-Pk", "教學 04", ""], ["8Kw5t34Uv6o", "教學 05", ""], ["L1eSGIlkN0E", "教學 06", ""], ["HpDPLt1C9nA", "教學 07", ""], ["6EVyfukXvMs", "教學 08", ""], ["pT6Ugb6b8e4", "教學 09", ""], ["YaokK-R-Hu8", "教學 10", ""]] }
+      ]
+    },
+    "smarthome": {
+      "badge": "VIA 智慧城市 · 情境影片",
+      "en": "VIA Smart Home — Scenario & Product Videos",
+      "meta": [["類型", "產品情境與介紹影片"], ["分工", "腳本 · 拍攝 · 剪輯 · 調色"], ["工具", "Premiere · After Effects"]],
+      "overview": "原本的業務教材與 DM 多是技術規格，經銷商推廣 Smart Home IoT 產品串聯時，需要花很多時間口頭解釋。這個專案把產品的連動邏輯與使用情境轉成影像，讓客戶直接看懂系統怎麼運作。",
+      "challenge": "產品之間的串聯與連動邏輯很難用文字呈現；要把操作邏輯轉成客戶聽得懂的生活語言，同時維持技術描述正確。",
+      "role": ["與 FAE、RD 拆解產品連動邏輯，寫成情境腳本", "規劃拍攝方案與現場素材，支援多版本剪輯", "剪輯、調色與聲效，維持系列影片一致"],
+      "chapters": [
+        { "title": "腳本與分鏡", "text": "先用分鏡表規劃每一幕的畫面、拍攝細節與道具，再進行拍攝。", "layout": "one", "photo": false,
+          "images": [["sh_story", "情境影片分鏡表"]] },
+        { "title": "成果", "text": "產出「情境體驗」與「產品介紹」兩種影片，業務與經銷商可以依場合（展覽、提案、培訓）選用；產品串聯邏輯 1–2 分鐘就能說明完畢。同一套視覺也延伸到主視覺 Banner 與產品型錄。", "layout": "2", "photo": true,
+          "videos": [["wz7AnCPJKOI", "VIA 智慧安居｜情境影片", "sh_v1"]],
+          "images": [["sh_banner", "主視覺 Banner"], ["sh_cat", "產品總覽"]] }
+      ]
+    },
+    "smarthome-guide": {
+      "badge": "VIA 智慧城市 · 教學影片",
+      "en": "VIA Smart Home — Setup Tutorial Videos",
+      "meta": [["類型", "產品設定教學影片"], ["分工", "腳本 · 剪輯 · 動態字卡"], ["工具", "Premiere · After Effects"]],
+      "overview": "把 Smart Home 產品的安裝設定流程，從技術手冊轉成分段式的影音教學，讓經銷商與使用者能依需求找到對應步驟。",
+      "challenge": "原廠手冊冗長艱澀，施工現場也難以即時查閱；單靠文字與平面圖，難以呈現軟硬體設定細節，容易造成操作誤判、拉長部署工時。",
+      "role": ["分析操作路徑，把冗長流程拆成獨立的教學段落並寫腳本", "取得原生螢幕錄影素材，確認畫面與步驟正確", "剪輯並用動態字卡與局部高亮標示關鍵操作點"],
+      "chapters": [
+        { "title": "成果", "text": "一套完整的 Master Guide，加上依功能拆分的模組化短片（保全系統、社區物業、監看、訊息通知、系統設定、通話功能），安裝時可以隨選即看。", "layout": "one", "photo": true,
+          "images": [["sh_v2", "安裝情境說明"]] }
+      ]
+    },
+    "via-web": {
+      "badge": "VIA · 官網改版",
+      "en": "VIA Website Redesign — UI & Information Architecture",
+      "meta": [["類型", "企業官網改版"], ["範圍", "資訊架構 · 線框圖 · Mockup · 設計規範"], ["工具", "Adobe XD · Photoshop"]],
+      "links": [["VIA 官網", "https://www.viatech.com/en/home-en/"]],
+      "overview": "配合威盛的品牌轉型參與官網 UI/UX 改版。舊網站架構無法承載新的「產業解決方案」定位，這次重新規劃了資訊分類與頁面呈現方式。",
+      "challenge": "公司策略聚焦車載安全系統，同時把智慧城市的顯示方案與智慧居家產品納入官網；產品從單一硬體跨到多元場域，需要一套能同時容納三類解決方案的資訊架構。",
+      "role": ["盤點產品資料，依架構判斷各頁的資訊層級並編排", "繪製線框圖與瀏覽路徑，從首頁順暢導到解決方案頁", "蒐集參考、提出視覺提案並製作高保真 Mockup", "建立色彩、字體、間距與元件的設計規範"],
+      "chapters": [
+        { "title": "功能地圖", "text": "捨棄以「硬體規格」分類的邏輯，改以「解決方案」與「產業應用」為主軸建立導覽結構。", "layout": "2", "photo": false,
+          "images": [["web_ia1", "解決方案分類"], ["web_ia2", "頁面區塊規劃"]] },
+        { "title": "模組化線框圖", "text": "預先設計涵蓋所有使用情境的線框圖模組，不同資訊區塊可以標準化地快速套用，提升建置效率。", "layout": "one", "photo": false,
+          "images": [["web_wf", "線框圖模組"]] },
+        { "title": "Mockup 與改版對照", "text": "依線框圖與設計規範繪製關鍵頁面 Mockup。改版後大量使用白底與卡片式版面，以 Overview、Features、Use Cases、Documentation 分段，讓頁面更專注在產品介紹與資源。", "layout": "2", "photo": false,
+          "images": [["web_home", "首頁 Mockup"], ["web_fss", "Mobile360 FSS 產品頁 Mockup"], ["web_weld", "解決方案頁｜改版後"], ["web_landing", "Mobile360 登陸頁"]] }
+      ]
+    },
+    "via-next": {
+      "badge": "VIA 集團子公司 · 官網",
+      "en": "VIA NEXT — UX Architecture & Wireframes",
+      "meta": [["類型", "子公司官網建置"], ["範圍", "線框圖 · 開發協作"], ["工具", "Adobe XD"]],
+      "links": [["VIA NEXT 官網", "https://www.vianextech.com/tc/home-tc/"]],
+      "overview": "威盛集團子公司的官方網站建置。開發時程緊迫，由行銷部主導，在子公司既有的資訊架構與產品需求上，快速轉成可執行的線框圖，讓專案在高壓節奏下準確落地，也給開發端清楚的建置標準。",
+      "challenge": "從 0 到 1 建立數位門面；把長篇純文字整理成適合網頁閱讀的區塊；為了如期上線，直接進入線框圖並採用 Desktop-first。",
+      "role": ["依既有架構把原始文字轉成頁面佈局，提高資訊可讀性", "與前端開發即時同步，確認實作可行並微調互動方式"],
+      "chapters": [
+        { "title": "主視覺", "text": "以晶片與電路為主題的主視覺。", "layout": "one", "photo": true,
+          "images": [["next_kv", "主視覺"]] },
+        { "title": "線框圖", "text": "首頁、核心能力、解決方案與關於我們等頁面的線框圖。", "layout": "3", "photo": false,
+          "images": [["next_home", "首頁"], ["next_core", "核心能力"], ["next_sol", "解決方案"], ["next_dm", "解決方案內頁"], ["next_about", "關於我們"]] }
+      ]
+    },
+    "skyrec": {
+      "badge": "研究所碩二實習 · SkyREC",
+      "en": "SkyREC Insight — BI Dashboard UX Optimization",
+      "meta": [["類型", "BI 數據分析系統 UX 優化"], ["範圍", "Persona · 功能地圖 · UI Flow · 線框圖"], ["工具", "Axure RP · Photoshop"]],
+      "links": [["Wireframe Prototype（Axure）", "http://rpfzm9.axshare.com"]],
+      "overview": "在 SkyREC 實習期間參與 BI 數據分析系統 SkyREC Insight 的 UX 優化。當時版本功能多、介面資訊量過大，沒有依使用者的操作邏輯整理。我盤點原始的資訊架構與 UI Flow，找出核心痛點，用 Axure RP 設計一套標準化線框圖，作為之後改版的設計規範。",
+      "challenge": "缺少具全局觀的 Dashboard，切換單店與多店數據時容易搞不清楚層級；功能與資訊密度高，操作路徑複雜；選單沒有分類，資訊同時出現造成視覺疲勞。",
+      "role": ["調研主流數據分析系統，建立 Persona 定義優化順序", "重組資訊架構與資料層級，適應不同職務的分析需求", "繪製線框圖並重新規劃操作路徑，從 Dashboard 一路深入細部資料"],
+      "chapters": [
+        { "title": "Persona", "text": "建立營運部經理、總經理、店長與數據分析師四種角色，作為與主管討論痛點與優先順序的基準。", "layout": "2", "photo": false,
+          "images": [["sky_p1", "Persona｜營運部經理"], ["sky_p2", "Persona｜總經理"], ["sky_p3", "Persona｜店長"], ["sky_p4", "Persona｜數據分析師"]] },
+        { "title": "功能地圖與 UI Flow", "text": "全面盤點原始功能，畫出功能地圖找出要簡化或重組的區塊，再把各頁面串成操作流程。", "layout": "2", "photo": false,
+          "images": [["sky_fm2", "Insight 2.5 功能地圖"], ["sky_fm", "Insight X 功能地圖"], ["sky_flow2", "Insight 2.5 UI Flow"], ["sky_flow", "Insight X UI Flow"]] },
+        { "title": "線框圖與對照", "text": "新增全局概覽的 Dashboard，登入後就能掌握關鍵指標；選單改為層級收摺，降低跨分店查詢的複雜度。", "layout": "2", "photo": false,
+          "images": [["sky_home", "主系統頁面"], ["sky_dash", "單店分析"], ["sky_compare", "首頁｜線框圖與原介面對照"], ["sky_adv", "系統優勢說明"]] }
+      ]
+    },
+    "rma": {
+      "badge": "VIA 智慧城市 · 服務設計",
+      "en": "VIA Smart Home — Shipping & RMA Service Design",
+      "meta": [["類型", "服務設計 · 流程標準化"], ["範圍", "出貨流程 · 保固政策 · SOP · 表單 · FAQ"], ["工具", "InDesign"]],
+      "overview": "智慧建築解決方案隨著建案落地、出貨量大增，我負責建構並優化出貨與退換貨（RMA）的標準作業流程，用標準化的範本與跨部門權責劃分，讓產品規模化之後售後服務仍維持一致的品質。",
+      "challenge": "初期的簡易流程無法因應規模化，下游系統整合商加入後溝通成本升高；公司既有的 RMA 系統是為工業電腦設計，不適用 IoT 產品；代理商、SI、建商之間沒有統一的執行標準。",
+      "role": ["與 PM、業務、業助釐清各自在流程中的責任", "統整並標準化出貨與 RMA 流程及文件", "設計 RMA 表單、撰寫 SOP，讓新同仁快速上手"],
+      "chapters": [
+        { "title": "標準化文件", "text": "建立 5 份關鍵文件：出貨流程說明、維修保固政策、內部 RMA 流程 SOP、RMA 表單與 FAQ。圖為內部維修流程（已模糊處理）。", "layout": "one", "photo": false,
+          "images": [["vm_sop", "內部維修流程 SOP"]] }
+      ]
+    },
+    "via-marketing": {
+      "badge": "VIA · 產品行銷",
+      "en": "VIA Mobile360 Safety System — Marketing Assets",
+      "meta": [["類型", "全球市場行銷素材"], ["通路", "LinkedIn · Minexpo 2024 · 官網 · EDM"], ["工具", "Illustrator · Photoshop · After Effects · Premiere"]],
+      "links": [["LinkedIn｜Heavy Equipment", "https://www.linkedin.com/posts/viatechnologies_innovation-technology-safetyfirst-activity-7226950294801170432-ejBN"], ["LinkedIn｜Seatbelt Sensor", "https://www.linkedin.com/posts/viatechnologies_workplacesafety-equipmentsafety-oshacompliance-activity-7239634575105105921-fGyR"], ["LinkedIn｜Skid-Steers", "https://www.linkedin.com/posts/viatechnologies_via-safety-solution-for-skid-steers-activity-7257391142894264323-YXZI"]],
+      "overview": "為 VIA Mobile360 AI 安全系統產出全球市場的行銷素材，涵蓋 LinkedIn、Minexpo 2024 展會與官網。與企劃文案團隊協作，把技術規格轉成影片、Infographic 等視覺素材，並維持跨通路的一致性。",
+      "challenge": "大型挖掘機、堆高機在台灣很少見，無法實地拍攝，只能依賴美國同事提供零散的素材；AI 視覺避障與感測器融合的規格生硬，B2B 決策者很難快速理解商業價值。",
+      "role": ["建立回饋機制，主動確認跨國素材的技術描述是否正確", "與 PM 確認 Sales Kit 的技術描述，避免與實際規格不符", "建議呈現方式：影片搭配 UI 畫面、用 Infographic 拆解 Sensor Fusion", "篩選、初剪並後製跨國素材"],
+      "chapters": [
+        { "title": "LinkedIn 視覺素材", "text": "把 AI 技術文章轉成易讀的 Infographic，並把偵測對象（人、物、車）模組化分類。", "layout": "3", "photo": true,
+          "images": [["vm_hero", "工地安全主視覺"], ["vm_shield", "Advanced Sensor Fusion"], ["vm_seat", "Seatbelt Sensor"]] },
+        { "title": "輪播貼文", "text": "以職場事故數據開場，引導到免費諮詢。", "layout": "3", "photo": false,
+          "images": [["vm_rising1", "輪播 1"], ["vm_rising2", "輪播 2"], ["vm_rising3", "輪播 3"], ["vm_rising4", "輪播 4"], ["vm_rising5", "輪播 5"]] },
+        { "title": "Minexpo 2024 展會", "text": "配合展前、展中、展後產出素材：展前以 LinkedIn 與 EDM 預熱；展中 10 支功能影片加 1 支總覽影片，用 UI 畫面與實際場景演示；展後把現場素材剪成活動回顧影片。", "layout": "3", "photo": true,
+          "images": [["vm_cam", "Flexible Camera Placement"], ["vm_blue", "Blue Box Highlights"], ["vm_truck", "Truck Bed Sensor"]] },
+        { "title": "EDM 與說明圖", "text": "電子報版面，以及把人員偵測範圍畫成一張就看得懂的說明圖。", "layout": "2", "photo": false,
+          "images": [["vm_edm", "EDM 版面"], ["vm_zone", "人員偵測範圍說明"]] }
+      ]
+    },
+    "dfi-marketing": {
+      "badge": "DFI · 產品行銷",
+      "en": "DFI — Product Articles & One-page Site",
+      "meta": [["類型", "B2B 產品行銷"], ["範圍", "技術文章 · LinkedIn · HubSpot 專頁 · SOP"], ["工具", "HubSpot"]],
+      "links": [["CRA 合規專頁", "https://pages.dfi.com/zh-tw/cyber-resilience-act-cra-compliance"]],
+      "overview": "2026 年在友通資訊擔任高級產品行銷專員，負責 B2B 工業電腦產品線的對外文章與網頁建置，橫跨技術文章、HubSpot 部落格、社群素材，對象包含工程端、採購端與海外客戶。",
+      "challenge": "規格表回答不了工程師與採購真正在意的問題：塞不塞得進機構、散熱撐不撐得住、I/O 夠不夠；同一份產品資訊也要在部落格、EDM、LinkedIn 之間保持一致。",
+      "role": ["為 ASL600 與 EB100-MTU 撰寫新品文章：先提出實務部署的疑慮，再用規格回應", "製作 LinkedIn 貼文素材", "在 HubSpot 建置歐盟 CRA 合規專頁繁中版：頁面框架、區塊配置與錨點導覽", "HubSpot 聯絡人分群，並撰寫公司綁定的操作說明"],
+      "chapters": [
+        { "title": "產品技術文章", "text": "ASL600（SMARC 2.2 模組）與 EB100-MTU（無風扇工業電腦）的新品文章。", "layout": "2", "photo": false,
+          "images": [["dfi_blog1", "ASL600 文章"], ["dfi_blog2", "EB100-MTU 文章"]] },
+        { "title": "LinkedIn 貼文", "text": "新品上市貼文：一句話標語、規格重點與連結。", "layout": "2", "photo": false,
+          "images": [["dfi_li1", "ASL600 新品貼文"], ["dfi_li2", "EB100-MTU 新品貼文"]] },
+        { "title": "CRA 合規專頁", "text": "在 HubSpot 建置的一頁式網頁，文案與視覺由文案端與設計端提供。", "layout": "one", "photo": false,
+          "images": [["dfi_cra", "CRA 專頁"]] },
+        { "title": "HubSpot SOP 文件", "text": "名單管理的逐步教學，讓團隊照著操作（公司名稱已模糊處理）。", "layout": "one", "photo": false,
+          "images": [["dfi_sop", "Step by Step Guide"]] }
+      ]
+    }
+  }
+}

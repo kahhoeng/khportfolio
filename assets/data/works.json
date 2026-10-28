@@ -15,6 +15,11 @@
       "id": "ui",
       "zh": "UX/UI 設計",
       "en": "UX/UI Design"
+    },
+    {
+      "id": "marketing",
+      "zh": "行銷設計",
+      "en": "Marketing Design"
     }
   ],
   "works": [
@@ -32,7 +37,7 @@
         "en": ""
       },
       "tools": "AutoCAD",
-      "thumb": "assets/img/work/studio_02_layout.png",
+      "thumb": "assets/img/work/studio_render.jpg",
       "cover": false,
       "href": "projects/studio-grid.html",
       "highlight": 1
@@ -51,7 +56,7 @@
         "en": ""
       },
       "tools": "AutoCAD",
-      "thumb": "assets/img/work/emerald_02_layout.png",
+      "thumb": "assets/img/work/emerald_render.jpg",
       "cover": false,
       "href": "projects/emerald.html"
     },
@@ -112,17 +117,17 @@
       "cat": "space",
       "year": "2018–2021",
       "title": {
-        "zh": "VIA 數位看板提案集",
+        "zh": "VIA 數位看板提案｜板橋生命教育中心",
         "en": "VIA Digital Signage Proposals"
       },
       "summary": {
-        "zh": "把數位看板硬體規格，轉成商場、文化場館、醫療、辦公等場域的應用場景提案與空間配置圖，支援智慧城市專案落地。",
+        "zh": "把數位看板的硬體規格轉成空間配置與應用情境。代表案例：為板橋流浪動物之家規劃寵物挑選區與 VR 互動體驗區。",
         "en": ""
       },
-      "tools": "提案視覺 · 空間配置圖",
-      "thumb": "",
-      "cover": true,
-      "href": ""
+      "tools": "提案規劃 · 3D 示意 · 空間配置",
+      "thumb": "assets/img/case/dsg_pick.jpg",
+      "cover": false,
+      "href": "projects/case.html?id=digital-signage"
     },
     {
       "id": "ikea",
@@ -133,13 +138,14 @@
         "en": "IKEA Taichung — Customer Case Video"
       },
       "summary": {
-        "zh": "記錄系統導入過程，梳理實際使用情境，轉成具說服力的 B2B 成功案例影片。",
+        "zh": "記錄系統導入過程，整理實際使用情境，用鏡頭把產品價值轉成有說服力的 B2B 成功案例影片。",
         "en": ""
       },
       "tools": "拍攝 · 剪輯 · 調色 · 腳本",
-      "thumb": "",
+      "thumb": "assets/img/case/ikea_1.jpg",
       "cover": true,
-      "href": ""
+      "href": "projects/case.html?id=ikea",
+      "highlight": 1
     },
     {
       "id": "mobile360",
@@ -150,47 +156,67 @@
         "en": "Mobile360 — Installation Guide Videos"
       },
       "summary": {
-        "zh": "把繁瑣的安裝與校正手冊，轉成標準化教學影片與 SOP。10 份安裝指南統一全球部署基準，FAE 現場支援需求減少約三成。",
+        "zh": "把厚重的安裝與校正手冊拆成 10 支教學影片，協助全球經銷商與使用者順利完成安裝。",
         "en": ""
       },
       "tools": "拍攝 · 剪輯 · 調色 · 腳本",
-      "thumb": "",
+      "thumb": "assets/img/case/m360v_2.jpg",
       "cover": true,
-      "href": ""
+      "href": "projects/case.html?id=mobile360",
+      "highlight": 2
     },
     {
       "id": "smarthome",
       "cat": "video",
       "year": "2020",
       "title": {
-        "zh": "VIA Smart Home｜情境與介紹影片",
+        "zh": "VIA Smart Home｜情境與產品影片",
         "en": "VIA Smart Home — Scenario Videos"
       },
       "summary": {
-        "zh": "把 IoT 產品的連動邏輯與使用情境轉成影像，降低業務向客戶解釋複雜硬體功能的門檻。",
+        "zh": "把 IoT 產品的連動邏輯與使用情境轉成影像，1–2 分鐘就能讓客戶看懂系統怎麼運作。",
         "en": ""
       },
-      "tools": "拍攝 · 剪輯 · 調色 · 腳本",
-      "thumb": "",
+      "tools": "腳本 · 拍攝 · 剪輯 · 調色",
+      "thumb": "assets/img/case/sh_banner.jpg",
       "cover": true,
-      "href": ""
+      "href": "projects/case.html?id=smarthome",
+      "highlight": 3
+    },
+    {
+      "id": "smarthome-guide",
+      "cat": "video",
+      "year": "2020",
+      "title": {
+        "zh": "VIA Smart Home｜產品設定教學影片",
+        "en": "VIA Smart Home — Setup Tutorials"
+      },
+      "summary": {
+        "zh": "把安裝設定流程從技術手冊轉成分段式影音教學，安裝時可以隨選即看。",
+        "en": ""
+      },
+      "tools": "腳本 · 剪輯 · 動態字卡",
+      "thumb": "assets/img/case/sh_v2.jpg",
+      "cover": true,
+      "href": "projects/case.html?id=smarthome-guide"
     },
     {
       "id": "via-web",
       "cat": "ui",
       "year": "2022",
       "title": {
-        "zh": "VIA 官網改版｜介面與內容編排",
+        "zh": "VIA 官網改版｜介面設計與資訊架構",
         "en": "VIA Website Redesign"
       },
       "summary": {
-        "zh": "配合品牌轉型重新規劃資訊分類與導覽邏輯，讓訪客在三次點擊內找到需要的資訊。",
+        "zh": "配合品牌轉型，以「解決方案」與「產業應用」重建官網的資訊架構，並完成線框圖、Mockup 與設計規範。",
         "en": ""
       },
-      "tools": "UI/UX · Wireframe · Prototype",
-      "thumb": "",
+      "tools": "Adobe XD · Wireframe · Mockup",
+      "thumb": "assets/img/case/web_landing.jpg",
       "cover": true,
-      "href": ""
+      "href": "projects/case.html?id=via-web",
+      "highlight": 1
     },
     {
       "id": "via-next",
@@ -201,13 +227,85 @@
         "en": "VIA NEXT — IA & Wireframes"
       },
       "summary": {
-        "zh": "在緊迫時程下，把子公司既有的資訊架構快速轉成開發端可執行的線框圖。",
+        "zh": "在緊迫的時程下，把子公司既有的資訊架構快速轉成開發端可直接執行的線框圖。",
         "en": ""
       },
-      "tools": "UI/UX · Wireframe",
-      "thumb": "",
+      "tools": "Adobe XD · Wireframe",
+      "thumb": "assets/img/case/next_kv.jpg",
       "cover": true,
-      "href": ""
+      "href": "projects/case.html?id=via-next",
+      "highlight": 2
+    },
+    {
+      "id": "skyrec",
+      "cat": "ui",
+      "year": "2017–2018",
+      "title": {
+        "zh": "SkyREC Insight｜BI 系統 UX 優化",
+        "en": "Skyrec Insight — Analytics Platform"
+      },
+      "summary": {
+        "zh": "實習期間為零售 BI 數據分析系統做 UX 優化：建立 Persona、重整功能地圖與 UI Flow，並設計標準化的 Dashboard 線框圖。",
+        "en": ""
+      },
+      "tools": "Axure RP · Persona · Wireframe",
+      "thumb": "assets/img/case/sky_dash.jpg",
+      "cover": true,
+      "href": "projects/case.html?id=skyrec",
+      "highlight": 3
+    },
+    {
+      "id": "rma",
+      "cat": "ui",
+      "year": "2020",
+      "title": {
+        "zh": "VIA Smart Home｜出貨與 RMA 服務設計",
+        "en": "VIA Smart Home — RMA Service Design"
+      },
+      "summary": {
+        "zh": "為智慧建築方案建立出貨與退換貨的標準流程：權責劃分、保固政策、SOP、RMA 表單與 FAQ。",
+        "en": ""
+      },
+      "tools": "Service Design · SOP",
+      "thumb": "assets/img/case/vm_sop.jpg",
+      "cover": false,
+      "href": "projects/case.html?id=rma"
+    },
+    {
+      "id": "via-marketing",
+      "cat": "marketing",
+      "year": "2024",
+      "highlight": 1,
+      "title": {
+        "zh": "VIA Mobile360｜產品行銷素材",
+        "en": "VIA Mobile360 — Product Marketing"
+      },
+      "summary": {
+        "zh": "為車用 AI 安全系統產出全球市場的行銷素材：LinkedIn 視覺、Minexpo 2024 展會影片、EDM 與說明圖。",
+        "en": ""
+      },
+      "tools": "Infographic · 影片 · EDM",
+      "thumb": "assets/img/case/vm_hero.jpg",
+      "cover": true,
+      "href": "projects/case.html?id=via-marketing"
+    },
+    {
+      "id": "dfi-marketing",
+      "cat": "marketing",
+      "year": "2026",
+      "highlight": 2,
+      "title": {
+        "zh": "DFI｜產品文章與一頁式網頁",
+        "en": "DFI — Product Marketing & Localization"
+      },
+      "summary": {
+        "zh": "工業電腦新品的技術文章與 LinkedIn 貼文、HubSpot 建置的歐盟 CRA 合規專頁，以及名單管理 SOP。",
+        "en": ""
+      },
+      "tools": "HubSpot · LinkedIn · Blog",
+      "thumb": "assets/img/case/dfi_blog1.jpg",
+      "cover": true,
+      "href": "projects/case.html?id=dfi-marketing"
     }
   ]
 }

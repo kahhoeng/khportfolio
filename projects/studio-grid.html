@@ -75,6 +75,8 @@
     .plate { margin: 0; background: var(--plate); display: flex; flex-direction: column; }
     .plate__btn { border: 0; padding: clamp(14px, 3.4cqi, 40px); background: none; cursor: zoom-in; display: grid; place-items: center; flex: 1; width: 100%; }
     .plate__btn img { max-height: min(62vh, 620px); width: auto; object-fit: contain; mix-blend-mode: multiply; }
+    .plate__btn--render img { mix-blend-mode: normal; }
+    .plate:has(.plate__btn--render) { background: #fff; }
     .plate figcaption { display: flex; justify-content: space-between; gap: 12px; padding: 8px 12px; border-top: 1px solid var(--rule); background: var(--bg); font-family: var(--f-mono); font-size: 11px; color: var(--ink-2); }
     .plate figcaption b { font-family: var(--f-body); font-weight: 500; color: var(--ink); }
 
@@ -173,8 +175,8 @@
         </div>
         <div class="cell span-3" style="padding:0">
           <figure class="plate">
-            <button class="plate__btn" type="button" data-zoom data-caption="平面配置圖 1:30"><img src="../assets/img/work/studio_02_layout.png" alt="板橋小套房平面配置圖"></button>
-            <figcaption><b>平面配置圖</b><span>02 / 08 · 1:30</span></figcaption>
+            <button class="plate__btn plate__btn--render" type="button" data-zoom data-caption="平面彩圖"><img src="../assets/img/work/studio_render.jpg" alt="板橋小套房平面彩圖：木地板、床鋪、書桌與浴室配置"></button>
+            <figcaption><b>平面彩圖</b><span>RENDER · 依平面配置圖</span></figcaption>
           </figure>
         </div>
       </div>

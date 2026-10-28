@@ -75,6 +75,8 @@
     .plate { margin: 0; background: var(--plate); display: flex; flex-direction: column; }
     .plate__btn { border: 0; padding: clamp(14px, 3.4cqi, 40px); background: none; cursor: zoom-in; display: grid; place-items: center; flex: 1; width: 100%; }
     .plate__btn img { max-height: min(62vh, 620px); width: auto; object-fit: contain; mix-blend-mode: multiply; }
+    .plate__btn--render img { mix-blend-mode: normal; }
+    .plate:has(.plate__btn--render) { background: #fff; }
     .plate figcaption { display: flex; justify-content: space-between; gap: 12px; padding: 8px 12px; border-top: 1px solid var(--rule); background: var(--bg); font-family: var(--f-mono); font-size: 11px; color: var(--ink-2); }
     .plate figcaption b { font-family: var(--f-body); font-weight: 500; color: var(--ink); }
 
@@ -172,7 +174,7 @@
         </div>
       </div>
 
-      <!-- 概要＋現況／配置比較 -->
+      <!-- 概要＋平面彩圖 -->
       <div class="row">
         <div class="cell">
           <dl class="meta">
@@ -184,6 +186,29 @@
             <div><dt>範圍</dt><dd>現況丈量 · 平面配置</dd></div>
           </dl>
         </div>
+        <div class="cell span-3" style="padding:0">
+          <figure class="plate">
+            <button class="plate__btn plate__btn--render" type="button" data-zoom data-caption="平面彩圖"><img src="../assets/img/work/emerald_render.jpg" alt="綠翡翠平面彩圖：客廳、圓桌餐廳、廚房與三間臥室"></button>
+            <figcaption><b>平面彩圖</b><span>RENDER · 依平面配置圖</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- 目標／做法／成果（草稿，待確認） -->
+      <div class="row story-row">
+        <div class="cell"><span class="label">PROCESS</span></div>
+        <div class="cell story"><h3>設計目標</h3><p>以一戶預售屋為對象，先把建商交屋的現況完整丈量出來，再依生活動線重新規劃平面。</p></div>
+        <div class="cell story"><h3>做法</h3><p>先畫平面現況圖，標出各空間淨尺寸、門窗與天花高度；再以中央的圓桌餐廳串起客廳、吧檯與廚房，公共區鋪六角磚，臥室區改鋪木地板。</p></div>
+        <div class="cell story"><h3>成果</h3><p>平面現況圖與平面配置圖各一張，比例 1:80，圖框統一使用 K.H Design 的標準格式。</p></div>
+      </div>
+
+      <!-- 現況 ⟷ 配置 拖曳比較 -->
+      <div class="row">
+        <div class="cell chapter__side"><div class="sticky">
+          <span class="chapter__no">COMPARE</span>
+          <h2 class="chapter__title">現況 ⟷ 配置</h2>
+          <p class="sheet__text">兩張圖用同一個範圍裁切，左右拖曳中間的方塊，就能看到同一戶從交屋現況變成配置。</p>
+        </div></div>
         <div class="cell span-3" style="padding:0">
           <figure class="plate" style="margin:0">
             <div class="cmp" id="cmp" style="--x:50%">
@@ -199,14 +224,6 @@
             <figcaption><b>現況 ⟷ 配置</b><span class="cmp__hint">拖曳中間的方塊比較 · 1:80</span></figcaption>
           </figure>
         </div>
-      </div>
-
-      <!-- 目標／做法／成果（草稿，待確認） -->
-      <div class="row story-row">
-        <div class="cell"><span class="label">PROCESS</span></div>
-        <div class="cell story"><h3>設計目標</h3><p>以一戶預售屋為對象，先把建商交屋的現況完整丈量出來，再依生活動線重新規劃平面。</p></div>
-        <div class="cell story"><h3>做法</h3><p>先畫平面現況圖，標出各空間淨尺寸、門窗與天花高度；再以中央的圓桌餐廳串起客廳、吧檯與廚房，公共區鋪六角磚，臥室區改鋪木地板。</p></div>
-        <div class="cell story"><h3>成果</h3><p>平面現況圖與平面配置圖各一張，比例 1:80，圖框統一使用 K.H Design 的標準格式。</p></div>
       </div>
 
       <div id="chapters" style="display:contents"></div>
