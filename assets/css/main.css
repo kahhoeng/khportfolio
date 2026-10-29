@@ -580,7 +580,7 @@ p { margin: 0; text-wrap: pretty; }
 }
 
 /* Work Index 分段固定尺寸：黑框、圖框、列高只在斷點換級，同一範圍內拖拉視窗不會變。
-   圖框固定 16:9，圖片完整顯示（不裁切、不變形）。 */
+   圖框固定 16:9：照片等比例填滿（從中間裁切），圖面類完整顯示在淺色底板上。 */
 @container wx (min-width: 700px) {
   .wx { --wx-box: 400px; --wx-frame: 352px; height: 520px; }
   .wx__item.is-open { flex: 0 0 var(--wx-box); }
