@@ -3,9 +3,9 @@
    每個功能都先檢查頁面上有沒有對應元素，所以首頁和作品內頁共用這支檔案。
    ========================================================================== */
 import { initI18n } from './i18n.js';
-import { initWorks } from './works.js?v=20261029a';
-import { initWorksIndex } from './works-index.js?v=20261029a';
-import { initLightbox } from './lightbox.js?v=20261029a';
+import { initWorks } from './works.js?v=20261029b';
+import { initWorksIndex } from './works-index.js?v=20261029b';
+import { initLightbox } from './lightbox.js?v=20261029b';
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -171,7 +171,7 @@ function initIdleShift() {
 function initTimelineLazy() {
   const host = document.querySelector('[data-timeline]');
   if (!host) return;
-  const load = () => import('./timeline.js?v=20261029a')
+  const load = () => import('./timeline.js?v=20261029b')
     .then((m) => m.initTimeline(host))
     .catch((err) => {
       console.error(err);
