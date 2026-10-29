@@ -133,7 +133,34 @@ export async function initWorksIndex() {
   }
 
   // 每個類別一列：最多 3 件（highlight 數字小的優先，其餘照資料順序），超過才加 More
+  // landing page（data-track）：照 works.json 的 tracks 設定分列，不看 highlight／home
+  function renderTrack(track) {
+    const byId = new Map(data.works.map((w, i) => [w.id, { w, i }]));
+    return track.rows.map((row) => {
+      const tid = list.dataset.track;
+      const works = row.works.map((id) => byId.get(id)).filter(Boolean)
+        .map(({ w, i }) => ({ w: w.href ? { ...w, href: w.href + (w.href.includes('?') ? '&' : '?') + 't=' + tid } : w, i }));
+      if (!works.length) return null;
+      const shown = works.length <= 4 ? works : works.slice(0, 3);
+      const rest = works.filter((x) => !shown.includes(x));
+      const ul = h('ul', { class: 'wx', 'aria-label': row.zh }, shown.map(({ w }, k) => workItem(w, k)));
+      if (rest.length) ul.append(moreItem({ id: row.cat || row.id, zh: row.zh, en: row.en }, rest));
+      ul.style.setProperty('--n', ul.children.length);
+      setOpen(ul.firstElementChild);
+      return h('section', { class: 'wx-row', 'aria-label': row.zh }, [
+        h('header', { class: 'wx-row__head' }, [
+          h('span', { class: 'wx-row__tag', text: `[ ${String(row.en || row.id).toUpperCase()} ]` }),
+          h('h3', { class: 'wx-row__name', text: row.zh }),
+          h('span', { class: 'wx-row__count', text: `/ ${pad(works.length)}` }),
+        ]),
+        ul,
+      ]);
+    }).filter(Boolean);
+  }
+
   function render() {
+    const track = list.dataset.track && data.tracks && data.tracks[list.dataset.track];
+    if (track) { list.replaceChildren(...renderTrack(track)); syncHint(); return; }
     const rows = data.categories.map((cat) => {
       const works = data.works.map((w, i) => ({ w, i })).filter(({ w }) => w.cat === cat.id)
         .sort((a, b) => ((a.w.highlight ?? 99) - (b.w.highlight ?? 99)) || (a.i - b.i));

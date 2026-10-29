@@ -1,5 +1,5 @@
 {
-  "_readme": "作品清單。新增作品：複製一筆、改內容即可。cat 可用 space（空間）、video（影像）、ui（介面）。thumb 留空會顯示灰色方塊佔位。cover=true 代表縮圖要裁切填滿（照片、3D 圖）；線稿請用 false。href 留空代表內頁還沒做。 feature=true 會變成黑色主打卡（建議只放一件）。 highlight=1/2/3 決定作品在首頁該類別那一列的順序；每列最多顯示 3 件，超過的收進 More，並可在 works.html 依類別查看。 home=false 代表不放在首頁 Work Index，只出現在 All Works。",
+  "_readme": "作品清單。新增作品：複製一筆、改內容即可。cat 可用 space（空間）、video（影像）、ui（介面）。thumb 留空會顯示灰色方塊佔位。cover=true 代表縮圖要裁切填滿（照片、3D 圖）；線稿請用 false。href 留空代表內頁還沒做。 feature=true 會變成黑色主打卡（建議只放一件）。 highlight=1/2/3 決定作品在首頁該類別那一列的順序；每列最多顯示 3 件，超過的收進 More，並可在 works.html 依類別查看。 home=false 代表不放在首頁 Work Index，只出現在 All Works。 tracks：landing page 用（interior.html／marketing.html），每列依 works 清單順序列出作品；4 件以內全部顯示，超過顯示 3 件＋More。",
   "categories": [
     {
       "id": "space",
@@ -307,5 +307,71 @@
       "href": "projects/case.html?id=dfi-marketing",
       "home": false
     }
-  ]
+  ],
+  "tracks": {
+    "interior": {
+      "rows": [
+        {
+          "id": "space-project",
+          "zh": "空間設計",
+          "en": "Space Design",
+          "cat": "space",
+          "works": [
+            "studio",
+            "emerald",
+            "digital-signage"
+          ]
+        },
+        {
+          "id": "space-detail",
+          "zh": "家具與室內細部",
+          "en": "Furniture & Detail",
+          "cat": "space",
+          "works": [
+            "cabinet",
+            "bedroom",
+            "bathroom"
+          ]
+        }
+      ]
+    },
+    "marketing": {
+      "rows": [
+        {
+          "id": "mk-video",
+          "zh": "動態影像",
+          "en": "Motion",
+          "cat": "video",
+          "works": [
+            "ikea",
+            "mobile360",
+            "smarthome",
+            "smarthome-guide"
+          ]
+        },
+        {
+          "id": "mk-visual",
+          "zh": "行銷設計",
+          "en": "Marketing Design",
+          "cat": "marketing",
+          "works": [
+            "via-marketing",
+            "dfi-marketing",
+            "digital-signage"
+          ]
+        },
+        {
+          "id": "mk-web",
+          "zh": "網站與資訊設計",
+          "en": "Web & Information Design",
+          "cat": "ui",
+          "works": [
+            "via-web",
+            "via-next",
+            "rma"
+          ]
+        }
+      ]
+    }
+  }
 }

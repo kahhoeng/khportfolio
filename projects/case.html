@@ -169,6 +169,7 @@
   </style>
 </head>
 <body>
+<script src="../assets/js/track.js?v=20261029a"></script>
 <!-- 通用作品內頁：網址 case.html?id=作品id，內容讀 assets/data/works.json 與 cases.json -->
 <div class="wrap">
   <article class="page" aria-labelledby="p-title">
@@ -212,9 +213,13 @@
   document.getElementById('loading').remove();
 
   const cat = works.categories.find((x) => x.id === w.cat) || {};
-  const same = works.works.filter((x) => x.cat === w.cat);
+  // 從 landing page 進來時，上下頁只在同一個領域裡循環
+  const T = window.KHTrack || {};
+  const tl = T.list ? T.list(works) : null;
+  const same = tl && tl.includes(w) ? tl : works.works.filter((x) => x.cat === w.cat);
+  const tlabel = tl && tl.includes(w) ? (T.id === 'interior' ? 'INTERIOR DESIGN' : 'MARKETING DESIGN') : String(cat.en || '').toUpperCase();
   document.title = `${w.title.zh}｜K.H Design`;
-  document.getElementById('p-index').textContent = `${pad(same.indexOf(w) + 1)} / ${pad(same.length)} · ${String(cat.en || '').toUpperCase()}`;
+  document.getElementById('p-index').textContent = `${pad(same.indexOf(w) + 1)} / ${pad(same.length)} · ${tlabel}`;
 
   const total = c.chapters.reduce((n, ch) => n + (ch.images || []).length, 0);
   const vids = c.chapters.reduce((n, ch) => n + (ch.videos || []).length, 0);
@@ -277,7 +282,7 @@
   const k = same.indexOf(w);
   const prev = same[(k - 1 + same.length) % same.length], next = same[(k + 1) % same.length];
   const link = (x, dir, label) => {
-    const href = x.href ? '../' + x.href : '../works.html#cat=' + x.cat;
+    const href = T.withT ? T.withT(x.href ? '../' + x.href : '../works.html#cat=' + x.cat) : (x.href ? '../' + x.href : '../works.html#cat=' + x.cat);
     return h('a', { class: 'cell', href }, [h('span', { class: 'label', text: dir }), h('b', { text: label + x.title.zh })]);
   };
   append(h('div', { class: 'pager' }, [
@@ -287,6 +292,7 @@
     link(next, 'NEXT →', `${pad(same.indexOf(next) + 1)} `),
   ]));
   append(h('div', { class: 'cell span-4 foot' }, [h('span', { text: '© 2026 K.H Design · 黃家禾' }), h('span', { text: (cat.en || '').toUpperCase() })]));
+  if (T.fixLinks) T.fixLinks(grid);
 
   // 點封面才換成 YouTube 播放器
   document.addEventListener('click', (e) => {

@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js" data-hero="A" data-track="marketing">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>黃家禾｜行銷設計作品集 · K.H Design</title>
+  <meta name="description" content="黃家禾的行銷設計作品：產品影片、展會與 LinkedIn 行銷素材、官網介面設計。">
+  <meta property="og:title" content="黃家禾｜行銷設計作品集 · K.H Design">
+  <meta property="og:description" content="黃家禾的行銷設計作品：產品影片、展會與 LinkedIn 行銷素材、官網介面設計。">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#ffffff">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Montserrat:wght@700&family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
+  <link rel="stylesheet" href="assets/css/tokens.css?v=20261029a">
+  <link rel="stylesheet" href="assets/css/main.css?v=20261029a">
+  <style>
+    /* ===== Hero 試作：A 品牌＋標語、B 名字＋職稱、C 一句話（只在預覽版） ===== */
+    .hv { display: none; }
+    [data-hero="A"] .hv--A, [data-hero="B"] .hv--B, [data-hero="C"] .hv--C { display: block; }
+
+    /* A：K.H Design＋SPACE · OBJECT · MEDIA */
+    .hv-brand { font-family: "Source Serif 4", "Noto Serif TC", Georgia, serif; font-weight: 400; font-size: clamp(56px, 11vw, 164px); line-height: 0.95; letter-spacing: -0.01em; color: var(--c-ink); }
+    .hv-tag { margin-top: clamp(14px, 2vw, 24px); font-family: var(--f-mono); font-size: clamp(13px, 1.6vw, 20px); letter-spacing: 0.32em; color: var(--c-ink-2); display: flex; align-items: center; flex-wrap: wrap; gap: 0 0.6em; }
+    .hv-tag .ring { display: inline-block; width: 0.95em; height: 0.95em; border-radius: 50%; vertical-align: -0.12em;
+      background: linear-gradient(135deg, #f4f4f4 0%, #9fa2a4 45%, #55585b 100%);
+      -webkit-mask: radial-gradient(circle, transparent 0 30%, #000 31%); mask: radial-gradient(circle, transparent 0 30%, #000 31%); }
+    .hv-tag .ring + span { margin-left: -0.32em; }
+    .hv-line { margin-top: clamp(18px, 2.4vw, 28px); font-size: clamp(16px, 1.6vw, 20px); color: var(--c-ink); }
+
+    /* B：大寫堆疊 */
+    .hv-stack { font-family: var(--f-display); font-weight: 700; font-size: clamp(40px, 6.6vw, 104px); line-height: 0.92; letter-spacing: -0.01em; color: var(--c-ink); text-transform: uppercase; }
+    .hv-stack span { display: block; }
+    .hv-stack span:first-child { color: #8f9294; }
+
+    /* C：一句話 */
+    .hv-say { font-family: var(--f-body); font-weight: 900; font-size: clamp(40px, 7.2vw, 104px); line-height: 1.15; letter-spacing: 0.02em; color: var(--c-ink); }
+    .hv-say em { font-style: normal; color: #8f9294; }
+    .hv-brandline { margin-top: clamp(14px, 2vw, 22px); display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+    .hv-brandline b { font-family: "Source Serif 4", Georgia, serif; font-weight: 400; font-size: clamp(22px, 2.4vw, 30px); }
+    .hv-brandline span { font-family: var(--f-mono); font-size: 13px; letter-spacing: 0.28em; color: var(--c-ink-2); }
+
+    .hv-meta { margin-top: clamp(20px, 2.6vw, 30px); display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: var(--fs-md); color: var(--c-ink-2); }
+    .hv-meta strong { color: var(--c-ink); font-weight: 500; }
+
+
+    /* ===== 封面方塊構圖（自由擺放，不鎖格線） ===== */
+    .cover-art { position: absolute; left: 0; top: 0; width: max(100%, 700px); aspect-ratio: 1546 / 1098; container-type: inline-size; --r: 1.05cqi; }
+    .ca { position: absolute; display: block; }
+    .ca--sq { background: var(--g); border-radius: var(--r); box-shadow: -1.3cqi 1.9cqi 2.4cqi rgba(52, 44, 40, 0.34); }
+    .ca--light { box-shadow: -1.1cqi 1.6cqi 2.2cqi rgba(52, 44, 40, 0.26); }
+    .ca--glow { border-radius: 0 0 var(--r) var(--r); box-shadow: -1.4cqi 2cqi 2.6cqi rgba(52, 44, 40, 0.3); }
+    .ca--outline { border: max(1px, 0.07cqi) solid rgba(150, 152, 154, 0.55); border-radius: 0.7cqi; background: rgba(255,255,255,0.18); }
+    .ca--haze { border-radius: 1cqi; background: rgba(236, 237, 237, 0.75); filter: blur(1.1cqi); }
+    .ca--dots { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Crect width='5' height='5' fill='%23a5a7a9'/%3E%3C/svg%3E"); background-size: 0.62cqi 0.62cqi; opacity: 0.9; }
+    .ca--tiny { background: var(--t); border-radius: 1px; }
+    .ca--svg { height: auto; }   /* 點陣：使用 Illustrator 匯出的 SVG（含原稿漸層） */
+    @media (max-width: 767.98px) { .ca--low { display: none; } }
+    /* 首頁封面：方塊縮小、變淺、陰影變輕，標題往上移 */
+    .hero { min-height: min(84svh, 800px); }
+    .hero .hero__content { padding-bottom: var(--sp-7); }
+    .hero .cover-art { width: max(74%, 600px); }
+    .hero .ca--sq { filter: brightness(1.2) contrast(0.72); box-shadow: -0.8cqi 1.3cqi 2.6cqi rgba(52, 44, 40, 0.15); }
+    .hero .ca--light { box-shadow: -0.7cqi 1.1cqi 2.2cqi rgba(52, 44, 40, 0.11); }
+    .hero .ca--glow { box-shadow: -0.9cqi 1.4cqi 2.8cqi rgba(52, 44, 40, 0.14); }
+    @media (min-width: 992px) {
+      .hero__content > * { margin-left: 39.5%; }
+      .hero__content .hero__tagline { display: none; }   /* 桌機版讓標題下移，不壓到方塊；說明文字 About 已有 */
+      .hero__content .hv-brand { font-size: clamp(64px, 8.6vw, 150px); }
+    }
+
+
+    /* ===== 字型：K.H Design 使用源雲明體（SIL OFL，只取英數字以縮小檔案） ===== */
+    @font-face { font-family: "GenWanMin"; src: url("assets/fonts/GenWanMin2TW-R-latin.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+    @font-face { font-family: "GenWanMin"; src: url("assets/fonts/GenWanMin2TW-M-latin.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+    .hv-brand, .hv-brandline b { font-family: "GenWanMin", "Source Serif 4", "Noto Serif TC", Georgia, serif !important; }
+
+    /* ===== 封底構圖放在 Contact ===== */
+    .contact { min-height: 560px; }
+    .contact__art { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+    .cover-art--back { left: auto; right: 0; width: min(62%, 980px); top: 50%; translate: 0 -50%; }
+    .contact .container { position: relative; z-index: 1; }
+    @media (max-width: 767.98px) {
+      .contact { padding-top: calc(100vw * 0.62 + 24px); }
+      .cover-art--back { width: 108%; right: -4%; top: 0; translate: none; }
+    }
+
+
+    /* ===== 配色試作（預覽用）：紅線／黑白／藍圖藍 ===== */
+    :root[data-accent="mono"]   { --c-accent: #222324; --c-accent-ink: #222324; }
+    :root[data-accent="mono"] .work-card--feature .work-card__cat,
+    :root[data-accent="mono"] .work-card--feature .work-card__more { color: #ffffff; }
+    :root[data-accent="mono"] .work-card--feature .work-card__body::before { background: #ffffff; }
+    :root[data-accent="mono"] .site-header::before { background: #222324; }
+    :root[data-accent="cobalt"] { --c-accent: #2747d6; --c-accent-ink: #2342c4; }
+    :root[data-accent="cobalt"] .work-card--feature .work-card__cat,
+    :root[data-accent="cobalt"] .work-card--feature .work-card__more { color: #93a6ff; }
+    .hv-switch .sep { width: 1px; height: 22px; background: rgba(255,255,255,0.25); margin: 0 4px; padding: 0; }
+
+    /* 預覽用切換鈕 */
+    .hv-switch { position: fixed; z-index: 60; left: 50%; transform: translateX(-50%);
+      bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+      display: flex; align-items: center; gap: 4px; padding: 5px; border-radius: 999px;
+      background: rgba(21,22,23,0.92); color: #fff; font-family: var(--f-mono); font-size: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+    .hv-switch span { padding: 0 6px 0 10px; color: #b9bbbd; white-space: nowrap; }
+    @media (max-width: 480px) { .hv-switch span { display: none; } .hv-switch button { padding: 0 10px; font-size: 11px; } }
+    .hv-switch button { white-space: nowrap; border: 0; min-height: 36px; padding: 0 12px; border-radius: 999px; background: none; color: #fff; cursor: pointer; font-family: var(--f-mono); font-size: 12px; }
+    .hv-switch button[aria-pressed="true"] { background: #fff; color: #151617; }
+
+    /* ===== 行銷設計 landing：封面是影片 ===== */
+    .hero--mk { min-height: 0; padding-bottom: 0; }
+    .hero--mk .hero__content { display: grid; gap: clamp(32px, 5vw, 56px); padding-top: clamp(40px, 7vw, 96px); }
+    .hero--mk .hv-brand { font-size: clamp(56px, 9vw, 120px); }
+    @media (min-width: 992px) {
+      .hero--mk .hero__content { grid-template-columns: minmax(0, 4.6fr) minmax(0, 7.4fr); align-items: end; }
+      .hero--mk .hero__content > * { margin-left: 0; }
+      .hero--mk .hero__content .hv-brand { font-size: clamp(64px, 6.4vw, 112px); }
+      .hero--mk .hero__content .hero__tagline { display: block; }
+    }
+    .mk-stage { position: relative; padding: 0 0 0 clamp(0px, 2vw, 28px); }
+    .mk-sq { position: absolute; left: 0; top: clamp(-28px, -2vw, -14px); width: 34%; aspect-ratio: 1;
+      background: linear-gradient(135deg, #d6d8d9 0%, #b0b3b5 55%, #959899 100%); box-shadow: -8px 14px 26px rgba(52, 44, 40, 0.14); }
+    .mk-dots { position: absolute; right: -6px; top: -34px; width: 44px; }
+    .mk-reel { position: relative; margin: 0 0 0 clamp(16px, 3vw, 40px); background: #111; box-shadow: -14px 22px 40px rgba(20, 22, 24, 0.22); }
+    .mk-reel .video, .mk-reel .video__frame { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; padding: 0; position: relative; background: #111; cursor: pointer; }
+    .mk-reel .video img { width: 100%; height: 100%; object-fit: cover; opacity: 0.88; transition: opacity 0.3s; }
+    .mk-reel .video:hover img { opacity: 1; }
+    .video__play { position: absolute; left: 50%; top: 50%; width: 72px; height: 72px; margin: -36px 0 0 -36px; background: var(--c-accent); box-shadow: -6px 10px 18px rgba(0,0,0,0.35); }
+    .video__play::after { content: ""; position: absolute; left: 29px; top: 23px; border-left: 20px solid #fff; border-top: 13px solid transparent; border-bottom: 13px solid transparent; }
+    .mk-reel figcaption { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; padding: 14px 18px; background: #151617; color: #fff; font-size: var(--fs-sm); }
+    .mk-reel figcaption b { font-weight: 500; }
+    .mk-reel figcaption a { margin-left: auto; color: #fff; }
+    .mk-reel__tag { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.12em; color: var(--c-accent); }
+    .mk-thumbs { list-style: none; margin: 14px 0 0 clamp(16px, 3vw, 40px); padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .mk-thumbs a { display: block; text-decoration: none; color: var(--c-ink-2); font-size: var(--fs-xs); }
+    .mk-thumbs img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #e9e9e8; transition: opacity 0.3s; }
+    .mk-thumbs a:hover img { opacity: 0.8; }
+    .mk-thumbs span { display: block; margin-top: 6px; }
+    @media (max-width: 575.98px) { .mk-thumbs span { display: none; } .mk-dots { display: none; } }
+    @media (max-width: 991.98px) { .hero--mk .hero__cue { display: none; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">跳到主要內容</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="K.H Design 回到頂端">
+        <img class="brand__logo" src="assets/img/logo/kh-design-wordmark.svg" alt="" width="116" height="22">
+      </a>
+      <nav class="nav" aria-label="主選單">
+        <div class="lang-switch" role="group" aria-label="語言" hidden data-lang-switch>
+          <button type="button" data-lang="zh-Hant" aria-pressed="true">中</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="開啟選單">
+          <span class="nav__toggle-bars" aria-hidden="true"></span>
+        </button>
+        <ul class="nav__list" id="nav-list">
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#work" data-i18n="nav.work">Work</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero hero--mk grid-bg" aria-labelledby="hero-title">
+
+      <div class="container hero__content">
+        <div class="mk-text">
+        <div class="hv hv--A">
+          <h1 class="hv-brand" id="hero-title">K.H Design</h1>
+          <p class="hv-tag"><span>SPACE</span><span>·</span><span class="ring" aria-hidden="true"></span><span>BJECT</span><span class="visually-hidden">OBJECT</span><span>·</span><span>MEDIA</span></p>
+          <p class="hv-line">用影像與視覺，把產品講清楚。</p>
+        </div>
+        <p class="hv-meta"><strong>黃家禾</strong><span>行銷設計 · 動態影像 · 網站介面</span></p>
+        <p class="hero__tagline">六年 B2B 科技業經驗：產品影片從腳本、拍攝到剪輯調色，以及展會素材、LinkedIn 視覺與官網介面。</p>
+        <a class="hero__cue" href="#about" data-i18n="hero.cue">Scroll</a>
+        </div>
+        <div class="mk-stage">
+          <span class="mk-sq" aria-hidden="true"></span>
+          <img class="mk-dots" src="assets/img/dots/matrix_dot_2.svg" alt="" aria-hidden="true">
+          <figure class="mk-reel">
+            <button class="video" type="button" data-yt="voqmLknc1No" aria-label="播放影片：IKEA 台中店智慧叫號系統｜PM 觀點">
+              <img src="assets/img/case/ikea_cover.jpg" alt="" decoding="async">
+              <span class="video__play" aria-hidden="true"></span>
+            </button>
+            <figcaption><span class="mk-reel__tag">FEATURED</span><b>IKEA 台中店智慧叫號系統｜客戶案例影片</b><a href="projects/case.html?id=ikea">看專案 →</a></figcaption>
+          </figure>
+          <ul class="mk-thumbs" aria-label="更多影片與行銷作品">
+            <li><a href="projects/case.html?id=mobile360"><img src="assets/img/case/m360v_2.jpg" alt="" loading="lazy"><span>Mobile360 安裝教學</span></a></li>
+            <li><a href="projects/case.html?id=smarthome"><img src="assets/img/case/sh_banner.jpg" alt="" loading="lazy"><span>Smart Home 情境影片</span></a></li>
+            <li><a href="projects/case.html?id=via-marketing"><img src="assets/img/case/vm_hero.jpg" alt="" loading="lazy"><span>Mobile360 行銷素材</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-head__kicker">About</span>
+          <h2 class="section-head__title" id="about-title">黃家禾</h2>
+          <span class="section-head__sub">KAHHOE NG</span>
+        </header>
+
+        <div class="about">
+          <div class="about__portrait reveal">
+            <div class="about__photo">
+              <img src="assets/img/portrait.jpg" alt="黃家禾" width="472" height="472">
+            </div>
+            <span class="dots" aria-hidden="true"></span>
+          </div>
+
+          <div class="reveal">
+            <p class="about__role mono">M.S. in Interaction Design ｜ 行銷設計 · 動態影像</p>
+            <p class="about__lead">把複雜的產品，轉成看得懂的畫面</p>
+            <div class="about__text">
+              <p data-i18n="about.p1">以視覺與影音為主要工具的行銷設計師，具六年 B2B 科技業經驗。我做的事一直是同一件：把複雜的東西轉成別人看得懂的畫面——把安裝手冊變成教學影片與 SOP，把硬體規格變成應用場景與空間配置提案，讓業務與 FAE 團隊拿去就能用。</p>
+            </div>
+
+            <dl class="stats" aria-label="經歷數字">
+              <div><dt data-i18n="stats.years">B2B 科技業經驗</dt><dd>6<span>年</span></dd></div>
+              <div><dt data-i18n="stats.videos">影音資產全流程產出</dt><dd>21<span>+ 支</span></dd></div>
+              <div><dt data-i18n="stats.guides">標準化安裝指南與影片 SOP</dt><dd>10<span>份</span></dd></div>
+              <div><dt data-i18n="stats.fae">FAE 現場支援需求</dt><dd>−30<span>%</span></dd></div>
+            </dl>
+
+            <ul class="skills" aria-label="技能與工具">
+              <li class="skill"><span class="skill__sq" aria-hidden="true"></span><span class="skill__name">Adobe CC<span class="skill__note">Premiere · AE · PS · AI</span></span></li>
+              <li class="skill"><span class="skill__sq" aria-hidden="true"></span><span class="skill__name">Axure · XD · Figma<span class="skill__note">線框圖 · 原型 · 發想</span></span></li>
+              <li class="skill"><span class="skill__sq" aria-hidden="true"></span><span class="skill__name">中 · EN · BM<span class="skill__note">TOEIC 945</span></span></li>
+            </ul>
+            <p class="about__creds" data-i18n="about.creds">證照：ISO 27001 內部稽核員 ｜ 台灣永久居留（無需工作許可）</p>
+          </div>
+        </div>
+
+        <!-- d3 時間軸 -->
+        <div class="timeline reveal" id="timeline">
+          <div class="timeline__head">
+            <h3 class="timeline__title">Path</h3>
+            <span class="timeline__hint" data-i18n="timeline.hint">點選色塊看詳細・手機可左右滑動</span>
+          </div>
+          <div class="timeline__chart" data-timeline data-src="assets/data/timeline.json">
+            <noscript>
+              <ul class="timeline__fallback">
+                <li>2011–2016 東海大學 資訊管理學士</li>
+                <li>2016–2018 國立台北科技大學 互動設計碩士</li>
+                <li>2018–2025 威盛電子 高級產品行銷代表 → 高級行銷代表</li>
+                <li>2026 友通資訊 高級產品行銷專員</li>
+                <li>2026– 室內軟裝與 BIM 空間應用班</li>
+              </ul>
+            </noscript>
+          </div>
+          <div class="timeline__detail" aria-live="polite" data-timeline-detail>
+            <span class="timeline__detail-period"></span>
+            <span class="timeline__detail-title"></span>
+            <span class="timeline__detail-note"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Work index ===== -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-head__kicker">Work</span>
+          <h2 class="section-head__title" id="work-title">Index</h2>
+          <span class="section-head__sub">IDEA × PROCESS × OUTCOME</span>
+        </header>
+
+        <p class="wx-hint" data-wx-hint></p>
+        <div class="wx-wrap">
+          <div class="wx-rows" data-works-index data-track="marketing" data-src="assets/data/works.json" data-all="works.html"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact grid-bg" id="contact" aria-labelledby="contact-title">
+      <div class="contact__art" aria-hidden="true">
+        <!-- 封底構圖（紙本背面）：比封面簡約，方塊集中在右側 -->
+        <div class="cover-art cover-art--back">
+          <span class="ca ca--sq ca--light" style="left:9.51%;top:13.11%;width:15.10%;height:20.40%;--i:0;--g:linear-gradient(135deg,#f1f1f1 0%,#e2e3e3 60%,#d3d4d5 100%);"></span>
+          <span class="ca ca--outline" style="left:35.94%;top:14.39%;width:8.07%;height:10.93%;--i:1;"></span>
+          <span class="ca ca--outline" style="left:17.19%;top:36.98%;width:9.38%;height:12.75%;--i:2;"></span>
+          <span class="ca ca--sq ca--light" style="left:49.74%;top:24.04%;width:7.03%;height:9.47%;--i:3;--g:linear-gradient(135deg,#f1f1f1 0%,#e2e3e3 60%,#d3d4d5 100%);"></span>
+          <span class="ca ca--sq ca--light" style="left:27.73%;top:41.17%;width:8.85%;height:11.66%;--i:4;--g:linear-gradient(135deg,#f4f4f4 0%,#e6e7e7 100%);"></span>
+          <span class="ca ca--sq ca--light" style="left:69.92%;top:21.86%;width:8.72%;height:11.66%;--i:5;--g:linear-gradient(135deg,#f1f1f1 0%,#e2e3e3 60%,#d3d4d5 100%);"></span>
+          <span class="ca ca--sq " style="left:57.16%;top:37.70%;width:9.90%;height:13.30%;--i:6;--g:linear-gradient(135deg,#d9dadb 0%,#b9bbbd 60%,#a9abad 100%);border-radius:0 var(--r) 0 0;"></span>
+          <span class="ca ca--sq " style="left:84.90%;top:33.33%;width:10.16%;height:13.84%;--i:7;--g:linear-gradient(135deg,#c9cbcc 0%,#a7aaac 55%,#8f9295 100%);border-radius:var(--r) 0 0 0;"></span>
+          <span class="ca ca--sq ca--glow" style="left:67.84%;top:57.01%;width:15.10%;height:20.40%;--i:8;--g:radial-gradient(circle at 72% 45%,#ffffff 0%,#f2f2f2 22%,#c4c6c7 60%,#9fa2a4 100%);border-radius:var(--r);"></span>
+          <span class="ca ca--sq " style="left:89.32%;top:72.13%;width:7.16%;height:9.65%;--i:9;--g:linear-gradient(135deg,#c9cbcc 0%,#a7aaac 55%,#8f9295 100%);"></span>
+          <span class="ca ca--sq " style="left:79.30%;top:81.60%;width:10.16%;height:13.66%;--i:10;--g:linear-gradient(135deg,#c9cbcc 0%,#a7aaac 55%,#8f9295 100%);border-radius:0 0 0 var(--r);"></span>
+          <img class="ca ca--svg" src="assets/img/dots/matrix_dot_2.svg" alt="" style="left:39.97%;top:33.70%;width:4.43%;--i:11;">
+          <img class="ca ca--svg" src="assets/img/dots/matrix_dot_2.svg" alt="" style="left:9.64%;top:40.26%;width:4.69%;--i:12;">
+          <img class="ca ca--svg" src="assets/img/dots/progress_dot.svg" alt="" style="left:38.93%;top:46.27%;width:4.17%;--i:13;">
+          <img class="ca ca--svg" src="assets/img/dots/progress_dot.svg" alt="" style="left:44.27%;top:53.19%;width:4.17%;--i:14;">
+          <img class="ca ca--svg" src="assets/img/dots/matrix_dot_2.svg" alt="" style="left:90.23%;top:53.92%;width:4.69%;--i:15;">
+          <img class="ca ca--svg" src="assets/img/dots/matrix_dot_1.svg" alt="" style="left:60.03%;top:80.87%;width:4.69%;--i:16;">
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="contact__title reveal" id="contact-title">Let’s Talk</h2>
+        <ul class="contact__list reveal">
+          <li><span class="contact__label">Email</span><a class="contact__value" href="mailto:kahhoe.ng@gmail.com">kahhoe.ng@gmail.com</a></li>
+          <li><span class="contact__label" data-i18n="contact.location">地點</span><span class="contact__value" data-i18n="contact.city">新北市 板橋</span></li>
+          <li><span class="contact__label">Notion</span><a class="contact__value" href="https://ngkahhoe.notion.site/" target="_blank" rel="noopener">ngkahhoe.notion.site</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>© 2026 K.H Design · 黃家禾 Kahhoe Ng</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>try { localStorage.setItem("kh-track", "marketing"); } catch (e) {}</script>
+  <script>
+    // 點封面才換成 YouTube 播放器（不拖慢首頁）
+    document.addEventListener('click', function (e) {
+      var v = e.target.closest('[data-yt]'); if (!v) return;
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + v.dataset.yt + '?autoplay=1&rel=0';
+      f.title = v.getAttribute('aria-label');
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      f.allowFullscreen = true; f.className = 'video__frame';
+      v.replaceWith(f);
+    });
+  </script>
+  <script type="module" src="assets/js/main.js?v=20261029a"></script>
+</body>
+</html>

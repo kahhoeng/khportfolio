@@ -1,0 +1,24 @@
+# 每次推上 main，就重新計算 README 的資源清單；有變動才自動 commit
+name: 更新資源清單
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['README.md']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  resources:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 tools/resources.py
+      - run: |
+          if git diff --quiet README.md; then echo "沒有變動"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -am "README：更新資源清單"
+          git push

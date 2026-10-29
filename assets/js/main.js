@@ -1,12 +1,11 @@
 /* ==========================================================================
    KH Portfolio — entry
-   改了 JS 或 CSS 之後，把 HTML 與這裡的 ?v= 版本號一起更新，瀏覽器才不會用到舊的快取。
    每個功能都先檢查頁面上有沒有對應元素，所以首頁和作品內頁共用這支檔案。
    ========================================================================== */
 import { initI18n } from './i18n.js';
-import { initWorks } from './works.js?v=20261028j';
-import { initWorksIndex } from './works-index.js?v=20261028j';
-import { initLightbox } from './lightbox.js?v=20261028j';
+import { initWorks } from './works.js?v=20261029a';
+import { initWorksIndex } from './works-index.js?v=20261029a';
+import { initLightbox } from './lightbox.js?v=20261029a';
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -172,7 +171,7 @@ function initIdleShift() {
 function initTimelineLazy() {
   const host = document.querySelector('[data-timeline]');
   if (!host) return;
-  const load = () => import('./timeline.js?v=20261028j')
+  const load = () => import('./timeline.js?v=20261029a')
     .then((m) => m.initTimeline(host))
     .catch((err) => {
       console.error(err);
