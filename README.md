@@ -81,15 +81,16 @@ d3 採 ISC 授權，© Mike Bostock。
 <!-- RESOURCES:START -->
 ## 資源清單
 
-> 自動產生，請勿手動修改。更新時間：2026-10-29
+> 自動產生，請勿手動修改。更新時間：2026-11-05
 
-**總計 15.7 MB**，共 144 個檔案，約佔 GitHub Pages 建議上限（1 GB）的 1.5%。
+**總計 18.2 MB**，共 146 個檔案，約佔 GitHub Pages 建議上限（1 GB）的 1.8%。
 
 ### 分類小計
 
 | 分類 | 檔案數 | 大小 |
 |---|---:|---:|
 | 作品圖（assets/img/case） | 81 | 13.1 MB |
+| 其他 | 4 | 2.5 MB |
 | 課程作品圖（assets/img/work） | 27 | 2.2 MB |
 | 頁面（HTML） | 11 | 154.5 KB |
 | 程式（assets/js、vendor） | 8 | 82.2 KB |
@@ -97,7 +98,6 @@ d3 採 ISC 授權，© Mike Bostock。
 | 樣式（assets/css） | 2 | 40.0 KB |
 | 其他圖片（logo、點陣、大頭照） | 6 | 38.1 KB |
 | 字型（assets/fonts） | 3 | 30.0 KB |
-| 其他 | 2 | 24 B |
 
 ### 檔案明細（由大到小）
 
@@ -105,6 +105,7 @@ d3 採 ISC 授權，© Mike Bostock。
 
 | 檔案 | 大小 |
 |---|---:|
+| `pdf/2026-11_interior_banqiao-studio.pdf` | 2.5 MB |
 | `assets/img/case/dsg_site2.jpg` | 441.6 KB |
 | `assets/img/case/dsg_site4.jpg` | 392.2 KB |
 | `assets/img/case/web_fss.jpg` | 376.1 KB |
@@ -246,6 +247,7 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/dots/matrix_dot_1.svg` | 1.6 KB |
 | `assets/img/dots/matrix_dot_2.svg` | 1.6 KB |
 | `assets/i18n/en.json` | 1.1 KB |
+| `pdf/README.md` | 941 B |
 | `assets/img/dots/progress_dot.svg` | 790 B |
 | `.gitignore` | 24 B |
 | `.nojekyll` | 0 B |
