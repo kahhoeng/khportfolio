@@ -1220,6 +1220,117 @@
           ]
         }
       ]
+    },
+    "studio-furniture": {
+      "badge": "空間設計提案 · 板橋小套房",
+      "en": "Custom Furniture for the Banqiao Studio",
+      "meta": [
+        [
+          "件數",
+          "3 件"
+        ],
+        [
+          "工具",
+          "AutoCAD · SketchUp · V-Ray"
+        ],
+        [
+          "所屬專案",
+          "板橋小套房改造提案"
+        ]
+      ],
+      "story": [
+        [
+          "設計目標",
+          "板橋小套房實際住下來，收納不夠、床邊沒有地方放東西，現成家具的尺寸也放不進去。"
+        ],
+        [
+          "做法",
+          "依空間和使用習慣，自己設計電視櫃、床頭櫃與衣櫃，畫出俯視、正視、側視與內部立面，標註板厚與層板間距。"
+        ],
+        [
+          "成果",
+          "3 件家具的尺寸圖與渲染，可以直接拿去和木工或系統櫃廠商溝通。"
+        ]
+      ],
+      "links": [
+        [
+          "回到板橋小套房",
+          "../projects/studio-grid.html"
+        ]
+      ],
+      "chapters": [
+        {
+          "title": "F001 電視櫃",
+          "text": "W110 × D40 × H50 cm。櫃體兩端倒圓角，經過時不易碰撞。上層格子加高到 20.3 cm，放得下 PS5，也留出散熱空間；背面開放讓主機散熱，隔板留穿線孔讓線材在格子之間穿過；中間下層設抽屜；底部採高腳設計，方便清掃。",
+          "layout": "2",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "work/studio_f_tv_dwg.png",
+              "F001 電視櫃｜俯視 · 正視 · 側視"
+            ],
+            [
+              "work/studio_f_tv.jpg",
+              "F001 電視櫃｜渲染",
+              "photo"
+            ]
+          ]
+        },
+        {
+          "title": "F001 電視櫃｜空櫃與使用中",
+          "text": "45 度空櫃標出兩端圓角、背面開放、隔板穿線孔、抽屜與高腳；正面使用中的畫面則是左右兩格放 Switch、手把，中間上層放主機、下層是抽屜。",
+          "layout": "2",
+          "photo": true,
+          "drawing": false,
+          "images": [
+            [
+              "work/studio_f_tv_45_note.jpg",
+              "F001 電視櫃｜45 度空櫃（標註）"
+            ],
+            [
+              "work/studio_f_tv_front.jpg",
+              "F001 電視櫃｜正面使用中"
+            ]
+          ]
+        },
+        {
+          "title": "F002 床頭櫃",
+          "text": "W44 × D30 × H55 cm。檯面與床墊同高，躺著伸手就拿得到。開口朝向走道，從浴室出來順手取用保養品；朝床一側封閉，維持睡眠區整潔。外角倒圓角 R10，開放側前角以金屬圓管支撐。",
+          "layout": "2",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "work/studio_f_bed_dwg.png",
+              "F002 床頭櫃｜俯視 · 正視 · 側視"
+            ],
+            [
+              "work/studio_f_bedside.jpg",
+              "F002 床頭櫃｜渲染",
+              "photo"
+            ]
+          ]
+        },
+        {
+          "title": "F003 衣櫃",
+          "text": "W90 × D60 × H190 cm。室內淨高 240 cm，衣櫃刻意不做到頂，上方留白放行李箱，降低壓迫感。左右拉門不佔開門空間；左格吊衣、右格層板加抽屜，中間隔板對齊拉門交界，打開一片門就能完整看到一格。",
+          "layout": "2",
+          "photo": false,
+          "drawing": true,
+          "images": [
+            [
+              "work/studio_f_wardrobe_dwg.png",
+              "F003 衣櫃｜俯視 · 正視 · 內部立面"
+            ],
+            [
+              "work/studio_f_wardrobe.jpg",
+              "F003 衣櫃｜渲染",
+              "photo"
+            ]
+          ]
+        }
+      ]
     }
   }
 }

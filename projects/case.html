@@ -169,7 +169,7 @@
   </style>
 </head>
 <body>
-<script src="../assets/js/track.js?v=20261029b"></script>
+<script src="../assets/js/track.js?v=20261106a"></script>
 <!-- 通用作品內頁：網址 case.html?id=作品id，內容讀 assets/data/works.json 與 cases.json -->
 <div class="wrap">
   <article class="page" aria-labelledby="p-title">
@@ -267,9 +267,11 @@
       ]),
       h('figcaption', {}, [h('b', { text: cap }), h('a', { href: `https://www.youtube.com/watch?v=${yt}${ch.playlist ? '&list=' + ch.playlist : ''}`, target: '_blank', rel: 'noopener', text: 'YouTube ↗' })]),
     ]));
-    const imagePlates = (ch.images || []).map(([file, cap]) => {
+    // images 的第三欄可寫 'photo' 或 'drawing'，覆蓋該章的設定（同一章混放圖面與渲染圖時用）
+    const imagePlates = (ch.images || []).map(([file, cap, kind]) => {
       n += 1;
-      return h('figure', { class: 'plate' + (ch.photo ? ' plate--photo' : '') + (ch.drawing ? ' plate--drawing' : '') }, [
+      const photo = kind ? kind === 'photo' : ch.photo, drawing = kind ? kind === 'drawing' : ch.drawing;
+      return h('figure', { class: 'plate' + (photo ? ' plate--photo' : '') + (drawing ? ' plate--drawing' : '') }, [
         h('button', { class: 'plate__btn', type: 'button', 'data-zoom': '', 'data-caption': cap },
           h('img', { src: src(file), alt: `${w.title.zh}：${cap}`, loading: 'lazy', decoding: 'async' })),
         h('figcaption', {}, [h('b', { text: cap }), h('span', { text: `${pad(n)} / ${pad(total)}` })]),

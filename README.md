@@ -81,20 +81,20 @@ d3 採 ISC 授權，© Mike Bostock。
 <!-- RESOURCES:START -->
 ## 資源清單
 
-> 自動產生，請勿手動修改。更新時間：2026-11-05
+> 自動產生，請勿手動修改。更新時間：2026-11-06
 
-**總計 18.2 MB**，共 146 個檔案，約佔 GitHub Pages 建議上限（1 GB）的 1.8%。
+**總計 20.0 MB**，共 160 個檔案，約佔 GitHub Pages 建議上限（1 GB）的 2.0%。
 
 ### 分類小計
 
 | 分類 | 檔案數 | 大小 |
 |---|---:|---:|
 | 作品圖（assets/img/case） | 81 | 13.1 MB |
+| 課程作品圖（assets/img/work） | 41 | 4.0 MB |
 | 其他 | 4 | 2.5 MB |
-| 課程作品圖（assets/img/work） | 27 | 2.2 MB |
-| 頁面（HTML） | 11 | 154.5 KB |
+| 頁面（HTML） | 11 | 158.9 KB |
 | 程式（assets/js、vendor） | 8 | 82.2 KB |
-| 資料（assets/data、i18n） | 4 | 54.1 KB |
+| 資料（assets/data、i18n） | 4 | 58.5 KB |
 | 樣式（assets/css） | 2 | 40.0 KB |
 | 其他圖片（logo、點陣、大頭照） | 6 | 38.1 KB |
 | 字型（assets/fonts） | 3 | 30.0 KB |
@@ -129,21 +129,27 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/case/rma_form.jpg` | 219.2 KB |
 | `assets/img/work/emerald_render.jpg` | 217.0 KB |
 | `assets/img/case/web_landing.jpg` | 213.3 KB |
+| `assets/img/work/studio_f_tv_45_note.jpg` | 206.8 KB |
 | `assets/img/case/ikea_3.jpg` | 204.3 KB |
 | `assets/img/case/vm_cam.jpg` | 202.5 KB |
 | `assets/img/case/vm_blue.jpg` | 200.4 KB |
 | `assets/img/case/sky_flow2.jpg` | 199.2 KB |
 | `assets/img/case/next_kv.jpg` | 194.7 KB |
+| `assets/img/work/studio_r_work.jpg` | 194.7 KB |
 | `assets/img/work/cab_front.jpg` | 194.0 KB |
 | `assets/img/case/sh_v2.jpg` | 184.1 KB |
+| `assets/img/work/studio_f_tv_front.jpg` | 181.4 KB |
 | `assets/img/case/vm_shield.jpg` | 173.8 KB |
+| `assets/img/work/studio_f_tv_45.jpg` | 173.0 KB |
 | `assets/img/work/cab_inner.jpg` | 171.8 KB |
 | `assets/img/case/sky_fm.jpg` | 170.7 KB |
 | `assets/img/work/cab_3d.jpg` | 170.3 KB |
 | `assets/img/case/rma_warranty_2.jpg` | 168.2 KB |
 | `assets/img/case/sky_dash.jpg` | 166.8 KB |
+| `assets/img/work/studio_f_tv.jpg` | 164.3 KB |
 | `assets/img/work/emerald_02_layout.png` | 164.1 KB |
 | `assets/img/case/sky_fm2.jpg` | 160.9 KB |
+| `assets/img/work/studio_f_wardrobe.jpg` | 160.5 KB |
 | `assets/img/case/ikea_6.jpg` | 160.2 KB |
 | `assets/img/case/vm_hero.jpg` | 159.8 KB |
 | `assets/img/case/rma_faq.jpg` | 158.2 KB |
@@ -155,13 +161,18 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/work/emerald_01_survey.png` | 141.7 KB |
 | `assets/img/case/next_sol.jpg` | 139.0 KB |
 | `assets/img/case/next_dm.jpg` | 137.7 KB |
+| `assets/img/work/studio_r_tv.jpg` | 135.1 KB |
 | `assets/img/case/vm_sop.jpg` | 130.2 KB |
 | `assets/img/case/ikea_8.jpg` | 129.1 KB |
 | `assets/img/case/vm_seat.jpg` | 125.4 KB |
 | `assets/img/case/rma_sop_2.jpg` | 119.7 KB |
 | `assets/img/case/rma_shipping.jpg` | 119.2 KB |
+| `assets/img/work/studio_f_bedside.jpg` | 119.1 KB |
 | `assets/img/case/next_core.jpg` | 117.2 KB |
+| `assets/img/work/studio_r_sleep.jpg` | 115.2 KB |
+| `assets/img/work/studio_r_entry.jpg` | 113.4 KB |
 | `assets/img/case/m360v_4.jpg` | 111.9 KB |
+| `assets/img/work/studio_strategy.jpg` | 109.5 KB |
 | `assets/img/work/studio_08_power.png` | 109.1 KB |
 | `assets/img/case/next_about.jpg` | 108.9 KB |
 | `assets/img/case/sh_banner.jpg` | 108.2 KB |
@@ -196,18 +207,20 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/work/cab_top.jpg` | 62.9 KB |
 | `assets/img/case/sky_adv.jpg` | 61.1 KB |
 | `assets/img/case/dfi_sop.jpg` | 61.0 KB |
+| `assets/img/work/studio_f_wardrobe_dwg.png` | 59.9 KB |
 | `assets/img/case/vm_rising5.jpg` | 59.7 KB |
 | `assets/img/case/vm_rising1.jpg` | 57.8 KB |
 | `assets/img/work/cab_side.jpg` | 55.7 KB |
+| `assets/img/work/studio_f_tv_dwg.png` | 53.8 KB |
 | `assets/img/case/web_ia2.jpg` | 52.6 KB |
 | `assets/img/work/studio_03_demo.png` | 49.7 KB |
 | `assets/img/work/studio_07_plumbing.png` | 46.8 KB |
 | `assets/img/work/bath_plan.png` | 44.6 KB |
 | `assets/vendor/d3-lite.min.js` | 44.5 KB |
+| `assets/data/cases.json` | 42.1 KB |
 | `assets/img/work/bed_elevA.png` | 41.4 KB |
 | `assets/img/work/studio_01_survey.png` | 40.3 KB |
 | `assets/img/case/rma_flow_v2.jpg` | 38.3 KB |
-| `assets/data/cases.json` | 38.3 KB |
 | `assets/css/main.css` | 37.5 KB |
 | `assets/img/work/bed_elevB.png` | 35.8 KB |
 | `assets/img/work/bed_circuit.png` | 34.0 KB |
@@ -217,16 +230,17 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/work/studio_06_ceiling.png` | 23.9 KB |
 | `marketing.html` | 23.8 KB |
 | `interior.html` | 22.8 KB |
-| `projects/case.html` | 20.1 KB |
+| `projects/studio-grid.html` | 20.6 KB |
+| `projects/case.html` | 20.3 KB |
 | `assets/img/portrait.jpg` | 19.5 KB |
 | `projects/emerald.html` | 18.8 KB |
+| `assets/img/work/studio_f_bed_dwg.png` | 18.0 KB |
 | `assets/img/work/bed_lightpos.png` | 17.1 KB |
 | `assets/img/work/bed_ceiling.png` | 16.7 KB |
-| `projects/studio-grid.html` | 16.4 KB |
 | `assets/fonts/GenWanMin2TW-M-latin.woff2` | 12.9 KB |
 | `projects/studio.html` | 12.8 KB |
 | `assets/fonts/GenWanMin2TW-R-latin.woff2` | 12.8 KB |
-| `assets/data/works.json` | 11.5 KB |
+| `assets/data/works.json` | 12.1 KB |
 | `projects/bedroom.html` | 11.2 KB |
 | `assets/js/works-index.js` | 10.8 KB |
 | `projects/cabinet.html` | 9.7 KB |

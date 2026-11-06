@@ -29,14 +29,14 @@
       "year": "2026",
       "feature": true,
       "title": {
-        "zh": "板橋小套房｜從現況到水電",
-        "en": "Studio Renovation — Survey to MEP"
+        "zh": "板橋小套房｜改造提案",
+        "en": "Studio Renovation — Storage & Custom Furniture"
       },
       "summary": {
-        "zh": "長型小套房的改造提案：從現況、拆除、新作隔間，畫到地板、天花、給排水與電源插座，共 8 張施工圖。",
+        "zh": "長型小套房的改造提案：從丈量、8 張施工圖，到衣櫃、床頭櫃、電視櫃三件訂製家具與空間渲染。",
         "en": ""
       },
-      "tools": "AutoCAD",
+      "tools": "AutoCAD · SketchUp · V-Ray",
       "thumb": "assets/img/work/studio_render.jpg",
       "cover": false,
       "href": "projects/studio-grid.html",
@@ -59,6 +59,23 @@
       "thumb": "assets/img/work/emerald_render.jpg",
       "cover": false,
       "href": "projects/emerald.html"
+    },
+    {
+      "id": "studio-furniture",
+      "cat": "space",
+      "year": "2026",
+      "title": {
+        "zh": "板橋小套房｜訂製家具",
+        "en": "Custom Furniture — Banqiao Studio"
+      },
+      "summary": {
+        "zh": "為小套房設計的電視櫃、床頭櫃與衣櫃：尺寸圖與渲染。",
+        "en": ""
+      },
+      "tools": "AutoCAD · SketchUp",
+      "thumb": "assets/img/work/studio_f_wardrobe.jpg",
+      "cover": true,
+      "href": "projects/case.html?id=studio-furniture"
     },
     {
       "id": "cabinet",
@@ -328,6 +345,7 @@
           "en": "Furniture & Detail",
           "cat": "space",
           "works": [
+            "studio-furniture",
             "cabinet",
             "bedroom",
             "bathroom"

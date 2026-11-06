@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>板橋小套房｜K.H Design</title>
-  <meta name="description" content="長型小套房的改造提案：現況、配置、拆除、新作隔間、地板、天花、給排水與電源插座，共 8 張施工圖。">
+  <meta name="description" content="長型小套房的改造提案：8 張施工圖、3 件訂製家具與 4 張空間渲染。">
   <script>document.documentElement.classList.replace('no-js', 'js');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,6 +77,12 @@
     .plate__btn img { max-height: min(62vh, 620px); width: auto; object-fit: contain; mix-blend-mode: multiply; }
     .plate__btn--render img { mix-blend-mode: normal; }
     .plate:has(.plate__btn--render) { background: #fff; }
+    .plates .plate__btn--render { padding: 0; }
+    .plates .plate__btn--render { position: relative; min-height: 220px; }
+    .plates .plate__btn--render img { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; object-fit: cover; }
+    .plates .plate--tall .plate__btn--render { padding: clamp(14px, 3.4cqi, 40px); background: var(--plate); }
+    .plates .plate--tall .plate__btn--render { position: static; }
+    .plates .plate--tall .plate__btn--render img { position: static; width: auto; height: auto; max-height: min(78vh, 760px); object-fit: contain; }
     .plate figcaption { display: flex; justify-content: space-between; gap: 12px; padding: 8px 12px; border-top: 1px solid var(--rule); background: var(--bg); font-family: var(--f-mono); font-size: 11px; color: var(--ink-2); }
     .plate figcaption b { font-family: var(--f-body); font-weight: 500; color: var(--ink); }
 
@@ -87,6 +93,7 @@
     .sheet__name { display: flex; justify-content: space-between; gap: 12px; font-weight: 700; }
     .sheet__name span { font-family: var(--f-mono); font-size: 11px; font-weight: 400; color: var(--ink-2); }
     .sheet__text { color: var(--ink-2); font-size: 13px; }
+    .side-link { font-family: var(--f-mono); font-size: 12px; text-decoration: underline; text-underline-offset: 3px; }
 
     /* ---- 上下頁 ---- */
     .pager { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -121,6 +128,7 @@
       .chapter__side > .sticky { position: sticky; top: 112px; display: grid; gap: 18px; }
       .plates--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .plates--stack { grid-template-columns: minmax(0, 1fr); }
+      .plates--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
       .pager { display: contents; }
       .pager .cell { min-height: 110px; }
@@ -139,7 +147,7 @@
   </style>
 </head>
 <body data-work-id="studio">
-<script src="../assets/js/track.js?v=20261029b"></script>
+<script src="../assets/js/track.js?v=20261106a"></script>
 <div class="wrap">
   <article class="page" aria-labelledby="p-title">
     <div class="grid">
@@ -156,9 +164,9 @@
       <div class="row">
         <div class="cell mark-cell"><span class="mark" aria-hidden="true"></span></div>
         <div class="cell span-3 title-cell">
-          <span class="label">空間設計提案 · 2026.10</span>
+          <span class="label">空間設計提案 · 2026</span>
           <h1 class="title" id="p-title">板橋小套房</h1>
-          <span class="title-en">Studio Renovation — From Survey to MEP</span>
+          <span class="title-en">Studio Renovation — Storage &amp; Custom Furniture</span>
         </div>
       </div>
 
@@ -167,11 +175,11 @@
         <div class="cell">
           <dl class="meta">
             <div><dt>類型</dt><dd>空間設計提案</dd></div>
-            <div><dt>日期</dt><dd>2026.10</dd></div>
-            <div><dt>工具</dt><dd>AutoCAD</dd></div>
+            <div><dt>日期</dt><dd>2026.10–11</dd></div>
+            <div><dt>工具</dt><dd>AutoCAD · SketchUp · V-Ray</dd></div>
             <div><dt>比例</dt><dd>1:30</dd></div>
-            <div><dt>圖面</dt><dd>8 張</dd></div>
-            <div><dt>範圍</dt><dd>拆除 · 隔間 · 地坪 · 天花 · 水電</dd></div>
+            <div><dt>圖面</dt><dd>施工圖 8 張 · 家具 3 件 · 渲染 4 張</dd></div>
+            <div><dt>範圍</dt><dd>配置 · 拆除 · 隔間 · 地坪 · 天花 · 水電 · 訂製家具</dd></div>
           </dl>
         </div>
         <div class="cell span-3" style="padding:0">
@@ -185,9 +193,9 @@
       <!-- 目標／做法／成果 -->
       <div class="row story-row">
         <div class="cell"><span class="label">PROCESS</span></div>
-        <div class="cell story"><h3>設計目標</h3><p>以一間長型小套房為對象，從現況丈量開始，完成一套可以交給工班施工的改造圖。</p></div>
-        <div class="cell story"><h3>做法</h3><p>先畫現況與配置。浴室把馬桶與洗手台位置對調、改用日式橫拉門與玻璃隔屏，再依此畫出拆除、新作隔間、地板、天花與水電圖。</p></div>
-        <div class="cell story"><h3>成果</h3><p>8 張施工圖，從拆除一路交代到給排水與電源插座，圖框統一使用 K.H Design 的標準格式。</p></div>
+        <div class="cell story"><h3>設計目標</h3><p>這是我在板橋居住的小套房，一個人生活、工作，也收藏模型。實際住下來，發現收納不足、床邊沒有置物空間、柱子旁的角落閒置。</p></div>
+        <div class="cell story"><h3>做法</h3><p>從丈量和生活習慣出發：垂直收納、順著動線配置、利用畸零空間。現成家具不合用的地方，自己設計衣櫃、床頭櫃與電視櫃。</p></div>
+        <div class="cell story"><h3>成果</h3><p>8 張施工圖、3 件訂製家具圖與 4 張空間渲染，涵蓋拆除、隔間、地坪、天花、水電與家具尺寸。</p></div>
       </div>
 
       <div id="chapters" style="display:contents"></div>
@@ -199,7 +207,7 @@
         <div class="cell cell--mid" aria-hidden="true"></div>
         <a class="cell" href="emerald.html"><span class="label">NEXT →</span><b>02 預售屋｜綠翡翠</b></a>
       </div>
-      <div class="cell span-4 foot"><span>© 2026 K.H Design · 黃家禾</span><span>A001–A008</span></div>
+      <div class="cell span-4 foot"><span>© 2026 K.H Design · 黃家禾</span><span>A001–A008 · F001–F003</span></div>
     </div>
   </article>
 </div>
@@ -211,19 +219,43 @@
 
 <script>
 (() => {
+  // 每章：左欄說明（sheets）＋右側圖（plates）。plates 沒寫就用 sheets 的圖。render=true 的圖不做線稿疊色
+  const W = '../assets/img/work/';
   const CH = [
-    { no: '01', title: '現況／配置', layout: '2', sheets: [
-      { n: '01', name: '平面現況圖', scale: '1:30', img: 'studio_01_survey.png', text: '長型套房，淨深 579 cm，浴室在入口側。現況為平釘天花，室內 CH240、浴室 CH227.5，並標示門窗尺寸。' },
-      { n: '02', name: '平面配置圖', scale: '1:30', img: 'studio_02_layout.png', text: '沿長向配置工作區、睡眠區與收納，靠窗擺放書桌，入口側是浴室。' } ] },
-    { no: '02', title: '拆除／新作隔間', layout: 'stack', sheets: [
-      { n: '03', name: '拆除圖', scale: '1:30', img: 'studio_03_demo.png', text: '拆除浴室原門片與門框（門洞維持 W78 × H210）、原馬桶與洗手台，地坪拆除見底約 1 坪。' },
-      { n: '04', name: '新作隔間圖', scale: '1:30', img: 'studio_04_partition.png', text: '床頭背板封 6mm 矽酸鈣板；浴室改日式橫拉門，馬桶與洗手台對調，新作 8mm 強化清玻璃隔屏與人造石止水門檻。' } ] },
-    { no: '03', title: '地板／天花', layout: '2', sheets: [
-      { n: '05', name: '地板配置圖', scale: '1:30', img: 'studio_05_floor.png', text: '臥室 3.5 坪胡桃木木地板；衛浴與淋浴區各 0.5 坪，使用冠軍瓷磚維斯塔系列。' },
-      { n: '06', name: '天花板配置圖', scale: '1:30', img: 'studio_06_ceiling.png', text: '原平釘天花保留：臥室 CH240；浴室 CH≦227.5，依天花內管線現場調整。' } ] },
-    { no: '04', title: '給排水／電源', layout: '2', sheets: [
-      { n: '07', name: '水管排水圖', scale: '1:30', img: 'studio_07_plumbing.png', text: '原糞管封堵並移位，配合新的馬桶位置；列出給冷水、給冷熱水、排水、落水口與汙水。' },
-      { n: '08', name: '電源插座配置圖', scale: '1:30', img: 'studio_08_power.png', text: '接地型雙聯插座 18 個（110V）、專用迴路 2 組（220V），並標示安裝高度。' } ] },
+    { title: '設計策略', layout: 'stack', sheets: [
+      { n: '1', name: '分區配置', text: '沿走道規劃收納、工作、睡眠三區，各自獨立不干擾。' },
+      { n: '2', name: '順著動線', text: '依入口 → 衣櫃 → 浴室 → 床的順序配置，日常動線不必繞路。' },
+      { n: '3', name: '畸零空間利用', text: '柱邊凹角做成燈光展示層板，收藏模型與香氛。' },
+      { n: '4', name: '依需求設計家具', text: '現成家具無法完全符合需求，因此自行設計衣櫃、床頭櫃與電視櫃。' } ],
+      plates: [{ img: 'studio_strategy.jpg', cap: '設計策略', tag: '平面示意 · 1–4 對應左欄', render: true, tall: true }] },
+    { title: '現況／配置', layout: '2', sheets: [
+      { n: 'A001', name: '平面現況圖', scale: '1:30', img: 'studio_01_survey.png', text: '長型套房，淨深 579 cm，浴室在入口側。現況為平釘天花，室內 CH240、浴室 CH227.5，並標示門窗尺寸。' },
+      { n: 'A002', name: '平面配置圖', scale: '1:30', img: 'studio_02_layout.png', text: '沿走道規劃收納、工作、睡眠三區，各自獨立不干擾；床頭櫃、衣櫃與電視櫃為依需求設計的訂製家具。' } ] },
+    { title: '拆除／新作隔間', layout: 'stack', sheets: [
+      { n: 'A003', name: '拆除圖', scale: '1:30', img: 'studio_03_demo.png', text: '拆除浴室原有門片門框（門洞維持 W78 × H210）、馬桶與洗手台，浴室地坪拆除見底約 1 坪，重新施作防水。' },
+      { n: 'A004', name: '新作隔間圖', scale: '1:30', img: 'studio_04_partition.png', text: '床頭背板為單面隔間牆（角材骨架、面封 6mm 矽酸鈣板，總厚 4 cm）；浴室改為強化玻璃貼磨砂的日式橫拉門，馬桶與洗手台對調、糞管移位重配；淋浴區新作 8mm 強化清玻璃固定隔屏（H190）與 L 型人造石止水門檻。' } ] },
+    { title: '地板／天花', layout: '2', sheets: [
+      { n: 'A005', name: '地板配置圖', scale: '1:30', img: 'studio_05_floor.png', text: '臥室 3.5 坪胡桃木紋木地板；浴室乾區與淋浴區各 0.5 坪，以冠軍瓷磚維斯塔系列兩種規格區分。浴室門口與淋浴區新作人造石門檻，避免水氣外流。' },
+      { n: 'A006', name: '天花板配置圖', scale: '1:30', img: 'studio_06_ceiling.png', text: '原平釘天花保留：臥室 CH240；浴室 CH≦227.5，依天花內管線現場調整。' } ] },
+    { title: '給排水／電源', layout: '2', sheets: [
+      { n: 'A007', name: '水管排水圖', scale: '1:30', img: 'studio_07_plumbing.png', text: '原糞管封堵並移位，配合新的馬桶位置；列出給冷水、給冷熱水、排水、落水口與汙水。' },
+      { n: 'A008', name: '電源插座配置圖', scale: '1:30', img: 'studio_08_power.png', text: '接地型雙聯插座 18 個（110V）、專用迴路 2 組（220V），並標示安裝高度。' } ] },
+    { title: '依需求設計的家具', layout: '3', link: ['看家具尺寸圖 →', 'case.html?id=studio-furniture'], sheets: [
+      { n: 'F001', name: '電視櫃', scale: 'W110 × D40 × H50', text: '兩端倒圓角；上層格子加高放得下 PS5，背面開放散熱、隔板留穿線孔，中間設抽屜，底部高腳方便清掃。' },
+      { n: 'F002', name: '床頭櫃', scale: 'W44 × D30 × H55', text: '檯面與床墊同高，開口朝走道，朝床一側封閉。' },
+      { n: 'F003', name: '衣櫃', scale: 'W90 × D60 × H190', text: '不做到頂留出行李箱空間，左右拉門，左格吊衣、右格層板加抽屜。' } ],
+      plates: [
+        { img: 'studio_f_tv.jpg', cap: 'F001 電視櫃', tag: 'RENDER', render: true },
+        { img: 'studio_f_bedside.jpg', cap: 'F002 床頭櫃', tag: 'RENDER', render: true },
+        { img: 'studio_f_wardrobe.jpg', cap: 'F003 衣櫃', tag: 'RENDER', render: true } ] },
+    { title: '空間渲染', layout: '2', sheets: [
+      { n: 'R01', name: '玄關入口', text: '從入口望向房內，衣櫃、睡眠區與電視牆沿走道依序展開。' },
+      { n: 'R02', name: '工作區', text: '書桌、書櫃與衣櫃沿牆並排，工作與收納集中在同一側。' },
+      { n: 'R03', name: '電視牆與展示角落', text: '電視櫃延伸至柱邊層板，展示模型、放置香氛。' },
+      { n: 'R04', name: '睡眠區', text: '床頭背板內嵌間接燈光，睡眠區靠牆配置，遠離入口與工作區。' } ],
+      plates: [
+        { img: 'studio_r_entry.jpg', cap: 'R01 玄關入口', tag: 'RENDER', render: true }, { img: 'studio_r_work.jpg', cap: 'R02 工作區', tag: 'RENDER', render: true },
+        { img: 'studio_r_tv.jpg', cap: 'R03 電視牆與展示角落', tag: 'RENDER', render: true }, { img: 'studio_r_sleep.jpg', cap: 'R04 睡眠區', tag: 'RENDER', render: true } ] },
   ];
   const h = (tag, attrs = {}, kids = []) => {
     const n = document.createElement(tag);
@@ -231,22 +263,25 @@
     for (const c of [].concat(kids)) if (c) n.append(c);
     return n;
   };
+  const pad = (n) => String(n).padStart(2, '0');
   const host = document.getElementById('chapters');
-  CH.forEach((c) => {
+  CH.forEach((c, ci) => {
     const side = h('div', { class: 'cell chapter__side' }, h('div', { class: 'sticky' }, [
-      h('span', { class: 'chapter__no', text: `CHAPTER ${c.no} / 04` }),
+      h('span', { class: 'chapter__no', text: `CHAPTER ${pad(ci + 1)} / ${pad(CH.length)}` }),
       h('h2', { class: 'chapter__title', text: c.title }),
       ...c.sheets.map((s) => h('div', { class: 'sheet' }, [
-        h('p', { class: 'sheet__name' }, [`${s.n}　${s.name}`, h('span', { text: s.scale })]),
+        h('p', { class: 'sheet__name' }, [`${s.n}　${s.name}`, s.scale ? h('span', { text: s.scale }) : null]),
         h('p', { class: 'sheet__text', text: s.text }),
       ])),
+      c.link ? h('a', { class: 'side-link', href: c.link[1], text: c.link[0] }) : null,
     ]));
-    const plates = h('div', { class: 'plates ' + (c.layout === 'stack' ? 'plates--stack' : 'plates--2') }, c.sheets.map((s) =>
-      h('figure', { class: 'plate' }, [
-        h('button', { class: 'plate__btn', type: 'button', 'data-zoom': '', 'data-caption': `${s.n} ${s.name} ${s.scale}` }, h('img', { src: `../assets/img/work/${s.img}`, alt: `板橋小套房${s.name}`, loading: 'lazy', decoding: 'async' })),
-        h('figcaption', {}, [h('b', { text: s.name }), h('span', { text: `${s.n} / 08 · ${s.scale}` })]),
+    const plates = c.plates || c.sheets.map((s) => ({ img: s.img, cap: s.name, tag: `${s.n} · ${s.scale}` }));
+    const box = h('div', { class: 'plates ' + (c.layout === 'stack' ? 'plates--stack' : c.layout === '3' ? 'plates--3' : 'plates--2') }, plates.map((p) =>
+      h('figure', { class: 'plate' + (p.tall ? ' plate--tall' : '') }, [
+        h('button', { class: 'plate__btn' + (p.render ? ' plate__btn--render' : ''), type: 'button', 'data-zoom': '', 'data-caption': `${p.cap} · ${p.tag}` }, h('img', { src: W + p.img, alt: `板橋小套房 ${p.cap}`, loading: 'lazy', decoding: 'async' })),
+        h('figcaption', {}, [h('b', { text: p.cap }), h('span', { text: p.tag })]),
       ])));
-    host.append(h('div', { class: 'row' }, [side, h('div', { class: 'cell span-3', style: 'padding:0' }, plates)]));
+    host.append(h('div', { class: 'row' }, [side, h('div', { class: 'cell span-3', style: 'padding:0' }, box)]));
   });
 
   const lb = document.getElementById('lb');
