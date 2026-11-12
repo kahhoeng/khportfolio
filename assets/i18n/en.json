@@ -19,9 +19,9 @@
   "about.role": "M.S. in Interaction Design | Marketing Design · Video Content · Spatial Drafting",
   "about.creds": "Certifications: AutoCAD Certified User (ACU), ISO 27001 Internal Auditor | Taiwan permanent resident (no work permit required)",
   "stats.years": "Years in B2B tech",
-  "stats.videos": "Video assets produced end to end",
+  "stats.videos": "Videos shot, edited or color graded",
   "stats.guides": "Standardized install guides & video SOPs",
-  "stats.fae": "On-site FAE support requests",
+  "stats.fae": "FAE site visits & support calls (FAE team data)",
   "contact.location": "Location",
   "contact.city": "New Taipei City",
   "mk.line": "Making products clear through video and visuals.",
@@ -41,5 +41,6 @@
   "mk.u.none": " ",
   "mk.skill2": "Wireframes · Prototypes · Ideation",
   "mk.creds": "Certification: ISO 27001 Internal Auditor | Taiwan permanent resident (no work permit required)",
-  "mk.sub": "黃家禾"
+  "mk.sub": "黃家禾",
+  "mk.langs": "Chinese · English · Malay"
 }

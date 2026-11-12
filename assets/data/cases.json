@@ -177,7 +177,7 @@
         "跨團隊溝通：與 PM、企劃與 IKEA 窗口確認拍攝目標",
         "現場拍攝：觀察並捕捉系統操作的關鍵細節",
         "後期剪輯：把 B2B 技術流程整理成一看就懂的影片",
-        "全流程執行：從器材準備、現場引導到交片"
+        "全流程執行：從器材準備、現場引導到交片（訪談大綱由 PM 端訂定）"
       ],
       "chapters": [
         {
@@ -272,7 +272,7 @@
           "Cross-team coordination: aligned shoot goals with the PM, planning team and IKEA contact",
           "On-site shooting: observed and captured the key details of how the system is operated",
           "Editing: turned a B2B technical process into a video anyone can follow at a glance",
-          "End-to-end execution: from gear prep and on-site direction to final delivery"
+          "End-to-end execution, from gear prep and on-site direction to final delivery (interview questions were set by the PM team)"
         ],
         "chapters": [
           {
@@ -333,7 +333,7 @@
         "與產品行銷團隊逐一確認安裝步驟，確保教學正確",
         "場勘並規劃拍攝環境：銀色主機與黑色配件容易反光或吃光，特別挑選背景讓細節清楚",
         "把安裝流程拆成 10 個拍攝單元，製作分鏡腳本",
-        "初剪、模組化素材、統一調色（LUTs）與字卡規範"
+        "統一調色（LUTs）與字卡規範；初剪與 After Effects 片頭片尾由主管製作"
       ],
       "chapters": [
         {
@@ -445,7 +445,7 @@
           "Checked every installation step with the product marketing team to make sure the tutorials were accurate",
           "Scouted and planned the set: the silver main unit and black accessories easily reflect or lose light, so I chose backgrounds that keep details legible",
           "Split the installation process into 10 shooting units and wrote the storyboards",
-          "Rough cut, modular assets, unified color grading (LUTs) and title-card rules"
+          "Unified color grading (LUTs) and title-card rules; the rough cut and After Effects intro/outro were done by my manager"
         ],
         "chapters": [
           {
@@ -652,7 +652,7 @@
         ],
         [
           "範圍",
-          "資訊架構 · 線框圖 · Mockup · 設計規範"
+          "資訊架構 · 線框圖 · Mockup · 介面樣式"
         ],
         [
           "工具",
@@ -671,7 +671,7 @@
         "盤點產品資料，依架構判斷各頁的資訊層級並編排",
         "繪製線框圖與瀏覽路徑，從首頁順暢導到解決方案頁",
         "蒐集參考、提出視覺提案並製作高保真 Mockup",
-        "建立色彩、字體、間距與元件的設計規範"
+        "以主管提供的色彩表為基礎，決定介面樣式與按鈕配色"
       ],
       "chapters": [
         {
@@ -724,7 +724,7 @@
         },
         {
           "title": "Mockup 與改版對照",
-          "text": "依線框圖與設計規範繪製關鍵頁面 Mockup。改版後大量使用白底與卡片式版面，以 Overview、Features、Use Cases、Documentation 分段，讓頁面更專注在產品介紹與資源。",
+          "text": "依線框圖繪製關鍵頁面 Mockup。改版後大量使用白底與卡片式版面，以 Overview、Features、Use Cases、Documentation 分段，讓頁面更專注在產品介紹與資源。",
           "layout": "2",
           "photo": false,
           "images": [
@@ -756,7 +756,7 @@
           ],
           [
             "Scope",
-            "IA · Wireframes · Mockups · Design spec"
+            "IA · Wireframes · Mockups · UI styles"
           ],
           [
             "Tools",
@@ -775,7 +775,7 @@
           "Inventoried product content and set the information hierarchy for each page",
           "Drew wireframes and user flows leading smoothly from the homepage to solution pages",
           "Gathered references, proposed visual directions and built high-fidelity mockups",
-          "Defined the design spec for color, type, spacing and components"
+          "Worked from my manager's color sheet and decided the UI styles and button colors"
         ],
         "chapters": [
           {
@@ -804,7 +804,7 @@
           },
           {
             "title": "Mockups & Before/After",
-            "text": "Mockups of key pages based on the wireframes and design spec. The redesign uses white space and card layouts, with Overview, Features, Use Cases and Documentation sections keeping pages focused on the product and its resources.",
+            "text": "Mockups of key pages based on the wireframes. The redesign uses white space and card layouts, with Overview, Features, Use Cases and Documentation sections keeping pages focused on the product and its resources.",
             "caps": [
               "Homepage mockup",
               "Mobile360 FSS product page mockup",
@@ -1925,7 +1925,7 @@
         ]
       ],
       "overview": "威盛智慧醫療方案連續幾年參加台灣醫療科技展，這一頁收錄我在這條產品線上做的印刷品：2018 年的智慧病房 3 合 1 方案 DM、2019 年與馬偕紀念醫院合作的智慧急診室 DM，以及 2020 年聯合展位的急診戰情室背板。",
-      "challenge": "DM 要在三折的有限版面裡，排進系統架構、多張介面畫面、規格表與 App 截圖；2020 年的背板則是外包成品未達要求，需要在展期前接手重做，並符合 130 × 70 cm 的大圖輸出規格。",
+      "challenge": "DM 要在三折的有限版面裡，排進系統架構、多張介面畫面、規格表與 App 截圖；2020 年的背板則需要在展期前接手重新設計，並符合 130 × 70 cm 的大圖輸出規格。",
       "role": [
         "兩份 DM：負責版面設計與排版，整合介面截圖、規格表、圖示與照片（定稿前由同事協助修正一版）",
         "2020 展場背板：接手重新設計版面與文字編排，並完成大圖輸出檔"
@@ -1965,7 +1965,7 @@
         },
         {
           "title": "急診戰情室背板｜2020",
-          "text": "2020 台灣醫療科技展威盛與馬偕的聯合展位背板（130 × 70 cm）。展場海報原委由外包設計，這一張成品未達要求，由我接手重新設計並完成輸出。上方是電子看板的實際畫面，下方以波浪色塊承接四項功能。畫面中的人名已模糊處理。",
+          "text": "2020 台灣醫療科技展威盛與馬偕的聯合展位背板（130 × 70 cm）。展場海報原委由外包設計，這一張在展前改由我接手重新設計並完成輸出。上方是電子看板的實際畫面，下方以波浪色塊承接四項功能。畫面中的人名已模糊處理。",
           "layout": "one",
           "photo": true,
           "images": [
@@ -1997,7 +1997,7 @@
           ]
         ],
         "overview": "VIA's smart healthcare solutions exhibited at Healthcare Expo Taiwan for several years running. This page collects the print pieces I made for that product line: a 2018 brochure for the 3-in-1 smart ward solution, a 2019 smart ER brochure developed with MacKay Memorial Hospital, and the ER command center backdrop for the 2020 joint booth.",
-        "challenge": "Each brochure had to fit a system diagram, multiple UI screens, a spec table and app screenshots into a tri-fold. In 2020, the outsourced backdrop did not meet the brief and had to be redone before the show, to a 130 × 70 cm large-format print spec.",
+        "challenge": "Each brochure had to fit a system diagram, multiple UI screens, a spec table and app screenshots into a tri-fold. In 2020, the backdrop needed to be redone before the show, so I took it over and redesigned it to a 130 × 70 cm large-format print spec.",
         "role": [
           "Both brochures: layout and typesetting, bringing together UI screenshots, spec tables, icons and photos (a colleague revised one version before final)",
           "2020 expo backdrop: took over and redesigned the layout and typography, and prepared the large-format print file"
@@ -2021,7 +2021,7 @@
           },
           {
             "title": "ER Command Center Backdrop | 2020",
-            "text": "Backdrop for the VIA × MacKay joint booth at Healthcare Expo Taiwan 2020 (130 × 70 cm). The expo posters were originally outsourced; this one did not meet the brief, so I took it over, redesigned it and prepared it for print. Real signage screens sit at the top, and a wave of color below carries the four features. Names on screen have been blurred.",
+            "text": "Backdrop for the VIA × MacKay joint booth at Healthcare Expo Taiwan 2020 (130 × 70 cm). The expo posters were originally outsourced; this one was handed to me before the show, and I redesigned it and prepared it for print. Real signage screens sit at the top, and a wave of color below carries the four features. Names on screen have been blurred.",
             "caps": [
               "Healthcare Expo Taiwan 2020 backdrop"
             ]
