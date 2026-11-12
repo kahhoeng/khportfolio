@@ -81,20 +81,20 @@ d3 採 ISC 授權，© Mike Bostock。
 <!-- RESOURCES:START -->
 ## 資源清單
 
-> 自動產生，請勿手動修改。更新時間：2026-11-11
+> 自動產生，請勿手動修改。更新時間：2026-11-12
 
-**總計 20.0 MB**，共 160 個檔案，約佔 GitHub Pages 建議上限（1 GB）的 2.0%。
+**總計 21.8 MB**，共 169 個檔案，約佔 GitHub Pages 建議上限（1 GB）的 2.1%。
 
 ### 分類小計
 
 | 分類 | 檔案數 | 大小 |
 |---|---:|---:|
-| 作品圖（assets/img/case） | 81 | 13.1 MB |
+| 作品圖（assets/img/case） | 90 | 14.9 MB |
 | 課程作品圖（assets/img/work） | 41 | 4.0 MB |
 | 其他 | 4 | 2.5 MB |
 | 頁面（HTML） | 11 | 158.9 KB |
 | 程式（assets/js、vendor） | 8 | 82.2 KB |
-| 資料（assets/data、i18n） | 4 | 58.5 KB |
+| 資料（assets/data、i18n） | 4 | 66.8 KB |
 | 樣式（assets/css） | 2 | 40.0 KB |
 | 其他圖片（logo、點陣、大頭照） | 6 | 38.1 KB |
 | 字型（assets/fonts） | 3 | 30.0 KB |
@@ -117,15 +117,20 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/case/ikea_cover.jpg` | 336.4 KB |
 | `assets/img/case/sky_p3.jpg` | 326.1 KB |
 | `assets/img/case/sky_p1.jpg` | 320.9 KB |
+| `assets/img/case/pdm_er_2.jpg` | 319.4 KB |
+| `assets/img/case/auto_cover.jpg` | 298.1 KB |
 | `assets/img/case/ikea_2.jpg` | 274.2 KB |
 | `assets/img/case/web_mock.jpg` | 272.5 KB |
 | `assets/img/case/sky_p4.jpg` | 267.8 KB |
 | `assets/img/case/sky_p2.jpg` | 266.7 KB |
 | `assets/img/work/studio_render.jpg` | 265.0 KB |
 | `assets/img/case/ikea_4.jpg` | 259.1 KB |
+| `assets/img/case/pdm_ward_2.jpg` | 256.3 KB |
 | `assets/img/case/sky_flow.jpg` | 255.2 KB |
 | `assets/img/case/vm_truck.jpg` | 246.8 KB |
 | `assets/img/case/rma_warranty_1.jpg` | 244.7 KB |
+| `assets/img/case/pdm_backdrop.jpg` | 229.9 KB |
+| `assets/img/case/pdm_ward_1.jpg` | 229.9 KB |
 | `assets/img/case/rma_form.jpg` | 219.2 KB |
 | `assets/img/work/emerald_render.jpg` | 217.0 KB |
 | `assets/img/case/web_landing.jpg` | 213.3 KB |
@@ -138,6 +143,7 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/work/studio_r_work.jpg` | 194.7 KB |
 | `assets/img/work/cab_front.jpg` | 194.0 KB |
 | `assets/img/case/sh_v2.jpg` | 184.1 KB |
+| `assets/img/case/pdm_er_1.jpg` | 183.5 KB |
 | `assets/img/work/studio_f_tv_front.jpg` | 181.4 KB |
 | `assets/img/case/vm_shield.jpg` | 173.8 KB |
 | `assets/img/work/studio_f_tv_45.jpg` | 173.0 KB |
@@ -158,6 +164,7 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/case/sky_home.jpg` | 152.1 KB |
 | `assets/img/case/ikea_7.jpg` | 151.0 KB |
 | `assets/img/case/rma_sop_1.jpg` | 150.3 KB |
+| `assets/img/case/web_ref3.jpg` | 147.3 KB |
 | `assets/img/work/emerald_01_survey.png` | 141.7 KB |
 | `assets/img/case/next_sol.jpg` | 139.0 KB |
 | `assets/img/case/next_dm.jpg` | 137.7 KB |
@@ -178,6 +185,7 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/case/sh_banner.jpg` | 108.2 KB |
 | `assets/img/case/sh_cat.jpg` | 104.1 KB |
 | `assets/img/case/next_home.jpg` | 104.0 KB |
+| `assets/img/case/web_ref1.jpg` | 103.3 KB |
 | `assets/img/case/web_ia1.jpg` | 103.3 KB |
 | `assets/img/case/vm_rising2.jpg` | 100.1 KB |
 | `assets/img/case/m360v_3.jpg` | 99.0 KB |
@@ -199,6 +207,7 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/case/sh_v1.jpg` | 72.7 KB |
 | `assets/img/case/dsg_vr2.jpg` | 72.5 KB |
 | `assets/img/work/studio_04_partition.png` | 69.7 KB |
+| `assets/img/case/web_ref2.jpg` | 67.4 KB |
 | `assets/img/case/dsg_vr1.jpg` | 67.0 KB |
 | `assets/img/work/studio_02_layout.png` | 66.2 KB |
 | `assets/img/case/vm_zone.jpg` | 65.8 KB |
@@ -214,10 +223,10 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/work/studio_f_tv_dwg.png` | 53.8 KB |
 | `assets/img/case/web_ia2.jpg` | 52.6 KB |
 | `assets/img/work/studio_03_demo.png` | 49.7 KB |
+| `assets/data/cases.json` | 48.2 KB |
 | `assets/img/work/studio_07_plumbing.png` | 46.8 KB |
 | `assets/img/work/bath_plan.png` | 44.6 KB |
 | `assets/vendor/d3-lite.min.js` | 44.5 KB |
-| `assets/data/cases.json` | 42.1 KB |
 | `assets/img/work/bed_elevA.png` | 41.4 KB |
 | `assets/img/work/studio_01_survey.png` | 40.3 KB |
 | `assets/img/case/rma_flow_v2.jpg` | 38.3 KB |
@@ -237,10 +246,10 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/work/studio_f_bed_dwg.png` | 18.0 KB |
 | `assets/img/work/bed_lightpos.png` | 17.1 KB |
 | `assets/img/work/bed_ceiling.png` | 16.7 KB |
+| `assets/data/works.json` | 14.2 KB |
 | `assets/fonts/GenWanMin2TW-M-latin.woff2` | 12.9 KB |
 | `projects/studio.html` | 12.8 KB |
 | `assets/fonts/GenWanMin2TW-R-latin.woff2` | 12.8 KB |
-| `assets/data/works.json` | 12.1 KB |
 | `projects/bedroom.html` | 11.2 KB |
 | `assets/js/works-index.js` | 10.8 KB |
 | `projects/cabinet.html` | 9.7 KB |
