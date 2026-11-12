@@ -90,7 +90,65 @@
             ]
           ]
         }
-      ]
+      ],
+      "en_content": {
+        "badge": "VIA Smart City · Proposal",
+        "meta": [
+          [
+            "Type",
+            "Digital signage proposals"
+          ],
+          [
+            "Featured case",
+            "Banqiao animal shelter (Life Education Center)"
+          ],
+          [
+            "Tools",
+            "Photoshop · Illustrator · SketchUp"
+          ]
+        ],
+        "overview": "From 2018 to 2021 in VIA's Smart City division, I handled digital signage proposals for clients, turning hardware specs into space plans and use scenarios for malls, cultural venues, healthcare and offices. The featured case is the Banqiao animal shelter: many animals, limited space and staff, and pressure on both care quality and adoption rates. Together with the shelter, we proposed interactive and signage improvements that also promote life education.",
+        "challenge": "Space was tight, the number of animals was large, and the public's existing image of shelters needed to change. The proposal had to raise interest in meeting and adopting animals without adding staff.",
+        "role": [
+          "Surveyed the site and discussed needs and space constraints with the person in charge",
+          "Planned how the products would be deployed, presenting the proposal with 3D models and mockups",
+          "Designed the life-education interactive experience with the interaction design team"
+        ],
+        "chapters": [
+          {
+            "title": "Site Survey",
+            "text": "Documented kennels, aisles and existing signs as the basis for equipment placement and visitor flow.",
+            "caps": [
+              "Kennels and aisle",
+              "Puppy kennels",
+              "Adoption info on cages",
+              "Adult dog aisle"
+            ]
+          },
+          {
+            "title": "Proposal Plan",
+            "text": "Marked a pet selection zone and an interactive zone on the floor plan, matched to the adult and puppy kennels.",
+            "caps": [
+              "Proposal | Floor plan"
+            ]
+          },
+          {
+            "title": "Pet Selection Zone",
+            "text": "Screens and cameras at the adult and puppy kennels let visitors see the animals live; a \"Star of the Month\" feature promotes priority adoptions.",
+            "caps": [
+              "Pet selection zone | Signage layout"
+            ]
+          },
+          {
+            "title": "Interactive Zone",
+            "text": "VR headsets and a large screen show the animals in everyday scenes, so visitors get to know them before adopting.",
+            "caps": [
+              "VR scene and characters",
+              "Interactive zone layout"
+            ]
+          }
+        ]
+      }
     },
     "ikea": {
       "badge": "VIA 智慧城市 · 客戶案例影片",
@@ -187,7 +245,66 @@
             ]
           ]
         }
-      ]
+      ],
+      "en_content": {
+        "badge": "VIA Smart City · Customer Case Video",
+        "meta": [
+          [
+            "Type",
+            "B2B customer case video"
+          ],
+          [
+            "My part",
+            "Shoot · Edit · Color · Script"
+          ],
+          [
+            "Tools",
+            "Premiere · After Effects · Illustrator · Photoshop"
+          ],
+          [
+            "Gear",
+            "Sony A7III · Tamron 17-28mm"
+          ]
+        ],
+        "overview": "Worked with VIA's Smart City division to document the rollout of a smart queuing system at IKEA Taichung. I captured how the system is actually used and translated its value on camera into a persuasive success story, so more prospective clients could see what the solution delivers.",
+        "challenge": "The two stakeholders cared about different things: the PM side needed the applications and technical features explained clearly, while IKEA focused on real results and feedback after rollout. The structure had to serve both.",
+        "role": [
+          "Cross-team coordination: aligned shoot goals with the PM, planning team and IKEA contact",
+          "On-site shooting: observed and captured the key details of how the system is operated",
+          "Editing: turned a B2B technical process into a video anyone can follow at a glance",
+          "End-to-end execution: from gear prep and on-site direction to final delivery"
+        ],
+        "chapters": [
+          {
+            "title": "On-site Shoot",
+            "text": "Alongside the interviews, I shot B-roll of installation, staff training and everyday use, so viewers could follow each step of the rollout and see the system in context.",
+            "caps": [
+              "Rollout on site",
+              "Hardware installation",
+              "VIA PM interview",
+              "IKEA staff interview"
+            ]
+          },
+          {
+            "title": "Visualizing Product Features",
+            "text": "Close-ups combined with motion graphics explain the kiosk functions, antibacterial coating and shatter protection. In post, I built modular assets, unified color settings and title-card rules to keep the series consistent.",
+            "caps": [
+              "Kiosk functions",
+              "Antibacterial coating (opening)",
+              "Antibacterial coating",
+              "Shatter protection"
+            ]
+          },
+          {
+            "title": "Final Videos",
+            "text": "Two videos, each from a different angle: the PM's view on applications and technical features, and IKEA's view on results and user feedback.",
+            "vcaps": [
+              "PM's view | Applications & technical features",
+              "IKEA's view | Results & user feedback"
+            ]
+          }
+        ]
+      }
     },
     "mobile360": {
       "badge": "VIA · 教學影片",
@@ -301,7 +418,64 @@
             ]
           ]
         }
-      ]
+      ],
+      "en_content": {
+        "badge": "VIA · Tutorial Videos",
+        "meta": [
+          [
+            "Type",
+            "Installation & calibration tutorials"
+          ],
+          [
+            "My part",
+            "Shoot · Edit · Color · Script"
+          ],
+          [
+            "Tools",
+            "Premiere · After Effects · Audition"
+          ],
+          [
+            "Gear",
+            "Sony A7III · Tamron 17-28mm"
+          ]
+        ],
+        "overview": "For the Mobile360 AI forklift safety system, I worked with the product marketing team to produce standardized installation and calibration tutorials. Through shooting, annotated effects and post-production, a dense technical manual became clear, intuitive videos that help distributors and users worldwide complete the installation.",
+        "challenge": "The manual was thorough but slow and hard to read. With only text and diagrams, distributors struggled to follow the wiring and calibration steps, which led to installation errors and long labor hours.",
+        "role": [
+          "Checked every installation step with the product marketing team to make sure the tutorials were accurate",
+          "Scouted and planned the set: the silver main unit and black accessories easily reflect or lose light, so I chose backgrounds that keep details legible",
+          "Split the installation process into 10 shooting units and wrote the storyboards",
+          "Rough cut, modular assets, unified color grading (LUTs) and title-card rules"
+        ],
+        "chapters": [
+          {
+            "title": "Shooting",
+            "text": "Fixed camera settings, checked every shot against the storyboard list on set, and offloaded footage with a double backup at the end of each day.",
+            "caps": [
+              "Opening | Preparation",
+              "Unboxing & accessories",
+              "Mounting on the forklift",
+              "Demo vehicle"
+            ]
+          },
+          {
+            "title": "Final Videos",
+            "text": "10 installation tutorials, split by step so distributors can watch exactly the part they need.",
+            "vcaps": [
+              "Tutorial 01",
+              "Tutorial 02",
+              "Tutorial 03",
+              "Tutorial 04",
+              "Tutorial 05",
+              "Tutorial 06",
+              "Tutorial 07",
+              "Tutorial 08",
+              "Tutorial 09",
+              "Tutorial 10"
+            ]
+          }
+        ]
+      }
     },
     "smarthome": {
       "badge": "VIA 智慧城市 · 情境影片",
@@ -354,7 +528,47 @@
           ],
           "images": []
         }
-      ]
+      ],
+      "en_content": {
+        "badge": "VIA Smart City · Scenario Video",
+        "meta": [
+          [
+            "Type",
+            "Product scenario & intro videos"
+          ],
+          [
+            "My part",
+            "Script · Shoot · Edit · Color"
+          ],
+          [
+            "Tools",
+            "Premiere · After Effects"
+          ]
+        ],
+        "overview": "Existing sales materials and brochures were mostly technical specs, so distributors spent a lot of time explaining verbally how the Smart Home IoT products work together. This project turned those device interactions and everyday scenarios into video, so customers can see how the system works.",
+        "challenge": "How the devices link and trigger each other is hard to describe in text. The operating logic had to become everyday language customers understand, while staying technically accurate.",
+        "role": [
+          "Broke down device interactions with FAE and R&D, and wrote them up as scenario scripts",
+          "Planned the shoot and on-site footage to support multiple edit versions",
+          "Editing, color grading and sound, keeping the series consistent"
+        ],
+        "chapters": [
+          {
+            "title": "Script & Storyboard",
+            "text": "Planned the frame, shooting details and props for every scene on a storyboard sheet before the shoot.",
+            "caps": [
+              "Scenario video storyboard"
+            ]
+          },
+          {
+            "title": "Results",
+            "text": "Two kinds of video, scenario and product introduction, that sales and distributors can pick by occasion (trade shows, pitches, training). How the products work together now takes 1–2 minutes to explain.",
+            "vcaps": [
+              "VIA Smart Home | Scenario video"
+            ]
+          }
+        ]
+      }
     },
     "smarthome-guide": {
       "badge": "VIA 智慧城市 · 教學影片",
@@ -393,7 +607,40 @@
             ]
           ]
         }
-      ]
+      ],
+      "en_content": {
+        "badge": "VIA Smart City · Tutorial Videos",
+        "meta": [
+          [
+            "Type",
+            "Product setup tutorials"
+          ],
+          [
+            "My part",
+            "Script · Edit · Motion titles"
+          ],
+          [
+            "Tools",
+            "Premiere · After Effects"
+          ]
+        ],
+        "overview": "Turned the setup process for Smart Home products from a technical manual into segmented video tutorials, so distributors and users can find the exact step they need.",
+        "challenge": "The manual was long and hard to consult on a job site. Text and diagrams alone could not show the hardware and software settings clearly, which led to mistakes and longer deployments.",
+        "role": [
+          "Mapped the user path and split the long process into standalone tutorial segments with scripts",
+          "Sourced native screen recordings and checked that screens and steps were correct",
+          "Edited and used motion titles and local highlights to mark key actions"
+        ],
+        "chapters": [
+          {
+            "title": "Results",
+            "text": "A complete Master Guide plus modular short videos by feature (security, community property, monitoring, notifications, system settings, calling) that installers can pull up on demand.",
+            "caps": [
+              "Installation scenario overview"
+            ]
+          }
+        ]
+      }
     },
     "via-web": {
       "badge": "VIA · 官網改版",
@@ -499,7 +746,74 @@
             ]
           ]
         }
-      ]
+      ],
+      "en_content": {
+        "badge": "VIA · Website Redesign",
+        "meta": [
+          [
+            "Type",
+            "Corporate website redesign"
+          ],
+          [
+            "Scope",
+            "IA · Wireframes · Mockups · Design spec"
+          ],
+          [
+            "Tools",
+            "Adobe XD · Photoshop"
+          ]
+        ],
+        "links": [
+          [
+            "VIA website",
+            "https://www.viatech.com/en/home-en/"
+          ]
+        ],
+        "overview": "Took part in the UI/UX redesign of the corporate website as part of VIA's rebrand. The old structure could not support the new industry-solutions positioning, so we re-planned how information is categorized and presented.",
+        "challenge": "The company was focusing on in-vehicle safety systems while also bringing smart city display solutions and smart home products onto the site. With products spanning from single hardware to many settings, the site needed an information architecture that could hold all three solution lines.",
+        "role": [
+          "Inventoried product content and set the information hierarchy for each page",
+          "Drew wireframes and user flows leading smoothly from the homepage to solution pages",
+          "Gathered references, proposed visual directions and built high-fidelity mockups",
+          "Defined the design spec for color, type, spacing and components"
+        ],
+        "chapters": [
+          {
+            "title": "Research & References",
+            "text": "Before the redesign, I reviewed about 40 automotive, industrial and tech brand websites, annotated useful approaches to information architecture, navigation and layout rhythm, and compiled them into two reference documents to guide team discussions.",
+            "caps": [
+              "Annotated reference: key info and cues",
+              "Annotated reference: menu categories",
+              "Annotated reference: product page blocks"
+            ]
+          },
+          {
+            "title": "Site Map",
+            "text": "Dropped the hardware-spec categories and rebuilt navigation around solutions and industry applications.",
+            "caps": [
+              "Solution categories",
+              "Page block planning"
+            ]
+          },
+          {
+            "title": "Modular Wireframes",
+            "text": "Designed wireframe modules covering every use case in advance, so different information blocks could be applied quickly and consistently, speeding up the build.",
+            "caps": [
+              "Wireframe modules"
+            ]
+          },
+          {
+            "title": "Mockups & Before/After",
+            "text": "Mockups of key pages based on the wireframes and design spec. The redesign uses white space and card layouts, with Overview, Features, Use Cases and Documentation sections keeping pages focused on the product and its resources.",
+            "caps": [
+              "Homepage mockup",
+              "Mobile360 FSS product page mockup",
+              "Solutions page | After",
+              "Mobile360 landing page"
+            ]
+          }
+        ]
+      }
     },
     "via-next": {
       "badge": "威宏科技（VIA NEXT）· 官網",
@@ -571,7 +885,56 @@
             ]
           ]
         }
-      ]
+      ],
+      "en_content": {
+        "badge": "VIA NEXT · Website",
+        "meta": [
+          [
+            "Type",
+            "Subsidiary website build"
+          ],
+          [
+            "Scope",
+            "Wireframes · Developer handoff"
+          ],
+          [
+            "Tools",
+            "Adobe XD"
+          ]
+        ],
+        "links": [
+          [
+            "VIA NEXT website",
+            "https://www.vianextech.com/tc/home-tc/"
+          ]
+        ],
+        "overview": "Website build for VIA NEXT, a VIA subsidiary. The schedule was tight and led by the marketing team: I turned the subsidiary's existing information architecture and product needs into workable wireframes, so the project could land accurately under pressure with clear build standards for developers.",
+        "challenge": "Building a digital presence from scratch; reshaping long plain text into web-friendly blocks; and, to launch on time, going straight to wireframes with a desktop-first approach.",
+        "role": [
+          "Turned the source copy into page layouts within the existing structure, improving readability",
+          "Stayed in sync with front-end developers to confirm feasibility and fine-tune interactions"
+        ],
+        "chapters": [
+          {
+            "title": "Key Visual",
+            "text": "A key visual built on a chip-and-circuit theme.",
+            "caps": [
+              "Key visual"
+            ]
+          },
+          {
+            "title": "Wireframes",
+            "text": "Wireframes for the homepage, core capabilities, solutions and about pages.",
+            "caps": [
+              "Homepage",
+              "Core capabilities",
+              "Solutions",
+              "Solution detail",
+              "About us"
+            ]
+          }
+        ]
+      }
     },
     "skyrec": {
       "badge": "研究所碩二實習 · SkyREC",
@@ -784,7 +1147,72 @@
             ]
           ]
         }
-      ]
+      ],
+      "en_content": {
+        "badge": "VIA Smart City · Process Documents",
+        "meta": [
+          [
+            "Type",
+            "Process documentation · Information design"
+          ],
+          [
+            "Scope",
+            "Shipping · Warranty · SOP · Form · FAQ"
+          ],
+          [
+            "Tools",
+            "InDesign"
+          ]
+        ],
+        "overview": "The shipping and RMA (return, replacement and repair) rules were set by management and the relevant departments. My job was to turn those rules into 5 documents: clarify the steps and branches, unify the format, and redesign the layouts and flowcharts in InDesign so both customers and internal staff could follow them.",
+        "challenge": "There were only a few flowcharts in mixed styles, and branches such as in- vs. out-of-warranty or paid vs. free were hard to follow. The same rules served both external customers and internal staff, so they had to be organized into separate versions.",
+        "role": [
+          "Clarified the steps and branches and redrew them as consistent flowcharts",
+          "Designed a document template in InDesign and applied it across all 5 documents",
+          "Organized separate external and internal versions"
+        ],
+        "chapters": [
+          {
+            "title": "Original Flowcharts",
+            "text": "The flowcharts before: the information was there, but styles were inconsistent and the branches and notes were hard to read.",
+            "caps": [
+              "Original repair request flow",
+              "Original RMA flow"
+            ]
+          },
+          {
+            "title": "External: Shipping",
+            "text": "Shipping steps laid out on a timeline, with working days marked for each stage and prerequisites noted below.",
+            "caps": [
+              "Shipping guide"
+            ]
+          },
+          {
+            "title": "External: Warranty & Repair",
+            "text": "Page one covers how to request a repair and what to prepare; page two is the RMA repair flow, with left and right branches separating free in-warranty repairs from paid out-of-warranty repairs.",
+            "caps": [
+              "Warranty policy P.1",
+              "Warranty policy P.2 · RMA repair flow"
+            ]
+          },
+          {
+            "title": "Internal SOP",
+            "text": "The internal version uses three columns, Steps, Owner and Action Items, so who handles each step and what to record is clear at a glance.",
+            "caps": [
+              "Internal SOP P.1 · Repair & RMA flow",
+              "Internal SOP P.2 · Fault repair flow"
+            ]
+          },
+          {
+            "title": "Working Tools",
+            "text": "The RMA form standardizes the fields customers fill in, with VIA's internal section color-coded; the FAQ organizes common questions in Q&A form.",
+            "caps": [
+              "RMA form (customer data removed)",
+              "FAQ"
+            ]
+          }
+        ]
+      }
     },
     "via-marketing": {
       "badge": "VIA · 產品行銷",
@@ -910,7 +1338,71 @@
             ]
           ]
         }
-      ]
+      ],
+      "en_content": {
+        "badge": "VIA · Product Marketing",
+        "meta": [
+          [
+            "Type",
+            "Global marketing assets"
+          ],
+          [
+            "Channels",
+            "LinkedIn · Minexpo 2024 · Website · EDM"
+          ],
+          [
+            "Tools",
+            "Illustrator · Photoshop · After Effects · Premiere"
+          ]
+        ],
+        "overview": "Produced global marketing assets for the VIA Mobile360 AI safety system across LinkedIn, Minexpo 2024 and the website. Working with the copy and planning team, I turned technical specs into videos, infographics and other visuals, and kept them consistent across channels.",
+        "challenge": "Large excavators and forklifts are rare in Taiwan, so we could not shoot on site and relied on scattered footage from US colleagues. Specs like AI vision-based collision avoidance and sensor fusion are dry, making it hard for B2B decision-makers to quickly see the business value.",
+        "role": [
+          "Created LinkedIn product graphics, carousel posts and infographics",
+          "Edited Minexpo 2024 feature videos, an overview video and a recap video",
+          "Checked Sales Kit technical descriptions with the PM to keep them accurate to the specs",
+          "Selected and post-produced footage supplied by US colleagues"
+        ],
+        "chapters": [
+          {
+            "title": "LinkedIn Product Graphics",
+            "text": "LinkedIn product graphics: AI technical articles turned into easy-to-read infographics, with detection targets (people, objects, vehicles) organized into modules.",
+            "caps": [
+              "Jobsite safety key visual",
+              "Advanced Sensor Fusion",
+              "Seatbelt Sensor"
+            ]
+          },
+          {
+            "title": "Carousel Posts",
+            "text": "Opens with workplace accident data and leads to a free consultation.",
+            "caps": [
+              "Carousel 1",
+              "Carousel 2",
+              "Carousel 3",
+              "Carousel 4",
+              "Carousel 5"
+            ]
+          },
+          {
+            "title": "Minexpo 2024",
+            "text": "Assets for before, during and after the show: LinkedIn and EDM teasers beforehand; 10 feature videos and 1 overview video during the show, demonstrated with UI screens and real scenes; and a recap video cut from on-site footage afterwards.",
+            "caps": [
+              "Flexible Camera Placement",
+              "Blue Box Highlights",
+              "Truck Bed Sensor"
+            ]
+          },
+          {
+            "title": "EDM & Explainer Graphic",
+            "text": "Newsletter layout, plus a single graphic that makes the person-detection range clear at a glance.",
+            "caps": [
+              "EDM layout",
+              "Person-detection range"
+            ]
+          }
+        ]
+      }
     },
     "dfi-marketing": {
       "badge": "DFI · 高級產品行銷專員",
@@ -996,7 +1488,66 @@
             ]
           ]
         }
-      ]
+      ],
+      "en_content": {
+        "badge": "DFI · Senior Product Marketing Specialist",
+        "meta": [
+          [
+            "Type",
+            "Launch assets · Localization"
+          ],
+          [
+            "Scope",
+            "Technical articles · LinkedIn · zh-TW page"
+          ]
+        ],
+        "links": [
+          [
+            "CRA compliance page (zh-TW)",
+            "https://pages.dfi.com/zh-tw/cyber-resilience-act-cra-compliance"
+          ]
+        ],
+        "overview": "In 2026, as Senior Product Marketing Specialist at DFI, I worked on launch assets and Traditional Chinese localization for new industrial PCs.",
+        "challenge": "Readers of B2B industrial PC content are engineers and buyers who care about mechanics, thermals and I/O, not just the spec sheet. The same product information also has to stay consistent across channels.",
+        "role": [
+          "Wrote first-draft English technical articles for two new products",
+          "Created LinkedIn launch post assets",
+          "Localized the EU CRA compliance page into Traditional Chinese and published it on HubSpot",
+          "Wrote an SOP for cleaning up contact lists"
+        ],
+        "chapters": [
+          {
+            "title": "Product Articles",
+            "text": "First drafts of launch articles for the ASL600 (SMARC 2.2 module) and EB100-MTU (fanless industrial PC).",
+            "caps": [
+              "ASL600 article",
+              "EB100-MTU article"
+            ]
+          },
+          {
+            "title": "LinkedIn Posts",
+            "text": "Launch post assets.",
+            "caps": [
+              "ASL600 launch post",
+              "EB100-MTU launch post"
+            ]
+          },
+          {
+            "title": "CRA Page, zh-TW",
+            "text": "Localized the EU Cyber Resilience Act page into Traditional Chinese and published it; copy and visuals were provided by the original team.",
+            "caps": [
+              "CRA page, zh-TW"
+            ]
+          },
+          {
+            "title": "Process SOP",
+            "text": "Step-by-step guide to list cleanup (company names blurred).",
+            "caps": [
+              "Process SOP"
+            ]
+          }
+        ]
+      }
     },
     "cabinet": {
       "badge": "課程作品 · 室內軟裝與 BIM 空間應用班",
@@ -1424,7 +1975,59 @@
             ]
           ]
         }
-      ]
+      ],
+      "en_content": {
+        "badge": "VIA Smart Healthcare · Brochures & Expo Visuals",
+        "meta": [
+          [
+            "Type",
+            "Tri-fold brochures · Expo backdrop"
+          ],
+          [
+            "Use",
+            "Healthcare Expo Taiwan (2018–2020)"
+          ],
+          [
+            "Partner",
+            "MacKay Memorial Hospital"
+          ],
+          [
+            "My part",
+            "Brochures: layout & typesetting | Backdrop: took over and redesigned"
+          ]
+        ],
+        "overview": "VIA's smart healthcare solutions exhibited at Healthcare Expo Taiwan for several years running. This page collects the print pieces I made for that product line: a 2018 brochure for the 3-in-1 smart ward solution, a 2019 smart ER brochure developed with MacKay Memorial Hospital, and the ER command center backdrop for the 2020 joint booth.",
+        "challenge": "Each brochure had to fit a system diagram, multiple UI screens, a spec table and app screenshots into a tri-fold. In 2020, the outsourced backdrop did not meet the brief and had to be redone before the show, to a 130 × 70 cm large-format print spec.",
+        "role": [
+          "Both brochures: layout and typesetting, bringing together UI screenshots, spec tables, icons and photos (a colleague revised one version before final)",
+          "2020 expo backdrop: took over and redesigned the layout and typography, and prepared the large-format print file"
+        ],
+        "chapters": [
+          {
+            "title": "3-in-1 Smart Ward Brochure | 2018",
+            "text": "Angled magenta blocks set the rhythm. The outer panels carry the cover and system architecture; the inner panels introduce the bedside e-card interface, benefits and specs.",
+            "caps": [
+              "Outer: cover, value-added services & system architecture",
+              "Inner: interface, benefits & specs"
+            ]
+          },
+          {
+            "title": "Smart ER Solution Brochure | 2019",
+            "text": "An ER information system developed with MacKay Memorial Hospital. The outer panels summarize features and player specs; the inner panels use UI screens and scenario illustrations to show how the kiosk, app and digital signage work. The doctor's name in the UI has been blurred.",
+            "caps": [
+              "Outer: features, specs & cover",
+              "Inner: UI and use scenarios"
+            ]
+          },
+          {
+            "title": "ER Command Center Backdrop | 2020",
+            "text": "Backdrop for the VIA × MacKay joint booth at Healthcare Expo Taiwan 2020 (130 × 70 cm). The expo posters were originally outsourced; this one did not meet the brief, so I took it over, redesigned it and prepared it for print. Real signage screens sit at the top, and a wave of color below carries the four features. Names on screen have been blurred.",
+            "caps": [
+              "Healthcare Expo Taiwan 2020 backdrop"
+            ]
+          }
+        ]
+      }
     },
     "auto-cover": {
       "badge": "VIA 車用 AI · 型錄封面",
@@ -1466,7 +2069,43 @@
             ]
           ]
         }
-      ]
+      ],
+      "en_content": {
+        "badge": "VIA Automotive AI · Catalog Cover",
+        "meta": [
+          [
+            "Type",
+            "Catalog cover (A4)"
+          ],
+          [
+            "Market",
+            "China (Simplified Chinese)"
+          ],
+          [
+            "My part",
+            "Cover design (inner pages by the branch office)"
+          ],
+          [
+            "Team",
+            "International Marketing (supporting the China branch)"
+          ]
+        ],
+        "overview": "Supporting VIA's China branch, I designed the cover of the product catalog for VIA's autonomous-driving education platform. The platform packages autonomous-driving technology as interactive demo kits for science museums and schools.",
+        "challenge": "The branch needed a cover that could lead the catalog and also work as a standalone poster, introducing both the platform theme and its three main demo kits.",
+        "role": [
+          "Designed the key visual and layout of the catalog cover",
+          "Laid out the text and images for the three demo kits below"
+        ],
+        "chapters": [
+          {
+            "title": "Catalog Cover",
+            "text": "Brand and headline at the top, a wireframe car as the key visual, and arrows guiding the eye to the three kits below: the autonomous-driving education kit, the DMS smart cockpit kit, and the surround-view and driver-assist kit.",
+            "caps": [
+              "Catalog cover"
+            ]
+          }
+        ]
+      }
     }
   }
 }

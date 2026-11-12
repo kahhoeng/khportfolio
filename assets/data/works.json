@@ -144,12 +144,13 @@
       },
       "summary": {
         "zh": "把數位看板的硬體規格轉成空間配置與應用情境。代表案例：為板橋流浪動物之家規劃寵物挑選區與 VR 互動體驗區。",
-        "en": ""
+        "en": "Translating digital signage specs into space plans and use scenarios. Featured case: a pet adoption zone and VR experience zone for the Banqiao animal shelter."
       },
       "tools": "提案規劃 · 3D 示意 · 空間配置",
       "thumb": "assets/img/case/dsg_pick.jpg",
       "cover": false,
-      "href": "projects/case.html?id=digital-signage"
+      "href": "projects/case.html?id=digital-signage",
+      "tools_en": "Proposals · 3D Mockups · Space Planning"
     },
     {
       "id": "ikea",
@@ -161,13 +162,14 @@
       },
       "summary": {
         "zh": "記錄系統導入過程，整理實際使用情境，用鏡頭把產品價值轉成有說服力的 B2B 成功案例影片。",
-        "en": ""
+        "en": "Documented the system rollout and real in-store use, turning product value into a persuasive B2B customer success video."
       },
       "tools": "拍攝 · 剪輯 · 調色 · 腳本",
       "thumb": "assets/img/case/ikea_cover.jpg",
       "cover": true,
       "href": "projects/case.html?id=ikea",
-      "highlight": 1
+      "highlight": 1,
+      "tools_en": "Shoot · Edit · Color · Script"
     },
     {
       "id": "mobile360",
@@ -179,13 +181,14 @@
       },
       "summary": {
         "zh": "把厚重的安裝與校正手冊拆成 10 支教學影片，協助全球經銷商與使用者順利完成安裝。",
-        "en": ""
+        "en": "Broke a dense installation and calibration manual into 10 tutorial videos for distributors and users worldwide."
       },
       "tools": "拍攝 · 剪輯 · 調色 · 腳本",
       "thumb": "assets/img/case/m360v_2.jpg",
       "cover": true,
       "href": "projects/case.html?id=mobile360",
-      "highlight": 2
+      "highlight": 2,
+      "tools_en": "Shoot · Edit · Color · Script"
     },
     {
       "id": "smarthome",
@@ -197,13 +200,14 @@
       },
       "summary": {
         "zh": "把 IoT 產品的連動邏輯與使用情境轉成影像，1–2 分鐘就能讓客戶看懂系統怎麼運作。",
-        "en": ""
+        "en": "Turned IoT device interactions and use cases into video, so customers grasp how the system works in 1–2 minutes."
       },
       "tools": "腳本 · 拍攝 · 剪輯 · 調色",
       "thumb": "assets/img/case/sh_banner.jpg",
       "cover": true,
       "href": "projects/case.html?id=smarthome",
-      "highlight": 3
+      "highlight": 3,
+      "tools_en": "Script · Shoot · Edit · Color"
     },
     {
       "id": "smarthome-guide",
@@ -215,12 +219,13 @@
       },
       "summary": {
         "zh": "把安裝設定流程從技術手冊轉成分段式影音教學，安裝時可以隨選即看。",
-        "en": ""
+        "en": "Converted the setup process from a technical manual into segmented video tutorials that installers can pull up on demand."
       },
       "tools": "腳本 · 剪輯 · 動態字卡",
       "thumb": "assets/img/case/sh_v2.jpg",
       "cover": true,
-      "href": "projects/case.html?id=smarthome-guide"
+      "href": "projects/case.html?id=smarthome-guide",
+      "tools_en": "Script · Edit · Motion Titles"
     },
     {
       "id": "via-web",
@@ -232,13 +237,14 @@
       },
       "summary": {
         "zh": "配合品牌轉型，以「解決方案」與「產業應用」重建官網的資訊架構，並完成線框圖、Mockup 與設計規範。",
-        "en": ""
+        "en": "Rebuilt the corporate site's information architecture around solutions and industries to match the rebrand, with wireframes, mockups and a design spec."
       },
       "tools": "Adobe XD · Wireframe · Mockup",
       "thumb": "assets/img/case/web_landing.jpg",
       "cover": true,
       "href": "projects/case.html?id=via-web",
-      "highlight": 1
+      "highlight": 1,
+      "tools_en": "Adobe XD · Wireframes · Mockups"
     },
     {
       "id": "via-next",
@@ -250,13 +256,14 @@
       },
       "summary": {
         "zh": "為威盛子公司威宏科技（VIA NEXT），在緊迫的時程下把既有的資訊架構快速轉成開發端可直接執行的線框圖。",
-        "en": ""
+        "en": "Turned VIA NEXT's existing information architecture into developer-ready wireframes on a tight schedule."
       },
       "tools": "Adobe XD · Wireframe",
       "thumb": "assets/img/case/next_kv.jpg",
       "cover": true,
       "href": "projects/case.html?id=via-next",
-      "highlight": 2
+      "highlight": 2,
+      "tools_en": "Adobe XD · Wireframes"
     },
     {
       "id": "skyrec",
@@ -286,12 +293,13 @@
       },
       "summary": {
         "zh": "把主管訂定的出貨與退換貨規則，整理成 5 份版面一致的文件：出貨說明、保固政策、內部 SOP、RMA 表單與 FAQ。",
-        "en": ""
+        "en": "Organized shipping and return rules set by management into 5 consistent documents: shipping guide, warranty policy, internal SOP, RMA form and FAQ."
       },
       "tools": "InDesign · 流程圖",
       "thumb": "assets/img/case/rma_shipping.jpg",
       "cover": false,
-      "href": "projects/case.html?id=rma"
+      "href": "projects/case.html?id=rma",
+      "tools_en": "InDesign · Flowcharts"
     },
     {
       "id": "via-marketing",
@@ -303,13 +311,14 @@
       },
       "summary": {
         "zh": "車用 AI 安全系統的全球行銷素材：LinkedIn 產品圖與 Infographic、輪播貼文、Minexpo 2024 展會影片與 EDM。",
-        "en": ""
+        "en": "Global marketing assets for an AI vehicle safety system: LinkedIn product graphics and infographics, carousel posts, Minexpo 2024 trade-show videos and EDMs."
       },
       "tools": "LinkedIn 視覺 · Infographic · 展會影片",
       "thumb": "assets/img/case/vm_hero.jpg",
       "cover": true,
       "href": "projects/case.html?id=via-marketing",
-      "highlight": 1
+      "highlight": 1,
+      "tools_en": "LinkedIn Visuals · Infographics · Expo Videos"
     },
     {
       "id": "dfi-marketing",
@@ -321,13 +330,14 @@
       },
       "summary": {
         "zh": "工業電腦新品的英文技術文章初稿與 LinkedIn 貼文素材，以及歐盟 CRA 合規專頁的繁中在地化與上架。",
-        "en": ""
+        "en": "First-draft English technical articles and LinkedIn launch assets for new industrial PCs, plus Traditional Chinese localization of the EU CRA compliance page."
       },
       "tools": "新品素材 · 繁中在地化",
       "thumb": "assets/img/case/dfi_blog1.jpg",
       "cover": true,
       "href": "projects/case.html?id=dfi-marketing",
-      "home": false
+      "home": false,
+      "tools_en": "Launch Assets · zh-TW Localization"
     },
     {
       "id": "med-dm",
@@ -339,13 +349,14 @@
       },
       "summary": {
         "zh": "2018 到 2020 年醫療展的系列印刷品：智慧病房與智慧急診室兩份三折 DM，以及 2020 年接手重新設計的展場背板。",
-        "en": ""
+        "en": "Print pieces for medical trade shows, 2018–2020: two tri-fold brochures for smart ward and smart ER solutions, plus a 2020 expo backdrop I took over and redesigned."
       },
       "tools": "版面設計 · 排版 · 大圖輸出",
       "thumb": "assets/img/case/pdm_backdrop.jpg",
       "cover": true,
       "href": "projects/case.html?id=med-dm",
-      "highlight": 1
+      "highlight": 1,
+      "tools_en": "Layout · Typesetting · Large-format Print"
     },
     {
       "id": "auto-cover",
@@ -357,13 +368,14 @@
       },
       "summary": {
         "zh": "支援中國分公司，為自動駕駛科普平台型錄設計封面：線框車體帶出主題，下方三格介紹三套展示套件。",
-        "en": ""
+        "en": "Designed the catalog cover for an autonomous-driving education platform, supporting the China branch: a wireframe car as the key visual and three kits introduced below."
       },
       "tools": "封面設計",
       "thumb": "assets/img/case/auto_cover.jpg",
       "cover": true,
       "href": "projects/case.html?id=auto-cover",
-      "highlight": 2
+      "highlight": 2,
+      "tools_en": "Cover Design"
     }
   ],
   "tracks": {

@@ -50,8 +50,11 @@ export async function setLang(next) {
   listeners.forEach((fn) => fn(current));
 }
 
+// 個別頁面可以先開：<body data-en>（例如英文已翻好的行銷設計頁）
+const enabled = () => ENABLE_EN || document.body.hasAttribute('data-en');
+
 export async function initI18n() {
-  if (!ENABLE_EN) return;
+  if (!enabled()) return;
   const sw = document.querySelector('[data-lang-switch]');
   if (sw) {
     sw.hidden = false;
@@ -60,7 +63,11 @@ export async function initI18n() {
       if (b) setLang(b.dataset.lang);
     });
   }
+  // 網址 ?lang=en 優先（可以直接把英文版連結寄給招募方），其次是上次的選擇
+  const q = new URLSearchParams(location.search).get('lang');
   let saved = null;
   try { saved = localStorage.getItem(STORE_KEY); } catch { /* ignore */ }
-  if (saved === 'en') await setLang('en');
+  const want = q === 'en' ? 'en' : q === 'zh' ? 'zh-Hant' : saved;
+  if (want === 'en') await setLang('en');
+  else if (q === 'zh') await setLang('zh-Hant');
 }

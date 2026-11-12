@@ -11,45 +11,45 @@
       "lane": "edu", "start": "2011-09", "end": "2016-06",
       "period": "2011 – 2016",
       "title": { "zh": "東海大學｜資訊管理學士", "en": "Tunghai University — B.S. Information Management" },
-      "note": { "zh": "從馬來西亞來台求學，以資訊管理為主，修過一學期工業設計。", "en": "" }
+      "note": { "zh": "從馬來西亞來台求學，以資訊管理為主，修過一學期工業設計。", "en": "Came from Malaysia to study in Taiwan; majored in information management and took a semester of industrial design." }
     },
     {
       "lane": "edu", "start": "2016-09", "end": "2018-06",
       "period": "2016 – 2018",
       "label": { "zh": "北科大", "en": "Taipei Tech" },
       "title": { "zh": "國立台北科技大學｜互動設計碩士", "en": "Taipei Tech — M.S. Interaction Design" },
-      "note": { "zh": "從資管走進設計，開始處理使用者、介面與體驗。", "en": "" }
+      "note": { "zh": "從資管走進設計，開始處理使用者、介面與體驗。", "en": "Moved from information systems into design, working on users, interfaces and experience." }
     },
     {
       "lane": "work", "start": "2017-08",
       "period": "2017",
       "title": { "zh": "SkyREC 實習｜BI 系統 UX 優化", "en": "SkyREC — UX Intern" },
-      "note": { "zh": "盤點資訊架構與 UI Flow，用 Axure RP 設計標準化線框圖。", "en": "" }
+      "note": { "zh": "盤點資訊架構與 UI Flow，用 Axure RP 設計標準化線框圖。", "en": "Audited the information architecture and UI flows; designed standardized wireframes in Axure RP." }
     },
     {
       "lane": "work", "start": "2018-10", "end": "2021-05",
       "period": "10/2018 – 05/2021",
       "title": { "zh": "威盛電子｜高級產品行銷代表", "en": "VIA Technologies — Senior Product Marketing Representative" },
-      "note": { "zh": "設計 4 份標準化 RMA 服務文件；製作技術引導與應用場景影片；把硬體規格整理成智慧城市應用場景提案與空間配置圖。", "en": "" }
+      "note": { "zh": "設計 4 份標準化 RMA 服務文件；製作技術引導與應用場景影片；把硬體規格整理成智慧城市應用場景提案與空間配置圖。", "en": "Designed 4 standardized RMA service documents; produced technical how-to and use-case videos; turned hardware specs into smart city scenario proposals and space plans." }
     },
     {
       "lane": "work", "start": "2021-06", "end": "2025-03",
       "period": "06/2021 – 03/2025",
       "title": { "zh": "威盛電子｜高級行銷代表", "en": "VIA Technologies — Senior Marketing Representative" },
-      "note": { "zh": "參與 21+ 支影音資產全流程產出（含 Minexpo 2024）；開發 10 份標準化安裝指南與影片 SOP，FAE 現場支援需求減少約三成；規劃企業與子公司網站介面，資訊三次點擊內取得。", "en": "" }
+      "note": { "zh": "參與 21+ 支影音資產全流程產出（含 Minexpo 2024）；開發 10 份標準化安裝指南與影片 SOP，FAE 現場支援需求減少約三成；規劃企業與子公司網站介面，資訊三次點擊內取得。", "en": "Took part in end-to-end production of 21+ video assets (incl. Minexpo 2024); developed 10 standardized installation guides and video SOPs, cutting on-site FAE support requests by about 30%; planned UI for the corporate and subsidiary websites, with key information within three clicks." }
     },
     {
       "lane": "work", "start": "2026-04", "end": "2026-07",
       "period": "04/2026 – 07/2026",
       "title": { "zh": "友通資訊 DFI｜高級產品行銷專員", "en": "DFI Inc. — Senior Product Marketing Specialist" },
-      "note": { "zh": "B2B 工業電腦新品發表素材與繁體中文在地化。", "en": "" }
+      "note": { "zh": "B2B 工業電腦新品發表素材與繁體中文在地化。", "en": "Launch assets and Traditional Chinese localization for B2B industrial PCs." }
     },
     {
       "lane": "train", "start": "2026-08", "end": "now",
-      "period": "08/2026 – 迄今",
+      "period": { "zh": "08/2026 – 迄今", "en": "08/2026 – Present" },
       "label": { "zh": "室內設計進修", "en": "Interior design" },
       "title": { "zh": "室內軟裝與 BIM 空間應用班｜進修", "en": "Interior Soft Furnishing & BIM Program" },
-      "note": { "zh": "現場丈量、AutoCAD 平面圖、SketchUp 建模，初步接觸 Revit。", "en": "" }
+      "note": { "zh": "現場丈量、AutoCAD 平面圖、SketchUp 建模，初步接觸 Revit。", "en": "On-site measuring, AutoCAD floor plans, SketchUp modeling, and an introduction to Revit." }
     }
   ]
 }

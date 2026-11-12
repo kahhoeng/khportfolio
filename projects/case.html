@@ -147,6 +147,7 @@
     .role { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; }
     .links { display: grid; gap: 2px; }
     .links a, .side-link { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--rule); word-break: break-word; }
+    .lang-sw { margin-left: 14px; padding: 2px 8px; border: 1px solid currentColor; border-radius: 6px; font-family: var(--f-mono); font-size: 12px; }
     .side-link { font-family: var(--f-mono); font-size: 12px; }
     .plate.plate--drawing .plate__btn img { box-shadow: none; mix-blend-mode: multiply; }
     .plate--video { background: #111; }
@@ -169,7 +170,7 @@
   </style>
 </head>
 <body>
-<script src="../assets/js/track.js?v=20261106a"></script>
+<script src="../assets/js/track.js?v=20261112a"></script>
 <!-- 通用作品內頁：網址 case.html?id=作品id，內容讀 assets/data/works.json 與 cases.json -->
 <div class="wrap">
   <article class="page" aria-labelledby="p-title">
@@ -212,56 +213,84 @@
   if (!w || !c) { document.getElementById('loading').innerHTML = '找不到這件作品。<a href="../index.html#work">回到 Work Index</a>'; return; }
   document.getElementById('loading').remove();
 
+  // 中英切換：網址 ?lang=en 優先，其次沿用首頁的選擇（localStorage kh-lang）；只有寫了 en_content 的作品才有英文
+  const qs = new URLSearchParams(location.search);
+  let saved = null; try { saved = localStorage.getItem('kh-lang'); } catch (e) {}
+  const want = qs.get('lang') === 'en' ? 'en' : qs.get('lang') === 'zh' ? 'zh-Hant' : saved;
+  const hasEN = !!c.en_content;
+  const EN = hasEN && want === 'en';
+  if (qs.get('lang')) { try { localStorage.setItem('kh-lang', want); } catch (e) {} }
+  const ec = EN ? c.en_content : null;
+  const L = EN
+    ? { year: 'Year', media: 'Media', links: 'Links', ov: 'Overview', ch: 'Challenge', role: 'My Role', pl: 'Full playlist ↗', all: 'All ', play: 'Play video: ', img: (t, v) => v ? `${t} images · ${v} videos` : `${t} images` }
+    : { year: '年份', media: '圖片／影片', links: '連結', ov: '專案概述', ch: '關鍵挑戰', role: '我負責的部分', pl: '看完整播放清單 ↗', all: '全部', play: '播放影片：', img: (t, v) => v ? `${t} 張 · ${v} 支影片` : `${t} 張` };
+  const T0 = (x) => (EN && x.title.en) ? x.title.en : x.title.zh;
+  const C = ec ? { ...c, badge: ec.badge || c.badge, meta: ec.meta || c.meta, overview: ec.overview || c.overview, challenge: ec.challenge || c.challenge, role: ec.role || c.role, links: ec.links || c.links } : c;
+  const chs = c.chapters.map((ch, i) => {
+    const e = ec && ec.chapters && ec.chapters[i]; if (!e) return ch;
+    return { ...ch, title: e.title || ch.title, text: e.text || ch.text,
+      images: (ch.images || []).map((im, j) => [im[0], (e.caps && e.caps[j]) || im[1], im[2]]),
+      videos: (ch.videos || []).map((v, j) => [v[0], (e.vcaps && e.vcaps[j]) || v[1], v[2]]) };
+  });
+  document.documentElement.lang = EN ? 'en' : 'zh-Hant';
+  if (hasEN) {
+    const sw = document.createElement('a');
+    const u = new URL(location.href); u.searchParams.set('lang', EN ? 'zh' : 'en');
+    sw.href = u.toString(); sw.className = 'lang-sw'; sw.textContent = EN ? '中文' : 'EN';
+    sw.setAttribute('aria-label', EN ? '切換為中文' : 'Switch to English');
+    document.querySelector('.head .head__right').append(sw);
+  }
+
   const cat = works.categories.find((x) => x.id === w.cat) || {};
   // 從 landing page 進來時，上下頁只在同一個領域裡循環
   const T = window.KHTrack || {};
   const tl = T.list ? T.list(works) : null;
   const same = tl && tl.includes(w) ? tl : works.works.filter((x) => x.cat === w.cat);
   const tlabel = tl && tl.includes(w) ? (T.id === 'interior' ? 'INTERIOR DESIGN' : 'MARKETING DESIGN') : String(cat.en || '').toUpperCase();
-  document.title = `${w.title.zh}｜K.H Design`;
+  document.title = `${T0(w)}｜K.H Design`;
   document.getElementById('p-index').textContent = `${pad(same.indexOf(w) + 1)} / ${pad(same.length)} · ${tlabel}`;
 
-  const total = c.chapters.reduce((n, ch) => n + (ch.images || []).length, 0);
-  const vids = c.chapters.reduce((n, ch) => n + (ch.videos || []).length, 0);
+  const total = chs.reduce((n, ch) => n + (ch.images || []).length, 0);
+  const vids = chs.reduce((n, ch) => n + (ch.videos || []).length, 0);
   const append = (...nodes) => nodes.forEach((n) => grid.append(n));
 
   // 標題列
   append(h('div', { class: 'row' }, [
     h('div', { class: 'cell mark-cell' }, h('span', { class: 'mark', 'aria-hidden': 'true' })),
     h('div', { class: 'cell span-3 title-cell' }, [
-      h('span', { class: 'label', text: [c.badge, w.year].filter(Boolean).join(' · ') }),
-      h('h1', { class: 'title', id: 'p-title', text: w.title.zh }),
-      h('span', { class: 'title-en', text: c.en || w.title.en }),
+      h('span', { class: 'label', text: [C.badge, w.year].filter(Boolean).join(' · ') }),
+      h('h1', { class: 'title', id: 'p-title', text: EN ? (c.en || w.title.en) : w.title.zh }),
+      h('span', { class: 'title-en', text: EN ? w.title.zh : (c.en || w.title.en) }),
     ]),
   ]));
   // 概要：左欄專案資料＋連結；右側三欄 專案概述／關鍵挑戰／我負責的部分
   append(h('div', { class: 'row' }, [
     h('div', { class: 'cell' }, h('dl', { class: 'meta' }, [
-      ...c.meta.map(([k, v]) => h('div', {}, [h('dt', { text: k }), h('dd', { text: v })])),
-      w.year ? h('div', {}, [h('dt', { text: '年份' }), h('dd', { text: w.year })]) : null,
-      h('div', {}, [h('dt', { text: '圖片／影片' }), h('dd', { text: vids ? `${total} 張 · ${vids} 支影片` : `${total} 張` })]),
-      c.links ? h('div', {}, [h('dt', { text: '連結' }), h('dd', { class: 'links' }, c.links.map(([t, u]) => h('a', { href: u, target: '_blank', rel: 'noopener', text: t + ' ↗' })))]) : null,
+      ...C.meta.map(([k, v]) => h('div', {}, [h('dt', { text: k }), h('dd', { text: v })])),
+      w.year ? h('div', {}, [h('dt', { text: L.year }), h('dd', { text: w.year })]) : null,
+      h('div', {}, [h('dt', { text: L.media }), h('dd', { text: L.img(total, vids) })]),
+      C.links ? h('div', {}, [h('dt', { text: L.links }), h('dd', { class: 'links' }, C.links.map(([t, u]) => h('a', { href: u, target: '_blank', rel: 'noopener', text: t + ' ↗' })))]) : null,
     ])),
     // story：自訂三欄（例如課程作品的 練習目標／做法／成果）；沒有就用 概述／挑戰／負責項目
     ...(c.story ? c.story.map(([t, x]) => h('div', { class: 'cell story' }, [h('h3', { text: t }), h('p', { text: x })])) : [
-      h('div', { class: 'cell story' }, [h('h3', { text: '專案概述' }), h('p', { text: c.overview || w.summary.zh })]),
-      h('div', { class: 'cell story' }, c.challenge ? [h('h3', { text: '關鍵挑戰' }), h('p', { text: c.challenge })] : []),
-      h('div', { class: 'cell story' }, c.role ? [h('h3', { text: '我負責的部分' }), h('ul', { class: 'role' }, c.role.map((r) => h('li', { text: r })))] : []),
+      h('div', { class: 'cell story' }, [h('h3', { text: L.ov }), h('p', { text: C.overview || w.summary.zh })]),
+      h('div', { class: 'cell story' }, C.challenge ? [h('h3', { text: L.ch }), h('p', { text: C.challenge })] : []),
+      h('div', { class: 'cell story' }, C.role ? [h('h3', { text: L.role }), h('ul', { class: 'role' }, C.role.map((r) => h('li', { text: r })))] : []),
     ]),
   ]));
   // 章節
   let n = 0;
-  c.chapters.forEach((ch, i) => {
+  chs.forEach((ch, i) => {
     const side = h('div', { class: 'cell chapter__side' }, h('div', { class: 'sticky' }, [
-      h('span', { class: 'chapter__no', text: `CHAPTER ${pad(i + 1)} / ${pad(c.chapters.length)}` }),
+      h('span', { class: 'chapter__no', text: `CHAPTER ${pad(i + 1)} / ${pad(chs.length)}` }),
       h('h2', { class: 'chapter__title', text: ch.title }),
       h('p', { class: 'sheet__text', text: ch.text }),
-      ch.playlist ? h('a', { class: 'side-link', href: `https://www.youtube.com/playlist?list=${ch.playlist}`, target: '_blank', rel: 'noopener', text: '看完整播放清單 ↗' }) : null,
+      ch.playlist ? h('a', { class: 'side-link', href: `https://www.youtube.com/playlist?list=${ch.playlist}`, target: '_blank', rel: 'noopener', text: L.pl }) : null,
     ]));
     const cls = `plates plates--${ch.layout === 'one' ? 'one' : ch.layout === '3' ? '3' : '2'}`;
     // YouTube：先顯示封面，點了才載入播放器（不拖慢頁面）
     const videoPlates = (ch.videos || []).map(([yt, cap, poster]) => h('figure', { class: 'plate plate--video' }, [
-      h('button', { class: 'video', type: 'button', 'data-yt': yt, 'aria-label': `播放影片：${cap}` }, [
+      h('button', { class: 'video', type: 'button', 'data-yt': yt, 'aria-label': `${L.play}${cap}` }, [
         poster ? h('img', { src: src(poster), alt: '', loading: 'lazy', decoding: 'async' }) : h('span', { class: 'video__blank', 'aria-hidden': 'true' }, [h('b', { text: cap })]),
         h('span', { class: 'video__play', 'aria-hidden': 'true' }),
       ]),
@@ -273,7 +302,7 @@
       const photo = kind ? kind === 'photo' : ch.photo, drawing = kind ? kind === 'drawing' : ch.drawing;
       return h('figure', { class: 'plate' + (photo ? ' plate--photo' : '') + (drawing ? ' plate--drawing' : '') }, [
         h('button', { class: 'plate__btn', type: 'button', 'data-zoom': '', 'data-caption': cap },
-          h('img', { src: src(file), alt: `${w.title.zh}：${cap}`, loading: 'lazy', decoding: 'async' })),
+          h('img', { src: src(file), alt: `${T0(w)}: ${cap}`, loading: 'lazy', decoding: 'async' })),
         h('figcaption', {}, [h('b', { text: cap }), h('span', { text: `${pad(n)} / ${pad(total)}` })]),
       ]);
     });
@@ -285,15 +314,15 @@
   const prev = same[(k - 1 + same.length) % same.length], next = same[(k + 1) % same.length];
   const link = (x, dir, label) => {
     const href = T.withT ? T.withT(x.href ? '../' + x.href : '../works.html#cat=' + x.cat) : (x.href ? '../' + x.href : '../works.html#cat=' + x.cat);
-    return h('a', { class: 'cell', href }, [h('span', { class: 'label', text: dir }), h('b', { text: label + x.title.zh })]);
+    return h('a', { class: 'cell', href }, [h('span', { class: 'label', text: dir }), h('b', { text: label + T0(x) })]);
   };
   append(h('div', { class: 'pager' }, [
     link(prev, '← PREV', `${pad(same.indexOf(prev) + 1)} `),
-    h('a', { class: 'cell cell--mid', href: '../works.html#cat=' + w.cat }, [h('span', { class: 'label', text: 'INDEX' }), h('b', { text: '全部' + (cat.zh || '') })]),
+    h('a', { class: 'cell cell--mid', href: '../works.html#cat=' + w.cat }, [h('span', { class: 'label', text: 'INDEX' }), h('b', { text: EN ? 'All ' + (cat.en || '') : '全部' + (cat.zh || '') })]),
     h('div', { class: 'cell cell--mid', 'aria-hidden': 'true' }),
     link(next, 'NEXT →', `${pad(same.indexOf(next) + 1)} `),
   ]));
-  append(h('div', { class: 'cell span-4 foot' }, [h('span', { text: '© 2026 K.H Design · 黃家禾' }), h('span', { text: (cat.en || '').toUpperCase() })]));
+  append(h('div', { class: 'cell span-4 foot' }, [h('span', { text: EN ? '© 2026 K.H Design · Kahhoe Ng' : '© 2026 K.H Design · 黃家禾' }), h('span', { text: (cat.en || '').toUpperCase() })]));
   if (T.fixLinks) T.fixLinks(grid);
 
   // 點封面才換成 YouTube 播放器

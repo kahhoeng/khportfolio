@@ -39,7 +39,7 @@
       var m = h.match(/^(\.\.\/)?(home|index|works)\.html(#.*)?$/);
       if (m) {
         var hash = m[3] || (m[2] === 'works' ? '#work' : '');
-        if (m[2] === 'works') { hash = '#work'; if (a.querySelector('b')) a.querySelector('b').textContent = '全部' + NAMES[t] + '作品'; }
+        if (m[2] === 'works') { hash = '#work'; if (a.querySelector('b')) a.querySelector('b').textContent = document.documentElement.lang === 'en' ? 'All ' + (t === 'interior' ? 'Interior Design' : 'Marketing Design') + ' Work' : '全部' + NAMES[t] + '作品'; }
         a.setAttribute('href', (m[1] || '') + t + '.html' + hash);
       } else if (/^(\.\.\/)?projects\/|^[\w-]+\.html(\?|$)|^case\.html/.test(h) && !/[?&]t=/.test(h)) {
         a.setAttribute('href', withT(h));

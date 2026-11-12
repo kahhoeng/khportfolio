@@ -48,7 +48,7 @@ export async function initWorksIndex() {
   const cats = new Map(data.categories.map((c) => [c.id, c]));
   const catTag = (w) => {
     const c = cats.get(w.cat);
-    return c ? `${c.zh} ${String(c.en || '').toUpperCase()}` : w.cat;
+    return c ? (lang() === 'en' ? String(c.en || '').toUpperCase() : `${c.zh} ${String(c.en || '').toUpperCase()}`) : w.cat;
   };
 
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
@@ -70,7 +70,7 @@ export async function initWorksIndex() {
     const li = h('li', { class: 'wx__item', 'data-href': w.href || '' });
     const hit = h('button', { class: 'wx__hit', type: 'button', 'aria-expanded': 'false', 'aria-controls': id }, [
       h('span', { class: 'wx__num', text: pad(k + 1) }),
-      h('span', { class: 'wx__cat', text: w.tools || w.year || '' }),
+      h('span', { class: 'wx__cat', text: (lang() === 'en' && w.tools_en) || w.tools || w.year || '' }),
       h('span', { class: 'wx__title', text: pick(w.title) }),
       h('span', { class: 'wx__chev', 'aria-hidden': 'true' }),
     ]);
@@ -150,7 +150,7 @@ export async function initWorksIndex() {
       return h('section', { class: 'wx-row', 'aria-label': row.zh }, [
         h('header', { class: 'wx-row__head' }, [
           h('span', { class: 'wx-row__tag', text: `[ ${String(row.en || row.id).toUpperCase()} ]` }),
-          h('h3', { class: 'wx-row__name', text: row.zh }),
+          h('h3', { class: 'wx-row__name', text: lang() === 'en' ? row.en : row.zh }),
           h('span', { class: 'wx-row__count', text: `/ ${pad(works.length)}` }),
         ]),
         ul,
@@ -176,7 +176,7 @@ export async function initWorksIndex() {
       return h('section', { class: 'wx-row', 'aria-label': cat.zh }, [
         h('header', { class: 'wx-row__head' }, [
           h('span', { class: 'wx-row__tag', text: `[ ${String(cat.en || cat.id).toUpperCase()} ]` }),
-          h('h3', { class: 'wx-row__name', text: cat.zh }),
+          h('h3', { class: 'wx-row__name', text: lang() === 'en' ? cat.en : cat.zh }),
           h('span', { class: 'wx-row__count', text: `/ ${pad(works.length)}` }),
         ]),
         ul,

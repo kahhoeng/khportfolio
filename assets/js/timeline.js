@@ -48,7 +48,7 @@ export async function initTimeline(host) {
 
   function showDetail() {
     const d = items[active];
-    detail.querySelector('.timeline__detail-period').textContent = d.period;
+    detail.querySelector('.timeline__detail-period').textContent = pick(d.period);
     detail.querySelector('.timeline__detail-title').textContent = pick(d.title);
     detail.querySelector('.timeline__detail-note').textContent = pick(d.note);
   }
@@ -108,7 +108,7 @@ export async function initTimeline(host) {
       .attr('class', (d) => 'item' + (d.i === active ? ' is-active' : ''))
       .attr('tabindex', 0)
       .attr('role', 'button')
-      .attr('aria-label', (d) => `${d.period} ${pick(d.title)}`)
+      .attr('aria-label', (d) => `${pick(d.period)} ${pick(d.title)}`)
       .attr('aria-pressed', (d) => String(d.i === active));
 
     nodes.each(function (d) {
