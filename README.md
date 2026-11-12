@@ -94,7 +94,7 @@ d3 採 ISC 授權，© Mike Bostock。
 | 其他 | 4 | 2.5 MB |
 | 頁面（HTML） | 11 | 158.9 KB |
 | 程式（assets/js、vendor） | 8 | 82.2 KB |
-| 資料（assets/data、i18n） | 4 | 66.8 KB |
+| 資料（assets/data、i18n） | 4 | 65.3 KB |
 | 樣式（assets/css） | 2 | 40.0 KB |
 | 其他圖片（logo、點陣、大頭照） | 6 | 38.1 KB |
 | 字型（assets/fonts） | 3 | 30.0 KB |
@@ -223,7 +223,7 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/work/studio_f_tv_dwg.png` | 53.8 KB |
 | `assets/img/case/web_ia2.jpg` | 52.6 KB |
 | `assets/img/work/studio_03_demo.png` | 49.7 KB |
-| `assets/data/cases.json` | 48.2 KB |
+| `assets/data/cases.json` | 47.4 KB |
 | `assets/img/work/studio_07_plumbing.png` | 46.8 KB |
 | `assets/img/work/bath_plan.png` | 44.6 KB |
 | `assets/vendor/d3-lite.min.js` | 44.5 KB |
@@ -246,7 +246,7 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/work/studio_f_bed_dwg.png` | 18.0 KB |
 | `assets/img/work/bed_lightpos.png` | 17.1 KB |
 | `assets/img/work/bed_ceiling.png` | 16.7 KB |
-| `assets/data/works.json` | 14.2 KB |
+| `assets/data/works.json` | 13.6 KB |
 | `assets/fonts/GenWanMin2TW-M-latin.woff2` | 12.9 KB |
 | `projects/studio.html` | 12.8 KB |
 | `assets/fonts/GenWanMin2TW-R-latin.woff2` | 12.8 KB |
