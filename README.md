@@ -92,9 +92,9 @@ d3 採 ISC 授權，© Mike Bostock。
 | 作品圖（assets/img/case） | 90 | 14.9 MB |
 | 課程作品圖（assets/img/work） | 41 | 4.0 MB |
 | 其他 | 4 | 2.5 MB |
-| 頁面（HTML） | 11 | 158.9 KB |
-| 程式（assets/js、vendor） | 8 | 82.2 KB |
-| 資料（assets/data、i18n） | 4 | 65.3 KB |
+| 頁面（HTML） | 11 | 161.6 KB |
+| 資料（assets/data、i18n） | 4 | 98.5 KB |
+| 程式（assets/js、vendor） | 8 | 82.9 KB |
 | 樣式（assets/css） | 2 | 40.0 KB |
 | 其他圖片（logo、點陣、大頭照） | 6 | 38.1 KB |
 | 字型（assets/fonts） | 3 | 30.0 KB |
@@ -201,6 +201,7 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/case/web_wf.jpg` | 77.7 KB |
 | `assets/img/case/vm_rising3.jpg` | 77.1 KB |
 | `assets/img/work/cab_back3d.jpg` | 77.0 KB |
+| `assets/data/cases.json` | 76.0 KB |
 | `assets/img/case/dsg_plan.jpg` | 75.7 KB |
 | `assets/img/case/vm_rising4.jpg` | 73.5 KB |
 | `assets/img/case/sky_compare.jpg` | 72.9 KB |
@@ -223,7 +224,6 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/work/studio_f_tv_dwg.png` | 53.8 KB |
 | `assets/img/case/web_ia2.jpg` | 52.6 KB |
 | `assets/img/work/studio_03_demo.png` | 49.7 KB |
-| `assets/data/cases.json` | 47.4 KB |
 | `assets/img/work/studio_07_plumbing.png` | 46.8 KB |
 | `assets/img/work/bath_plan.png` | 44.6 KB |
 | `assets/vendor/d3-lite.min.js` | 44.5 KB |
@@ -236,22 +236,22 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/work/bath_elev.png` | 31.3 KB |
 | `assets/img/work/bed_layout.png` | 27.7 KB |
 | `assets/img/work/bed_survey.png` | 27.0 KB |
+| `marketing.html` | 24.2 KB |
 | `assets/img/work/studio_06_ceiling.png` | 23.9 KB |
-| `marketing.html` | 23.8 KB |
 | `interior.html` | 22.8 KB |
+| `projects/case.html` | 22.5 KB |
 | `projects/studio-grid.html` | 20.6 KB |
-| `projects/case.html` | 20.3 KB |
 | `assets/img/portrait.jpg` | 19.5 KB |
 | `projects/emerald.html` | 18.8 KB |
 | `assets/img/work/studio_f_bed_dwg.png` | 18.0 KB |
 | `assets/img/work/bed_lightpos.png` | 17.1 KB |
 | `assets/img/work/bed_ceiling.png` | 16.7 KB |
-| `assets/data/works.json` | 13.6 KB |
+| `assets/data/works.json` | 15.8 KB |
 | `assets/fonts/GenWanMin2TW-M-latin.woff2` | 12.9 KB |
 | `projects/studio.html` | 12.8 KB |
 | `assets/fonts/GenWanMin2TW-R-latin.woff2` | 12.8 KB |
 | `projects/bedroom.html` | 11.2 KB |
-| `assets/js/works-index.js` | 10.8 KB |
+| `assets/js/works-index.js` | 10.9 KB |
 | `projects/cabinet.html` | 9.7 KB |
 | `assets/img/logo/kh-design-lockup.svg` | 9.2 KB |
 | `assets/js/main.js` | 7.8 KB |
@@ -262,14 +262,14 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/js/works.js` | 4.8 KB |
 | `assets/fonts/GenWanMin-OFL.txt` | 4.4 KB |
 | `works.html` | 4.2 KB |
-| `assets/js/track.js` | 3.7 KB |
-| `assets/data/timeline.json` | 3.2 KB |
+| `assets/data/timeline.json` | 4.2 KB |
+| `assets/js/track.js` | 3.8 KB |
+| `assets/js/i18n.js` | 2.8 KB |
 | `assets/css/tokens.css` | 2.6 KB |
-| `assets/js/i18n.js` | 2.4 KB |
+| `assets/i18n/en.json` | 2.5 KB |
 | `assets/js/lightbox.js` | 2.2 KB |
 | `assets/img/dots/matrix_dot_1.svg` | 1.6 KB |
 | `assets/img/dots/matrix_dot_2.svg` | 1.6 KB |
-| `assets/i18n/en.json` | 1.1 KB |
 | `pdf/README.md` | 941 B |
 | `assets/img/dots/progress_dot.svg` | 790 B |
 | `.gitignore` | 24 B |
