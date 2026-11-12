@@ -332,38 +332,20 @@
     {
       "id": "med-dm",
       "cat": "print",
-      "year": "2018–2019",
+      "year": "2018–2020",
       "title": {
-        "zh": "VIA 智慧醫療｜三折 DM",
-        "en": "VIA Smart Healthcare — Tri-fold Brochures"
+        "zh": "VIA 智慧醫療｜DM 與展場視覺",
+        "en": "VIA Smart Healthcare — Brochures & Expo Visuals"
       },
       "summary": {
-        "zh": "為醫療展製作的兩份三折 DM：智慧病房 3 合 1 方案與智慧急診室解決方案，把系統、介面與規格排成好讀的印刷品。",
+        "zh": "2018 到 2020 年醫療展的系列印刷品：智慧病房與智慧急診室兩份三折 DM，以及 2020 年接手重新設計的展場背板。",
         "en": ""
       },
-      "tools": "版面設計 · 排版 · 印刷",
-      "thumb": "assets/img/case/pdm_ward_1.jpg",
+      "tools": "版面設計 · 排版 · 大圖輸出",
+      "thumb": "assets/img/case/pdm_backdrop.jpg",
       "cover": true,
       "href": "projects/case.html?id=med-dm",
       "highlight": 1
-    },
-    {
-      "id": "expo-2020",
-      "cat": "print",
-      "year": "2020",
-      "title": {
-        "zh": "2020 台灣醫療科技展｜急診戰情室背板",
-        "en": "Healthcare Expo Taiwan 2020 — Booth Backdrop"
-      },
-      "summary": {
-        "zh": "威盛與馬偕紀念醫院聯合展位的 130 × 70 cm 背板。原由外包設計，因成品未達要求，由我接手重新設計並完成輸出。",
-        "en": ""
-      },
-      "tools": "版面設計 · 大圖輸出",
-      "thumb": "assets/img/case/pdm_backdrop.jpg",
-      "cover": true,
-      "href": "projects/case.html?id=expo-2020",
-      "highlight": 2
     },
     {
       "id": "auto-cover",
@@ -381,7 +363,7 @@
       "thumb": "assets/img/case/auto_cover.jpg",
       "cover": true,
       "href": "projects/case.html?id=auto-cover",
-      "highlight": 3
+      "highlight": 2
     }
   ],
   "tracks": {
@@ -432,7 +414,6 @@
           "cat": "print",
           "works": [
             "med-dm",
-            "expo-2020",
             "auto-cover"
           ]
         },
