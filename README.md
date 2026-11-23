@@ -92,7 +92,7 @@ d3 採 ISC 授權，© Mike Bostock。
 | 作品圖（assets/img/case） | 90 | 14.9 MB |
 | 課程作品圖（assets/img/work） | 41 | 4.0 MB |
 | 其他 | 4 | 2.5 MB |
-| 頁面（HTML） | 11 | 161.6 KB |
+| 頁面（HTML） | 11 | 161.2 KB |
 | 資料（assets/data、i18n） | 4 | 98.5 KB |
 | 程式（assets/js、vendor） | 8 | 82.9 KB |
 | 樣式（assets/css） | 2 | 40.0 KB |
@@ -236,9 +236,9 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/work/bath_elev.png` | 31.3 KB |
 | `assets/img/work/bed_layout.png` | 27.7 KB |
 | `assets/img/work/bed_survey.png` | 27.0 KB |
-| `marketing.html` | 24.2 KB |
+| `marketing.html` | 24.1 KB |
 | `assets/img/work/studio_06_ceiling.png` | 23.9 KB |
-| `interior.html` | 22.8 KB |
+| `interior.html` | 22.6 KB |
 | `projects/case.html` | 22.5 KB |
 | `projects/studio-grid.html` | 20.6 KB |
 | `assets/img/portrait.jpg` | 19.5 KB |
