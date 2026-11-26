@@ -81,7 +81,7 @@ d3 採 ISC 授權，© Mike Bostock。
 <!-- RESOURCES:START -->
 ## 資源清單
 
-> 自動產生，請勿手動修改。更新時間：2026-11-23
+> 自動產生，請勿手動修改。更新時間：2026-11-26
 
 **總計 21.8 MB**，共 169 個檔案，約佔 GitHub Pages 建議上限（1 GB）的 2.1%。
 
@@ -92,8 +92,8 @@ d3 採 ISC 授權，© Mike Bostock。
 | 作品圖（assets/img/case） | 90 | 14.9 MB |
 | 課程作品圖（assets/img/work） | 41 | 4.0 MB |
 | 其他 | 4 | 2.5 MB |
-| 頁面（HTML） | 11 | 161.2 KB |
-| 資料（assets/data、i18n） | 4 | 98.5 KB |
+| 頁面（HTML） | 11 | 161.4 KB |
+| 資料（assets/data、i18n） | 4 | 98.6 KB |
 | 程式（assets/js、vendor） | 8 | 82.9 KB |
 | 樣式（assets/css） | 2 | 40.0 KB |
 | 其他圖片（logo、點陣、大頭照） | 6 | 38.1 KB |
@@ -236,7 +236,7 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/work/bath_elev.png` | 31.3 KB |
 | `assets/img/work/bed_layout.png` | 27.7 KB |
 | `assets/img/work/bed_survey.png` | 27.0 KB |
-| `marketing.html` | 24.1 KB |
+| `marketing.html` | 24.3 KB |
 | `assets/img/work/studio_06_ceiling.png` | 23.9 KB |
 | `interior.html` | 22.6 KB |
 | `projects/case.html` | 22.5 KB |
@@ -261,8 +261,8 @@ d3 採 ISC 授權，© Mike Bostock。
 | `assets/img/logo/kh-design-wordmark.svg` | 5.4 KB |
 | `assets/js/works.js` | 4.8 KB |
 | `assets/fonts/GenWanMin-OFL.txt` | 4.4 KB |
+| `assets/data/timeline.json` | 4.3 KB |
 | `works.html` | 4.2 KB |
-| `assets/data/timeline.json` | 4.2 KB |
 | `assets/js/track.js` | 3.8 KB |
 | `assets/js/i18n.js` | 2.8 KB |
 | `assets/css/tokens.css` | 2.6 KB |
