@@ -45,11 +45,11 @@
       "note": { "zh": "B2B 工業電腦新品發表素材與繁體中文在地化。", "en": "Launch assets and Traditional Chinese localization for B2B industrial PCs." }
     },
     {
-      "lane": "train", "start": "2026-08", "end": "now",
-      "period": { "zh": "08/2026 – 迄今", "en": "08/2026 – Present" },
+      "lane": "train", "start": "2026-08", "end": "2026-11",
+      "period": { "zh": "08/2026 – 11/2026", "en": "08/2026 – 11/2026" },
       "label": { "zh": "室內設計進修", "en": "Interior design" },
-      "title": { "zh": "室內軟裝與 BIM 空間應用班｜進修", "en": "Interior Soft Furnishing & BIM Program" },
-      "note": { "zh": "現場丈量、AutoCAD 平面圖、SketchUp 建模，初步接觸 Revit。", "en": "On-site measuring, AutoCAD floor plans, SketchUp modeling, and an introduction to Revit." }
+      "title": { "zh": "室內軟裝與 BIM 空間應用班｜結訓", "en": "Interior Soft Furnishing & BIM Program" },
+      "note": { "zh": "現場丈量、AutoCAD 平面與施工圖、SketchUp 建模，初步接觸 Revit；取得 AutoCAD ACU 認證。", "en": "On-site measuring, AutoCAD floor plans, SketchUp modeling, and an introduction to Revit; earned the AutoCAD ACU certification." }
     }
   ]
 }
